@@ -1,0 +1,144 @@
+==============================================================================
+  EVENT-SIZE DIAGNOSTIC — controlled fault classes (read-only)
+==============================================================================
+
+Cleaned rows        : 613,711
+Source events (raw) : 2,307
+Recording groups    : 16 (gap threshold 3,600 samples)
+
+WARNING: 15 event(s) span a recording-group boundary.
+
+==============================================================================
+Class 1 (Short-Circuit) — 15 source events
+==============================================================================
+   event_id  raw_samples  retained  recording_group    start_idx      end_idx
+       2117          619       619               12    1,074,414    1,075,032
+       1877          614       614               11      993,870      994,483
+       2125          613       613               12    1,077,713    1,078,325
+       1869          612       612               11      990,569      991,180
+       2161          591       591               13    1,158,445    1,159,035
+       2270          591       591               15    1,332,871    1,333,461
+       2287          591       591               15    1,336,171    1,336,761
+       2229          588       588               14    1,245,320    1,245,907
+       2182          509       509               13    1,161,747    1,162,255
+       2223          384       384               14    1,244,624    1,245,007
+       2221          207       207               14    1,244,416    1,244,622
+       2188           60        60               13    1,162,277    1,162,336
+       2186           15        15               13    1,162,261    1,162,275
+       2184            3         3               13    1,162,257    1,162,259
+       2180            2         2               13    1,161,744    1,161,745
+
+==============================================================================
+Class 2 (Degradation) — 19 source events
+==============================================================================
+   event_id  raw_samples  retained  recording_group    start_idx      end_idx
+       1430        2,695     2,695                9      815,665      818,359
+       1272        1,779     1,779                8      725,945      727,723
+       2112          644       644               12    1,072,283    1,072,926
+       1864          611       611               11      988,470      989,080
+       1872          610       610               11      991,770      992,379
+       2155          590       590               13    1,156,346    1,156,935
+       2278          584       584               15    1,334,078    1,334,661
+       2261          581       581               15    1,330,781    1,331,361
+       2172          579       579               13    1,159,657    1,160,235
+       2120          578       578               12    1,075,650    1,076,227
+       2239          572       572               14    1,247,524    1,248,095
+       2213          510       510               14    1,242,691    1,243,200
+       2190            6         6               13    1,162,345    1,162,350
+       2231            6         6               14    1,245,917    1,245,922
+       2163            6         6               13    1,159,045    1,159,050
+       2272            6         6               15    1,333,469    1,333,474
+       2289            6         6               15    1,336,771    1,336,776
+       2225            5         5               14    1,245,015    1,245,019
+       2170            3         3               13    1,159,653    1,159,655
+
+==============================================================================
+Class 3 (Open-Circuit) — 23 source events
+==============================================================================
+   event_id  raw_samples  retained  recording_group    start_idx      end_idx
+       2122          606       606               12    1,076,514    1,077,119
+       2176          601       601               13    1,160,535    1,161,135
+       1866          601       601               11      989,370      989,970
+       2283          600       600               15    1,334,962    1,335,561
+       2114          600       600               12    1,073,215    1,073,814
+       2157          600       600               13    1,157,236    1,157,835
+       2266          599       599               15    1,331,663    1,332,261
+       2217          599       599               14    1,243,508    1,244,106
+       1874          598       598               11      992,671      993,268
+       2234          595       595               14    1,246,513    1,247,107
+       2211            4         4               14    1,242,672    1,242,675
+       2214            3         3               14    1,243,201    1,243,203
+       1273            2         2                8      727,724      727,725
+       2168            2         2               13    1,159,636    1,159,637
+       2237            2         2               14    1,247,507    1,247,508
+       2240            2         2               14    1,248,096    1,248,097
+       2259            2         2               15    1,330,765    1,330,766
+       2262            2         2               15    1,331,362    1,331,363
+       1270            2         2                8      725,933      725,934
+       2173            1         1               13    1,160,236    1,160,236
+       1428            1         1                9      815,649      815,649
+       2276            1         1               15    1,334,063    1,334,063
+       2280            1         1               15    1,334,663    1,334,663
+
+==============================================================================
+  SAMPLE-COUNT DISTRIBUTION
+==============================================================================
+
+All 57 controlled-fault events, retained sizes ascending:
+  1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 4, 5, 6, 6, 6, 6, 6, 15, 60, 207, 384, 509, 510, 572, 578, 579, 581, 584, 588, 590, 591, 591, 591, 595, 598, 599, 599, 600, 600, 600, 601, 601, 606, 610, 611, 612, 613, 614, 619, 644, 1,779, 2,695
+
+  min 1 | median 572 | max 2,695 | mean 392.9
+
+Largest multiplicative jumps between consecutive event sizes:
+      15 →     60   x4.0
+      60 →    207   x3.5
+     644 →  1,779   x2.8
+       6 →     15   x2.5
+       1 →      2   x2.0
+     207 →    384   x1.9
+
+==============================================================================
+  EVENT SIZE STRUCTURE
+==============================================================================
+  Paper's controlled inductions: 10 minutes = ~600 samples at 1 Hz
+
+  Class 1 (Short-Circuit):
+    Events >=300 samples : 10  (mean size 571)
+    Events 11-299        : 3   → 207 samples (grp 14), 60 samples (grp 13), 15 samples (grp 13)
+    Events <=10          : 2
+
+  Class 2 (Degradation):
+    Events >=300 samples : 12  (mean size 861)
+    Events 11-299        : 0
+    Events <=10          : 7
+
+  Class 3 (Open-Circuit):
+    Events >=300 samples : 10  (mean size 600)
+    Events 11-299        : 0
+    Events <=10          : 13
+
+  Natural break in the distribution: none apparent
+
+  INTERPRETATION
+    Runs of <=10 samples are almost certainly label-edge flicker: they
+    cluster immediately adjacent to full-length events, where the label
+    bounces between classes for a few seconds at a transition.
+    Counting them as independent events inflates apparent fault support.
+
+  THIS THRESHOLD IS DESCRIPTIVE ONLY
+    No row is removed, relabelled, or excluded on the basis of event
+    size. Every labelled row remains in the classification data, and
+    this script writes no dataset. The counts above are support
+    metadata for judging how much independent fault evidence exists.
+
+  SUBSTANTIAL EVENTS (>=300 retained samples) PER RECORDING GROUP
+     group  Short-Circuit  Degradation  Open-Circuit
+         8              0            1             0
+         9              0            1             0
+        11              2            2             2
+        12              2            2             2
+        13              2            2             2
+        14              2            2             2
+        15              2            2             2
+    Groups with all three controlled classes: [11, 12, 13, 14, 15]
+    Groups with no substantial controlled event: [0, 1, 2, 3, 4, 5, 6, 7, 10]

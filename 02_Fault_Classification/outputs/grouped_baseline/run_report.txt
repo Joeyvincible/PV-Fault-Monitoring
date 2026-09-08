@@ -1,0 +1,186 @@
+==============================================================================
+  OBJECTIVE 1 — GROUP-DISJOINT CLASSIFIER, 5-FOLD CV
+==============================================================================
+  Started: 2026-09-04T18:24:52
+
+==============================================================================
+  5a. RECORDING GROUP RECONSTRUCTION
+==============================================================================
+  Loaded: fault_dataset.csv  613,711 rows x 22 cols
+  Gap threshold: 3,600 (inside stable band 387-42,335)
+  Recording groups recovered: 16 -> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+  ASSERT 16 groups numbered 0-15 in original order          : PASS
+  ASSERT groups 11-15 each contain labels 1, 2 and 3        : PASS
+  NOTE: recording_group is a split key only — never a model feature.
+
+  Long anomalous degradation events (> 900 samples): [1272, 1430]
+    event 1272: 1,779 samples, group 8
+    event 1430: 2,695 samples, group 9
+  Rows in long degradation events: 4,474 (kept in training and evaluation — diagnostic split only)
+
+==============================================================================
+  5b. FOLD ASSIGNMENT
+==============================================================================
+  Rule: anchors 11-15 seed folds 1-5. Remaining groups are assigned
+  largest-first to whichever fold currently holds the fewest test rows
+  (ties by lowest fold number), with groups 8 and 9 forced into
+  different folds. Determined only from group size and the support
+  table — never from model performance.
+  ASSERT computed allocation == user-approved allocation     : PASS
+
+  Fold Test groups         Test rows  Normal  Short-  Degrad  Open-C  Shadow  SC/Deg/OC ev
+     1 [2, 10, 11]           115,520  77,440   1,226   1,221   1,199  34,434  2/2/2
+     2 [1, 3, 7, 12]         150,009  92,815   1,232   1,222   1,206  53,534  2/2/2
+     3 [0, 9, 13]            115,381  71,063   1,180   3,879   1,205  38,054  2/3/2
+     4 [5, 6, 14]            116,452  80,385   1,179   1,093   1,205  32,590  2/2/2
+     5 [4, 8, 15]            116,349  81,141   1,182   2,956   1,209  29,861  2/3/2
+  ASSERT every fold has non-zero test support for labels 0-4 : PASS
+
+==============================================================================
+  5c. FEATURE SETS AND EXCLUSION ASSERTIONS
+==============================================================================
+  NO_CURRENT ∩ current-derived features : EMPTY
+  NO_VOLTAGE ∩ voltage-derived features : EMPTY
+  ASSERT NO_CURRENT excludes all current-derived features     : PASS
+  ASSERT NO_VOLTAGE excludes all voltage-derived features     : PASS
+  (physics features p_exp/residual/ratio require measured power,
+   so they are excluded from BOTH hardware-removal sets.)
+
+  Electrical (full)                        11 features
+  Electrical + irradiance                  12 features
+  Electrical + irradiance + module temp    13 features
+  No current sensors                        4 features
+  No voltage sensors                        4 features
+  Power + approx. measured-POA physics      6 features
+
+==============================================================================
+  5d. NaN / INF AUDIT (pre-imputation, whole dataset)
+==============================================================================
+  Undefined ratios are imputed, never dropped: vdc2 -> 0 during
+  open-circuit faults, exactly the class most needing evaluation.
+
+  feature                       NaN     +/-inf   total bad
+  (no NaN or inf present in any feature)
+
+==============================================================================
+  5e. MODELS
+==============================================================================
+  HistGradientBoostingClassifier supports class_weight: True
+  -> using class_weight=balanced
+  No downsampling: all training observations are preserved.
+  Imputer (and scaler for LogReg) fitted on the TRAINING fold only.
+
+==============================================================================
+  RUNNING 6 FEATURE SETS x 3 MODELS = 18 CONFIGURATIONS
+==============================================================================
+
+  Electrical (full) (11 features)
+    LogReg   MacroF1 OOF=0.9141  folds=0.9147+/-0.0127  balAcc=0.9218  4fault=0.9305  (83s, 0 imputed)
+    RF       MacroF1 OOF=0.9586  folds=0.9476+/-0.0541  balAcc=0.9332  4fault=0.9181  (223s, 0 imputed)
+    HistGBM  MacroF1 OOF=0.9504  folds=0.9576+/-0.0383  balAcc=0.9560  4fault=0.9482  (44s, 0 imputed)
+
+  Electrical + irradiance (12 features)
+    LogReg   MacroF1 OOF=0.9263  folds=0.9260+/-0.0103  balAcc=0.9310  4fault=0.9367  (88s, 0 imputed)
+    RF       MacroF1 OOF=0.9589  folds=0.9495+/-0.0504  balAcc=0.9335  4fault=0.9182  (217s, 0 imputed)
+    HistGBM  MacroF1 OOF=0.9661  folds=0.9639+/-0.0448  balAcc=0.9466  4fault=0.9347  (70s, 0 imputed)
+
+  Electrical + irradiance + module temp (13 features)
+    LogReg   MacroF1 OOF=0.9154  folds=0.9178+/-0.0161  balAcc=0.9308  4fault=0.9383  (95s, 0 imputed)
+    RF       MacroF1 OOF=0.9552  folds=0.9458+/-0.0547  balAcc=0.9276  4fault=0.9107  (222s, 0 imputed)
+    HistGBM  MacroF1 OOF=0.9566  folds=0.9543+/-0.0602  balAcc=0.9325  4fault=0.9173  (67s, 0 imputed)
+
+  No current sensors (4 features)
+    LogReg   MacroF1 OOF=0.7352  folds=0.7427+/-0.0419  balAcc=0.8862  4fault=0.9072  (28s, 0 imputed)
+    RF       MacroF1 OOF=0.8339  folds=0.8372+/-0.0278  balAcc=0.8190  4fault=0.8070  (256s, 0 imputed)
+    HistGBM  MacroF1 OOF=0.8186  folds=0.8187+/-0.0256  balAcc=0.8771  4fault=0.8891  (41s, 0 imputed)
+
+  No voltage sensors (4 features)
+    LogReg   MacroF1 OOF=0.5402  folds=0.5376+/-0.0305  balAcc=0.7190  4fault=0.7475  (61s, 0 imputed)
+    RF       MacroF1 OOF=0.6494  folds=0.6410+/-0.0678  balAcc=0.6222  4fault=0.5427  (186s, 0 imputed)
+    HistGBM  MacroF1 OOF=0.6349  folds=0.6305+/-0.0345  balAcc=0.7790  4fault=0.7872  (34s, 0 imputed)
+
+  Power + approx. measured-POA physics (6 features)
+    LogReg   MacroF1 OOF=0.5998  folds=0.6070+/-0.0352  balAcc=0.7857  4fault=0.8159  (89s, 0 imputed)
+    RF       MacroF1 OOF=0.7292  folds=0.7072+/-0.0973  balAcc=0.7038  4fault=0.6636  (150s, 0 imputed)
+    HistGBM  MacroF1 OOF=0.6280  folds=0.6501+/-0.0555  balAcc=0.6693  4fault=0.6232  (58s, 0 imputed)
+
+==============================================================================
+  DEGRADATION RECALL BREAKDOWN (diagnostic only)
+==============================================================================
+  Standard  = scheduled ~600-sample degradation inductions
+  Anomalous = the two long degradation-labelled events in groups 8 and 9
+  No sample was removed or relabelled; this is a reporting split only.
+
+  Standard degradation rows : 5,897
+  Anomalous degradation rows: 4,474 (events [1272, 1430])
+
+  feature set                              model     std recall  anom recall
+  Electrical + irradiance                  LogReg        0.9924       0.8699
+  Electrical + irradiance                  RF            0.8718       0.8487
+  Electrical + irradiance                  HistGBM       0.9778       0.7465
+  (full table: degradation_recall_breakdown.csv)
+
+==============================================================================
+  5g. CAPACITY SENSITIVITY (POWER_PHYSICS only)
+==============================================================================
+  Best model for this feature set: RF
+  5.00 kW (rated)        Macro F1 OOF=0.7292  folds=0.7072+/-0.0973
+  5.28 kW (nameplate)    Macro F1 OOF=0.7228  folds=0.7009+/-0.0848
+  Difference: 0.0064 -> INSENSITIVE to the capacity ambiguity
+
+==============================================================================
+  OBJECTIVE 1 — GROUPED BASELINE
+==============================================================================
+  Split: group-disjoint 5-fold CV over all 16 recording groups
+  Each fold: 1 controlled-fault anchor day + background groups
+  Every recording group tested exactly once
+  Allocation rule: anchors 11-15 seed folds 1-5; remaining groups
+    assigned largest-first to the fold with fewest test rows,
+    groups 8 and 9 forced apart; sizes/support only, never performance
+
+  Macro F1 — pooled out-of-fold (fold mean +/- std):
+  Feature Set                              LogReg            RF                HistGBM          
+  Electrical (full)                        0.914 (±0.013)    0.959 (±0.054)    0.950 (±0.038)   
+  Electrical + irradiance                  0.926 (±0.010)    0.959 (±0.050)    0.966 (±0.045)   
+  Electrical + irradiance + module temp    0.915 (±0.016)    0.955 (±0.055)    0.957 (±0.060)   
+  No current sensors                       0.735 (±0.042)    0.834 (±0.028)    0.819 (±0.026)   
+  No voltage sensors                       0.540 (±0.030)    0.649 (±0.068)    0.635 (±0.035)   
+  Power + approx. measured-POA physics     0.600 (±0.035)    0.729 (±0.097)    0.628 (±0.056)   
+
+  Four-fault mean recall — contextual comparison with Lazzaretti et al.
+   (2020), not directly equivalent:
+    Best configuration: 0.935 (Electrical + irradiance / HistGBM)
+    Reference: Lazzaretti et al. (2020) ANN 95.44% average four-fault
+      class accuracy | SC 99.35% | Deg 93.18% | OC 100% | Shad 89.26%
+      NOTE: they trained on simulated data and tested a four-fault
+      classifier on real data; ours is a five-class model trained and
+      evaluated on real data with group-disjoint folds. Different
+      protocols — do not subtract or rank these numbers.
+
+  Capacity sensitivity (POWER_PHYSICS only):
+    5.00 kW: Macro F1 0.729 ± 0.097
+    5.28 kW: Macro F1 0.723 ± 0.085
+    -> insensitive to capacity ambiguity
+
+  VOLTAGE vs CURRENT:
+    Electrical (full)      Macro F1: 0.959
+    No current sensors     Macro F1: 0.834  (drop: 0.125)
+    No voltage sensors     Macro F1: 0.649  (drop: 0.309)
+    -> Historical claim was that voltage sensors matter more than
+       current. Under leakage-safe grouped validation this claim
+       holds — removing voltage hurt MORE than removing current.
+
+  COMPARISON WITH HISTORICAL RESULT:
+    Historical Macro F1 (random row split): 0.9975
+    Grouped Macro F1 (best configuration):                    0.966 ± 0.050
+    -> The historical result was inflated by temporal leakage: random
+       row splitting on 1 Hz data placed adjacent seconds of the same
+       physical fault event in both train and test.
+
+  Fold-to-fold variance:
+    Highest std across folds: 0.109 (feature set: Power + approx. measured-POA physics, model: RF)
+    Lowest  std across folds: 0.012 (Electrical + irradiance, LogReg)
+    Per-fold class support is in fold_assignments.csv; folds 3 and 5
+    carry the long degradation events, and every fold's SC/OC support
+    rests on exactly 2 inductions (~1,200 samples).
+==============================================================================

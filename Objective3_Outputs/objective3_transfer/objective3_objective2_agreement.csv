@@ -1,0 +1,3 @@
+arm,status,overlapping_rows_denominator,both_flagged,objective3_only,objective2_only,neither,raw_agreement,objective3_flag_rate,objective2_flag_rate
+Arm B,available,4745,34,3191,9,1511,0.325606,0.679663,0.009062
+Arm C,available,4745,21,3204,9,1511,0.322866,0.679663,0.006322

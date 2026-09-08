@@ -1,0 +1,7 @@
+rule,rows,pct_of_grid,rows_2023,rows_typhoon_window,sensor_free
+HISTORICAL sensor rule (20<=irr<=1200) [contaminated],51625,56.97,23756,908,False
+ghi_clear >= 20,42636,47.05,16475,644,True
+ghi_clear >= 50,41083,45.33,15875,618,True
+zenith < 85,42517,46.92,16424,645,True
+zenith < 80,39767,43.88,15358,612,True
+ghi_clear >= 50 AND zenith < 85,41083,45.33,15875,618,True

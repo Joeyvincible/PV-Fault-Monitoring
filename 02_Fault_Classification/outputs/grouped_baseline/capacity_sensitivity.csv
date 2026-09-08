@@ -1,0 +1,3 @@
+capacity,model,macro_f1_oof,macro_f1_fold_mean,macro_f1_fold_std
+5.00 kW (rated),RF,0.7292,0.7072,0.0973
+5.28 kW (nameplate),RF,0.7228,0.7009,0.0848

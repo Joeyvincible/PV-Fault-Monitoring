@@ -1,0 +1,31 @@
+Objective 2 figure source manifest
+Generated: 2026-09-06T22:45:07
+
+Input files read (all under outputs/objective2_modeling/):
+  outputs/objective2_modeling/anomaly_screening.csv
+  outputs/objective2_modeling/arm_training_summary.csv
+  outputs/objective2_modeling/expected_power_accuracy.csv
+  outputs/objective2_modeling/irradiance_estimator_metrics.csv
+  outputs/objective2_modeling/objective2_grid.csv
+  outputs/objective2_modeling/residual_diagnostic/detrended_diagnostic.csv
+  outputs/objective2_modeling/residual_diagnostic/residual_by_irradiance_bin.csv
+  outputs/objective2_modeling/residual_diagnostic/residual_monthly_stats.csv
+  outputs/objective2_modeling/residual_diagnostic/threshold_offset_analysis.csv
+  outputs/objective2_modeling/residuals_full_arm_a.csv
+  outputs/objective2_modeling/residuals_full_arm_b.csv
+  outputs/objective2_modeling/residuals_full_arm_c.csv
+  outputs/objective2_modeling/residuals_full_reference.csv
+
+Figure -> source:
+  fig1_irradiance_estimation
+      objective2_grid.csv (Fig 1 only); irradiance_estimator_metrics.csv
+  fig2_power_accuracy_by_arm
+      expected_power_accuracy.csv
+  fig3_residual_trend
+      residual_diagnostic/residual_monthly_stats.csv
+  fig4_residual_by_irradiance
+      residual_diagnostic/residual_by_irradiance_bin.csv
+  fig5_saola_window
+      residuals_full_*.csv; arm_training_summary.csv; residual_diagnostic/threshold_offset_analysis.csv; detrended_diagnostic.csv
+
+Forbidden directories (asserted not read): outputs/no_sensor, outputs/lstm_with_sensor, outputs/calibration, outputs/eda_days, outputs/eda_features, outputs/hk_data_audit, outputs/objective2_design

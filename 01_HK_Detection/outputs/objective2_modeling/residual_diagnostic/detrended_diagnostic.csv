@@ -1,0 +1,13 @@
+N_days,arm,z_pre,z_proxy,z_post,contrast_vs_pre,event_window_rate_pct,alert_rate_outside_pct
+7,Reference (measured irradiance),-0.3726,0.0733,-0.2191,0.4459,0.96,2.12
+7,Arm A (pvlib only),-0.1608,-0.2457,-0.2243,-0.0849,2.64,1.37
+7,Arm B (ML estimate),-0.1716,-0.337,-0.2411,-0.1655,3.61,1.29
+7,Arm C (pvlib + ML estimate),-0.218,-0.2573,-0.2542,-0.0392,3.85,1.28
+30,Reference (measured irradiance),-0.3411,0.3823,-0.0149,0.7234,0.0,2.92
+30,Arm A (pvlib only),-0.1751,-0.1208,-0.2267,0.0543,1.44,1.71
+30,Arm B (ML estimate),-0.2063,-0.1999,-0.2346,0.0064,3.37,1.49
+30,Arm C (pvlib + ML estimate),-0.2759,-0.048,-0.2521,0.2279,3.37,1.35
+90,Reference (measured irradiance),-0.2173,0.4756,0.4167,0.6929,0.0,4.09
+90,Arm A (pvlib only),0.0145,-0.1897,-0.1613,-0.2042,1.44,2.0
+90,Arm B (ML estimate),0.0486,-0.3094,-0.2495,-0.358,3.61,1.64
+90,Arm C (pvlib + ML estimate),-0.0273,-0.1553,-0.2656,-0.128,3.61,1.65

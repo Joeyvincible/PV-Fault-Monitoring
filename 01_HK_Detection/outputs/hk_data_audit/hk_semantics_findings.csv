@@ -1,0 +1,14 @@
+part,question,finding,evidence_source,classification
+1,Sampling interval of site-level PV data,Modal spacing 0 days 00:15:00 (empirical),SQ1.csv timestamps; contradicts README '5-minute intervals',CONFIRMED
+1,Is power(W) AC or DC?,"AC active power. Inverter total = sum of three AC phase active powers (mean |diff| 0.0000 W); site level matches inverter 15-min mean (r=0.98290). No DC current exists in the dataset, so DC power is not derivable.",SQ1_Inverter.csv schema and values; SQ1.csv,CONFIRMED
+1,Instantaneous or aggregated?,"Interval-aggregated: power(W) behaves as a 15-minute mean, generation(kWh) as the matching interval energy",SQ1.csv generation(kWh) vs power(W) empirical comparison,SUPPORTED ASSUMPTION
+1,Does the distribution show inverter clipping?,"max 27,735 W = 100.5% of the 27.6 kW rating; 282 rows within 2% of max — no dense ceiling, no strong clipping evidence",SQ1.csv power(W) distribution vs TTL rating,CONFIRMED
+2,SQ1 tilt,0deg — confirms the pipeline's tilt=0,TTL ext:tiltAngle,CONFIRMED
+2,SQ1 azimuth,TTL says 0deg; pipeline uses 180°. Irrelevant at zero tilt but not matching,TTL ext:azimuth,CONFIRMED
+2,SQ1 location and altitude,"TTL: lat 22.33, lon 114.18, altitude 94.0 m. Pipeline: 22.3363, 114.2634, 30 m (README campus centroid). Discrepancy in longitude and altitude",TTL vs README vs pipeline constants,CONFIRMED
+2,Irradiance measurement plane,"Not documented. Weather-tower installation implies global horizontal, but no source states it. Inert for SQ1 (tilt=0, so GHI==POA)",Dataset README; TTL has no weather-station entry,UNRESOLVED
+2,Is SQ1 documented as served by this weather station?,No. The weather station is absent from the Brick model and no PV-to-station mapping is documented. One station serves 60 stations; pairing is an unavoidable assumption,README; TTL contains no weather-station entity,UNRESOLVED
+2,Timezone of raw and intermediate timestamps,All files naive (no offset). Hong Kong local time assumed; HK has no DST since 1979 so +8 is unambiguous if the assumption holds,Header inspection of raw and derived CSVs,SUPPORTED ASSUMPTION
+2,Sampling intervals,PV site level 0 days 00:15:00 (README says 5 min — data wins); inverter level 5 min; meteorological 0 days 00:01:00. Preprocessing resamples all to 15 min by mean,Empirical timestamp differences,CONFIRMED
+2,Meteorological variables available,"Seven folders. Used: Irradiance, Temperature. Available and unused: Rainfall, Relative Humidity, Sea Level Pressure, Visibility, Wind",Meteorological dataset folder inventory,CONFIRMED
+5,Is a future-prediction horizon specified anywhere?,"No. No tutor, brief, objective or protocol document states a lead time. The implemented script performs same-time estimation with no lag or shift",Full-text search of repository materials and the current script,SAME-TIME ESTIMATION

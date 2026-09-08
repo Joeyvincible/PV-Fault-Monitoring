@@ -1,0 +1,21 @@
+column,depends_on_measured_irradiance,derivation_path,script_and_line
+zenith,NO,pvlib solar position from timestamp + site location only,pvlib_features_SQ1.py:63-64
+azimuth,NO,pvlib solar position from timestamp + site location only,pvlib_features_SQ1.py:63-65
+ghi_clear,NO,pvlib Ineichen clear-sky from timestamp + location + altitude; no measurement,pvlib_features_SQ1.py:67-69
+k_clear,YES,"measured Irradiance / ghi_clear — clearness index, numerator is the sensor",pvlib_features_SQ1.py:72-73
+dni_est,YES,DISC decomposition with ghi = measured Irradiance,pvlib_features_SQ1.py:77-78
+dhi_est,YES,measured Irradiance − dni_est·cos(zenith),pvlib_features_SQ1.py:81-82
+poa_global,YES,get_total_irradiance with ghi = measured Irradiance and dni/dhi derived from it,pvlib_features_SQ1.py:85-95
+temp_cell,YES,"Faiman model driven by poa_global, which is a function of measured Irradiance",pvlib_features_SQ1.py:98-100
+p_exp,YES,"pvwatts_dc(poa_global, temp_cell) — both inputs trace to measured Irradiance",pvlib_features_SQ1.py:111-117
+residual,YES,power(W) − p_exp,pvlib_features_SQ1.py:119
+ratio,YES,power(W) / p_exp,pvlib_features_SQ1.py:120
+p_exp_cal,YES,"p_exp × α, and α itself is fitted on rows selected by measured Irradiance","pvlib_calibration_SQ1.py:102,126"
+residual_cal,YES,power(W) − p_exp_cal,pvlib_calibration_SQ1.py:127
+ratio_cal,YES,power(W) / p_exp_cal,pvlib_calibration_SQ1.py:128
+power(W),NO,measured AC active power; independent of the irradiance sensor,raw SQ1.csv
+Temp (Degree Celsius),NO,measured ambient temperature; separate sensor,raw Temperature/*.csv
+month_sin / month_cos,NO,calendar encoding of the timestamp,pv_no_sensor_SQ1.py
+ROW EXISTENCE (all downstream data),YES,"Data_preprocessing_SQ1.py drops rows with Irradiance < 20 or > 1200 W/m², so every row in every derived CSV survived a measured-irradiance test","Data_preprocessing_SQ1.py:50-51,166-167"
+SEQUENCE RETENTION (both LSTM scenarios),YES,"build_sequences skips any window whose target row has measured Irradiance < MIN_IRR, in the no-sensor scenario as well as the with-sensor one","pv_no_sensor_SQ1.py:220-226,260"
+alpha (calibration constant),YES,"OLS fit over rows selected by measured Irradiance >= 50, using p_exp which is itself irradiance-derived","pvlib_calibration_SQ1.py:41,102"

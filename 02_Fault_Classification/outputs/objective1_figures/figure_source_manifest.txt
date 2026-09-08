@@ -1,0 +1,28 @@
+FIGURE SOURCE MANIFEST
+======================================================================
+
+Files read (each exactly once):
+  outputs/extended_ablation/extended_ablation_summary.csv
+  outputs/extended_ablation/extended_ablation_per_fold.csv
+  outputs/extended_ablation/extended_ablation_per_class.csv
+  outputs/extended_ablation/extended_confusion_matrices.csv
+  outputs/extended_ablation/extended_degradation_breakdown.csv
+  outputs/extended_ablation/sensor_removal_by_model.csv
+  outputs/grouped_baseline/split_effect_diagnostic.csv
+  outputs/grouped_baseline/paired_fold_drops.csv
+
+Figure -> source CSV:
+  fig1_consolidated_results        <- extended_ablation_summary.csv
+  fig2_sensor_removal_by_model     <- paired_fold_drops.csv (LogReg/RF/HistGBM)
+                                      + extended_ablation_per_fold.csv (MLP, computed)
+  fig3_split_induced_optimism      <- split_effect_diagnostic.csv
+  fig4_confusion_matrix_best       <- extended_confusion_matrices.csv
+                                      (best config from extended_ablation_summary.csv)
+  fig5_per_class_f1                <- extended_ablation_per_class.csv
+  fig6_degradation_event_character <- extended_degradation_breakdown.csv
+                                      (best config per model from summary)
+
+Not read: any historical uncorrected CSV or figure in the outputs/ root.
+  sensor_removal_by_model.csv was loaded and schema-validated but
+  Figure 2 uses the paired within-fold values, which carry the
+  fold-level spread that the pooled file does not.

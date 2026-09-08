@@ -1,0 +1,5 @@
+population,label,raw_eligible,feature_complete_denominator,excluded_missing_inputs,missing_power_W,missing_irr_meas,missing_both,screening_rate,score_median,pred_Normal,pred_Short-Circuit,pred_Degradation,pred_Open-Circuit,pred_Shadowing
+clean-sensor 2023 (Jan/Feb/Nov/Dec),PRIMARY,4749,4745,4,4,0,0,0.679663,0.92264,1520,8,165,6,3046
+March-October 2023,corrupted-input stress test,11126,10939,187,1,186,0,0.682786,0.977737,3470,54,1366,246,5803
+full 2023,mixed-period stress summary (NOT a corruption contrast),15875,15684,191,5,186,0,0.681841,0.968155,4990,62,1531,252,8849
+Saola proxy window (1-15 Sept 2023),corrupted-input stress test,662,475,187,1,186,0,0.513684,0.576367,231,0,34,1,209

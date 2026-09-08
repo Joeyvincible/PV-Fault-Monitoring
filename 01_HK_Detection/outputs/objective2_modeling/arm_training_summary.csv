@@ -1,0 +1,5 @@
+arm,n_features,sequences,train_seq,test_seq,resid_sigma_train_W,alert_z_threshold,runtime_s
+Reference (measured irradiance),9,40783,25076,15707,2030.3,-3.576,87.1
+Arm A (pvlib only),9,40783,25076,15707,2908.4,-3.03,163.7
+Arm B (ML estimate),9,40783,25076,15707,2587.3,-3.025,3735.7
+Arm C (pvlib + ML estimate),10,40783,25076,15707,2545.8,-3.112,2780.4

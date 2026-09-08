@@ -1,0 +1,91 @@
+feature_set,model,fold,test_rows,macro_f1
+Electrical (full),LogReg,1,115520,0.9130401586176712
+Electrical (full),LogReg,2,150009,0.8918677901441135
+Electrical (full),LogReg,3,115381,0.9251869582013302
+Electrical (full),LogReg,4,116452,0.9276423929053734
+Electrical (full),LogReg,5,116349,0.9159244499372182
+Electrical (full),RF,1,115520,0.8653839193661572
+Electrical (full),RF,2,150009,0.9857842190184707
+Electrical (full),RF,3,115381,0.9934946359310903
+Electrical (full),RF,4,116452,0.9929333959584392
+Electrical (full),RF,5,116349,0.900288513475061
+Electrical (full),HistGBM,1,115520,0.97747144224436
+Electrical (full),HistGBM,2,150009,0.8939689601502179
+Electrical (full),HistGBM,3,115381,0.9909616734930691
+Electrical (full),HistGBM,4,116452,0.992117623195206
+Electrical (full),HistGBM,5,116349,0.9337149979366334
+Electrical + irradiance,LogReg,1,115520,0.9211334817181926
+Electrical + irradiance,LogReg,2,150009,0.9183125761721451
+Electrical + irradiance,LogReg,3,115381,0.9384359538072256
+Electrical + irradiance,LogReg,4,116452,0.9381986457594425
+Electrical + irradiance,LogReg,5,116349,0.9138367906377052
+Electrical + irradiance,RF,1,115520,0.880813632395059
+Electrical + irradiance,RF,2,150009,0.9849418339537456
+Electrical + irradiance,RF,3,115381,0.9931979897567096
+Electrical + irradiance,RF,4,116452,0.9929682191074377
+Electrical + irradiance,RF,5,116349,0.8955775374051523
+Electrical + irradiance,HistGBM,1,115520,0.9815690109726539
+Electrical + irradiance,HistGBM,2,150009,0.9764389533588265
+Electrical + irradiance,HistGBM,3,115381,0.9938578019086084
+Electrical + irradiance,HistGBM,4,116452,0.9923884570011403
+Electrical + irradiance,HistGBM,5,116349,0.8751638842005723
+Electrical + irradiance + module temp,LogReg,1,115520,0.9246760870129787
+Electrical + irradiance + module temp,LogReg,2,150009,0.8877656241382441
+Electrical + irradiance + module temp,LogReg,3,115381,0.9267624079842992
+Electrical + irradiance + module temp,LogReg,4,116452,0.9338273817169476
+Electrical + irradiance + module temp,LogReg,5,116349,0.9161149596336233
+Electrical + irradiance + module temp,RF,1,115520,0.8740681516890433
+Electrical + irradiance + module temp,RF,2,150009,0.9852821104498297
+Electrical + irradiance + module temp,RF,3,115381,0.9924583335700421
+Electrical + irradiance + module temp,RF,4,116452,0.993147681874369
+Electrical + irradiance + module temp,RF,5,116349,0.8839810507023204
+Electrical + irradiance + module temp,HistGBM,1,115520,0.9797338710357197
+Electrical + irradiance + module temp,HistGBM,2,150009,0.9782702853714771
+Electrical + irradiance + module temp,HistGBM,3,115381,0.9871532037558796
+Electrical + irradiance + module temp,HistGBM,4,116452,0.992105073511231
+Electrical + irradiance + module temp,HistGBM,5,116349,0.8343172570635297
+No current sensors,LogReg,1,115520,0.6871082466219605
+No current sensors,LogReg,2,150009,0.74150771561351
+No current sensors,LogReg,3,115381,0.7214826335085365
+No current sensors,LogReg,4,116452,0.8149114744407425
+No current sensors,LogReg,5,116349,0.7485255596693221
+No current sensors,RF,1,115520,0.8051984623515374
+No current sensors,RF,2,150009,0.8496219252928048
+No current sensors,RF,3,115381,0.8025036272183534
+No current sensors,RF,4,116452,0.8655486819418993
+No current sensors,RF,5,116349,0.8632277060558138
+No current sensors,HistGBM,1,115520,0.7862173055019592
+No current sensors,HistGBM,2,150009,0.8109265978986023
+No current sensors,HistGBM,3,115381,0.7992908522393491
+No current sensors,HistGBM,4,116452,0.8485367457002283
+No current sensors,HistGBM,5,116349,0.8486131750281254
+No voltage sensors,LogReg,1,115520,0.4982516046025463
+No voltage sensors,LogReg,2,150009,0.5775315341671338
+No voltage sensors,LogReg,3,115381,0.5349684604232723
+No voltage sensors,LogReg,4,116452,0.5659221694800123
+No voltage sensors,LogReg,5,116349,0.511076376674677
+No voltage sensors,RF,1,115520,0.622269586452522
+No voltage sensors,RF,2,150009,0.7192169137491224
+No voltage sensors,RF,3,115381,0.6903162961143086
+No voltage sensors,RF,4,116452,0.6506797653638656
+No voltage sensors,RF,5,116349,0.522628456924914
+No voltage sensors,HistGBM,1,115520,0.5938978379697388
+No voltage sensors,HistGBM,2,150009,0.6878067969401163
+No voltage sensors,HistGBM,3,115381,0.6474568444542548
+No voltage sensors,HistGBM,4,116452,0.6244071502597444
+No voltage sensors,HistGBM,5,116349,0.5987236187588525
+Power + approx. measured-POA physics,LogReg,1,115520,0.590053799122457
+Power + approx. measured-POA physics,LogReg,2,150009,0.5732482276048557
+Power + approx. measured-POA physics,LogReg,3,115381,0.6468310654842355
+Power + approx. measured-POA physics,LogReg,4,116452,0.5729984318626798
+Power + approx. measured-POA physics,LogReg,5,116349,0.6519502054343668
+Power + approx. measured-POA physics,RF,1,115520,0.6283962980507642
+Power + approx. measured-POA physics,RF,2,150009,0.7293432275490437
+Power + approx. measured-POA physics,RF,3,115381,0.888137647908669
+Power + approx. measured-POA physics,RF,4,116452,0.6352752992373791
+Power + approx. measured-POA physics,RF,5,116349,0.6546400407138795
+Power + approx. measured-POA physics,HistGBM,1,115520,0.6733827775322103
+Power + approx. measured-POA physics,HistGBM,2,150009,0.57640398582702
+Power + approx. measured-POA physics,HistGBM,3,115381,0.7070283738276693
+Power + approx. measured-POA physics,HistGBM,4,116452,0.7023579605122087
+Power + approx. measured-POA physics,HistGBM,5,116349,0.5915050340875576

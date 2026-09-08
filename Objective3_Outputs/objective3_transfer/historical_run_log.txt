@@ -1,0 +1,1 @@
+2026-08-24T10:49:39 | obj2_transfer.py | input: fault_dataset_corrected.csv, hk_rebuilt_grid.csv, extended_confusion_matrices.csv, extended_ablation_summary.csv, obj2_binary_collapse.csv, residuals_full_arm_b/c.csv | output: outputs/objective2_transfer/ | notes: direct transfer, no target adaptation; step2 count-level checkpoint PASS; clean-sensor screening rate 69.38%

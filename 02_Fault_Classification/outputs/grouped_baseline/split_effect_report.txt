@@ -1,0 +1,128 @@
+==============================================================================
+  SPLIT-EFFECT DIAGNOSTIC
+==============================================================================
+  Started: 2026-08-11T16:33:54
+  Data: fault_dataset_corrected.csv  613,711 rows
+  Group-disjoint allocation reproduces approved folds: PASS
+  Method A folds (random row) : sizes [122743, 122742, 122742, 122742, 122742]
+  Method B folds (group-disjoint): sizes [115520, 150009, 115381, 116452, 116349]
+
+==============================================================================
+  DIAGNOSTIC 1 — SPLIT-INDUCED OPTIMISM (controlled)
+==============================================================================
+  Dataset, features, model, preprocessing and fold count all held
+  constant. Only partition assignment differs.
+  Model: HistGradientBoosting | Folds: 5 | Data: fault_dataset_corrected.csv
+
+  Feature set: ratio_5k0 + residual_5k0 (2 features)
+    A. Stratified random-row 5-fold (INVALID) : 0.804  (folds 0.804 ± 0.002)
+       ^ stratified random-row 5-fold CV — DIAGNOSTIC ONLY, methodologically
+     invalid for result reporting (adjacent seconds of the same physical
+     event appear in different folds)
+    B. Group-disjoint 5-fold (valid)          : 0.713  (folds 0.713 ± 0.050)
+    Split-induced optimism                    : 0.091
+
+  Feature set: Electrical full (11 features)
+    A. Stratified random-row 5-fold (INVALID) : 0.998  (folds 0.998 ± 0.001)
+       ^ stratified random-row 5-fold CV — DIAGNOSTIC ONLY, methodologically
+     invalid for result reporting (adjacent seconds of the same physical
+     event appear in different folds)
+    B. Group-disjoint 5-fold (valid)          : 0.950  (folds 0.958 ± 0.043)
+    Split-induced optimism                    : 0.047
+
+  PER-CLASS RECALL — Method A (INVALID) vs Method B (valid)
+  ^ Method A columns are stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)
+
+    ratio_5k0 + residual_5k0
+      class             A (invalid)   B (valid)  inflation
+      Normal                 0.8577      0.7435    +0.1142
+      Short-Circuit          0.9847      0.8460    +0.1387
+      Degradation            0.9592      0.5618    +0.3975
+      Open-Circuit           0.9990      0.9517    +0.0473
+      Shadowing              0.9017      0.8765    +0.0252
+
+    Electrical full
+      class             A (invalid)   B (valid)  inflation
+      Normal                 0.9972      0.9871    +0.0101
+      Short-Circuit          0.9968      0.9678    +0.0290
+      Degradation            0.9983      0.8764    +0.1219
+      Open-Circuit           0.9998      0.9615    +0.0383
+      Shadowing              0.9980      0.9870    +0.0110
+
+  POOLED CONFUSION MATRICES (rows=true, cols=predicted)
+
+    ratio_5k0 + residual_5k0 | Method A — stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)
+      true \ pred         Normal Short-Cir Degradati Open-Circ Shadowing
+      Normal             345,523       374    38,085         0    18,862
+      Short-Circuit           21     5,907        38         9        24
+      Degradation            345        19     9,948        31        28
+      Open-Circuit             0         0         4     6,018         2
+      Shadowing           13,102       706     4,636        86   169,943
+
+    ratio_5k0 + residual_5k0 | Method B — group-disjoint 5-fold (valid)
+      true \ pred         Normal Short-Cir Degradati Open-Circ Shadowing
+      Normal             299,513       514    42,506         0    60,311
+      Short-Circuit          120     5,075       102         9       693
+      Degradation          4,083       357     5,826        31        74
+      Open-Circuit             0       102         0     5,733       189
+      Shadowing           17,797       727     4,668        80   165,201
+
+    Electrical full | Method A — stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)
+      true \ pred         Normal Short-Cir Degradati Open-Circ Shadowing
+      Normal             401,720         0         0         0     1,124
+      Short-Circuit            2     5,980         7         0        10
+      Degradation              0         2    10,353         4        12
+      Open-Circuit             0         0         1     6,023         0
+      Shadowing              328        19        30         1   188,095
+
+    Electrical full | Method B — group-disjoint 5-fold (valid)
+      true \ pred         Normal Short-Cir Degradati Open-Circ Shadowing
+      Normal             397,654         0         0     1,326     3,864
+      Short-Circuit            2     5,806        26         0       165
+      Degradation              1        36     9,089        21     1,224
+      Open-Circuit             0         0        15     5,792       217
+      Shadowing            2,293        73        59        28   186,020
+
+  INTERPRETATION
+    Split-induced optimism is larger for the physics-derived feature set: 0.091 vs 0.047 (difference 0.044).
+    ratio_5k0 + residual_5k0: most inflated classes — Degradation +0.397, Short-Circuit +0.139, Normal +0.114
+    Electrical full: most inflated classes — Degradation +0.122, Open-Circuit +0.038, Short-Circuit +0.029
+
+  CONTEXT (not a controlled comparison)
+    The uncorrected historical pipeline reported Macro F1 0.9975 under a
+    single 80/20 random row split, with different preprocessing and a
+    16-feature set including timestamp-derived pvlib features that no
+    longer exist. That figure is not directly comparable to either method
+    above and must not appear in dissertation result tables.
+
+==============================================================================
+  DIAGNOSTIC 2 — PAIRED FOLD DROPS (sensor removal)
+==============================================================================
+  Paired within-fold differences from the ELEC_FULL baseline.
+  Standard deviation uses ddof=1 (sample SD, n=5).
+
+  Model: Logistic Regression
+    Fold                 1       2       3       4       5     mean ± SD
+    − current        0.226   0.159   0.205   0.113   0.168     0.174 ± 0.044
+    − voltage        0.415   0.323   0.391   0.362   0.406     0.379 ± 0.037
+    Folds where voltage removal cost more: 5 of 5
+
+  Model: Random Forest
+    Fold                 1       2       3       4       5     mean ± SD
+    − current        0.061   0.136   0.191   0.127   0.037     0.110 ± 0.062
+    − voltage        0.245   0.267   0.304   0.343   0.377     0.307 ± 0.054
+    Folds where voltage removal cost more: 5 of 5
+
+  Model: HistGradientBoosting
+    Fold                 1       2       3       4       5     mean ± SD
+    − current        0.191   0.083   0.192   0.144   0.085     0.139 ± 0.054
+    − voltage        0.384   0.206   0.344   0.368   0.335     0.327 ± 0.070
+    Folds where voltage removal cost more: 5 of 5
+
+  AGGREGATE
+    Paired comparisons where voltage removal cost more: 15 of 15
+
+    → "Removing voltage caused a substantially larger reduction in Macro
+       F1 than removing current, consistently across all three classifiers
+       and in 15 of 15 paired fold comparisons."
+==============================================================================

@@ -1,0 +1,41 @@
+feature_set,model,TN_normal_normal,FP_normal_anom,FN_anom_normal,TP_anom_anom,normal_recall,anomalous_recall,anomalous_precision,anomalous_f1,balanced_accuracy
+Electrical (full),MLP,400265,2579,1802,209065,0.9936,0.9915,0.9878,0.9896,0.9925
+Electrical + irradiance,MLP,399500,3344,1440,209427,0.9917,0.9932,0.9843,0.9887,0.9924
+Electrical + irradiance,HistGBM,400468,2376,2999,207868,0.9941,0.9858,0.9887,0.9872,0.9899
+Electrical + irradiance + module temp,HistGBM,400276,2568,3321,207546,0.9936,0.9843,0.9878,0.986,0.9889
+Electrical + irradiance + module temp,MLP,398939,3905,2664,208203,0.9903,0.9874,0.9816,0.9845,0.9888
+Electrical (full),RF,400237,2607,4513,206354,0.9935,0.9786,0.9875,0.983,0.9861
+Electrical + irradiance + module temp,RF,400841,2003,5294,205573,0.995,0.9749,0.9904,0.9826,0.985
+Electrical + irradiance,RF,400707,2137,5163,205704,0.9947,0.9755,0.9897,0.9826,0.9851
+Electrical (full),HistGBM,397654,5190,2296,208571,0.9871,0.9891,0.9757,0.9824,0.9881
+No voltage sensors,MLP,371547,31297,24198,186669,0.9223,0.8852,0.8564,0.8706,0.9038
+No voltage sensors,RF,378668,24176,33376,177491,0.94,0.8417,0.8801,0.8605,0.8909
+HK-availability proxy (not a validated transfer mapping),RF,352693,50151,21448,189419,0.8755,0.8983,0.7907,0.841,0.8869
+Computed power + approximate measured-POA physics,RF,348217,54627,20693,190174,0.8644,0.9019,0.7769,0.8347,0.8831
+Electrical + irradiance + module temp,LogReg,362960,39884,32127,178740,0.901,0.8476,0.8176,0.8323,0.8743
+Electrical + irradiance,LogReg,365817,37027,35040,175827,0.9081,0.8338,0.826,0.8299,0.871
+HK-availability proxy (not a validated transfer mapping),MLP,340319,62525,17792,193075,0.8448,0.9156,0.7554,0.8278,0.8802
+Computed power + approximate measured-POA physics,HistGBM,343985,58859,23281,187586,0.8539,0.8896,0.7612,0.8204,0.8717
+Computed power + measured irradiance,MLP,342633,60211,23253,187614,0.8505,0.8897,0.757,0.818,0.8701
+Computed power + approximate measured-POA physics,MLP,336077,66767,19040,191827,0.8343,0.9097,0.7418,0.8172,0.872
+Computed power + irradiance + module temp,MLP,337867,64977,21564,189303,0.8387,0.8977,0.7445,0.8139,0.8682
+Computed power + measured irradiance,HistGBM,335913,66931,25211,185656,0.8339,0.8804,0.735,0.8012,0.8571
+Computed power + measured irradiance,RF,347745,55099,33726,177141,0.8632,0.8401,0.7627,0.7995,0.8516
+Computed power + irradiance + module temp,RF,351257,51587,36235,174632,0.8719,0.8282,0.772,0.7991,0.8501
+Electrical (full),LogReg,357280,45564,40659,170208,0.8869,0.8072,0.7888,0.7979,0.847
+Computed total power only,MLP,346545,56299,38538,172329,0.8602,0.8172,0.7538,0.7842,0.8387
+No voltage sensors,HistGBM,300680,102164,15807,195060,0.7464,0.925,0.6563,0.7678,0.8357
+No current sensors,MLP,337732,65112,40023,170844,0.8384,0.8102,0.7241,0.7647,0.8243
+No current sensors,HistGBM,334079,68765,38883,171984,0.8293,0.8156,0.7144,0.7616,0.8225
+HK-availability proxy (not a validated transfer mapping),HistGBM,284767,118077,22927,187940,0.7069,0.8913,0.6141,0.7272,0.7991
+No current sensors,RF,349337,53507,60269,150598,0.8672,0.7142,0.7378,0.7258,0.7907
+No current sensors,LogReg,323127,79717,45440,165427,0.8021,0.7845,0.6748,0.7255,0.7933
+Computed power + irradiance + module temp,HistGBM,280221,122623,25991,184876,0.6956,0.8767,0.6012,0.7133,0.7862
+Computed power + approximate measured-POA physics,LogReg,267854,134990,28098,182769,0.6649,0.8668,0.5752,0.6915,0.7658
+HK-availability proxy (not a validated transfer mapping),LogReg,272907,129937,31131,179736,0.6775,0.8524,0.5804,0.6906,0.7649
+Computed total power only,RF,328789,74055,71994,138873,0.8162,0.6586,0.6522,0.6554,0.7374
+Computed total power only,HistGBM,209991,192853,25014,185853,0.5213,0.8814,0.4908,0.6305,0.7013
+Computed power + measured irradiance,LogReg,259498,143346,73525,137342,0.6442,0.6513,0.4893,0.5588,0.6477
+Computed power + irradiance + module temp,LogReg,238976,163868,73174,137693,0.5932,0.653,0.4566,0.5374,0.6231
+No voltage sensors,LogReg,243852,158992,79200,131667,0.6053,0.6244,0.453,0.5251,0.6149
+Computed total power only,LogReg,63006,339838,46655,164212,0.1564,0.7787,0.3258,0.4594,0.4676

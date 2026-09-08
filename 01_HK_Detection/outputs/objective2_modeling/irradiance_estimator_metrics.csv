@@ -1,0 +1,3 @@
+slice,n,est_MAE,est_RMSE,est_R2,clearsky_MAE,clearsky_RMSE,clearsky_R2
+"2023 clean-sensor months (Jan,Feb,Nov,Dec)",4787,109.28,152.13,0.7345,214.06,275.04,0.1321
+2023 all eligible rows with a valid reading,15239,145.17,206.43,0.6027,249.22,323.28,0.0256

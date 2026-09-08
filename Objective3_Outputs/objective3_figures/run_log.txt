@@ -1,0 +1,2 @@
+2026-09-04T16:32:07 | plot_objective3_results.py | input: 9 frozen Objective 3 artefacts | output: 13 files in Objective3_Outputs/objective3_figures/ | notes: consolidation only; nothing trained, no transfer run, no Objective 1 or 3 output read
+2026-09-04T16:36:55 | plot_objective3_results.py | input: 9 frozen Objective 3 artefacts | output: 13 files in Objective3_Outputs/objective3_figures/ | notes: consolidation only; nothing trained, no transfer run, no Objective 1 or 2 output read

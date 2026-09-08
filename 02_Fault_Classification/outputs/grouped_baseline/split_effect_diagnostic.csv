@@ -1,0 +1,5 @@
+feature_set,n_features,method,valid_for_reporting,validity_label,macro_f1_pooled_oof,macro_f1_fold_mean,macro_f1_fold_sd_ddof1,recall_Normal,recall_Short-Circuit,recall_Degradation,recall_Open-Circuit,recall_Shadowing
+ratio_5k0 + residual_5k0,2,A_stratified_random_row,False,"stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)",0.8042,0.8042,0.002,0.8577,0.9847,0.9592,0.999,0.9017
+ratio_5k0 + residual_5k0,2,B_group_disjoint,True,VALID,0.7134,0.7126,0.0503,0.7435,0.846,0.5618,0.9517,0.8765
+Electrical full,11,A_stratified_random_row,False,"stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)",0.9975,0.9975,0.0006,0.9972,0.9968,0.9983,0.9998,0.998
+Electrical full,11,B_group_disjoint,True,VALID,0.9504,0.9576,0.0428,0.9871,0.9678,0.8764,0.9615,0.987

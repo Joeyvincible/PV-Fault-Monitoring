@@ -1,0 +1,6 @@
+fold,screening_rate,denominator_rows,pred_Normal,pred_Short-Circuit,pred_Degradation,pred_Open-Circuit,pred_Shadowing
+1,0.598525,4745,1905,7,170,6,2657
+2,0.700738,4745,1420,5,164,7,3149
+3,0.684089,4745,1499,104,58,7,3077
+4,0.683456,4745,1502,9,174,5,3055
+5,0.699473,4745,1426,8,38,7,3266

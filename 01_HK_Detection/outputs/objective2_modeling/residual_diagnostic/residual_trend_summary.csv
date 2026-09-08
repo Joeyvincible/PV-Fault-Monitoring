@@ -1,0 +1,9 @@
+arm,resid_2023_W,frac_2023_pct,frac_train_pct,period,slope_W_per_month,total_drift_W,n_months
+Reference (measured irradiance),-3716.1,-30.8,-0.01,,,,
+Arm A (pvlib only),-1477.4,-15.04,-0.78,,,,
+Arm B (ML estimate),-1197.6,-12.55,1.83,,,,
+Arm C (pvlib + ML estimate),-1327.1,-13.72,0.67,,,,
+Reference (measured irradiance),,,,2021-06..2022-12 (in-sample),-33.78,-574.3,18.0
+Arm A (pvlib only),,,,2021-06..2022-12 (in-sample),-4.53,-77.0,18.0
+Arm B (ML estimate),,,,2021-06..2022-12 (in-sample),-16.08,-273.4,18.0
+Arm C (pvlib + ML estimate),,,,2021-06..2022-12 (in-sample),-14.0,-237.9,18.0

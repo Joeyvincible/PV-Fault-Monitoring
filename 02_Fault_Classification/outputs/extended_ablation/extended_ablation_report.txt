@@ -1,0 +1,180 @@
+==============================================================================
+  OBJECTIVE 1 — EXTENDED ABLATION (final Brazil modelling task)
+==============================================================================
+  Started: 2026-09-04T19:03:49
+  Naming assertions on all feature-set labels: PASS
+  Banned label phrases enforced: 6 (defined in the FORBIDDEN constant in this script's source)
+  Data: 613,711 rows | fold allocation reproduces approved: PASS
+  All feature sets reference existing columns: PASS
+
+==============================================================================
+  MERGE — reading the 18 baseline configurations (not recomputed)
+==============================================================================
+  Read 18 summary rows, 90 per-fold rows, 90 per-class rows
+  Fold SD recomputed with ddof=1 from stored per-fold values (no retraining)
+
+==============================================================================
+  MLP TRAINING-FOLD DOWNSAMPLING (generated once per fold, then shared)
+==============================================================================
+  Classes larger than the second-largest are reduced to that size;
+  the three controlled-fault classes are left untouched.
+   fold class                 before       after   target
+      1 Normal               325,404     154,039   154,039
+      1 Short-Circuit          4,773       4,773
+      1 Degradation            9,150       9,150
+      1 Open-Circuit           4,825       4,825
+      1 Shadowing            154,039     154,039
+        TOTAL                498,191     326,826
+      2 Normal               310,029     134,939   134,939
+      2 Short-Circuit          4,767       4,767
+      2 Degradation            9,149       9,149
+      2 Open-Circuit           4,818       4,818
+      2 Shadowing            134,939     134,939
+        TOTAL                463,702     288,612
+      3 Normal               331,781     150,419   150,419
+      3 Short-Circuit          4,819       4,819
+      3 Degradation            6,492       6,492
+      3 Open-Circuit           4,819       4,819
+      3 Shadowing            150,419     150,419
+        TOTAL                498,330     316,968
+      4 Normal               322,459     155,883   155,883
+      4 Short-Circuit          4,820       4,820
+      4 Degradation            9,278       9,278
+      4 Open-Circuit           4,819       4,819
+      4 Shadowing            155,883     155,883
+        TOTAL                497,259     330,683
+      5 Normal               321,703     158,612   158,612
+      5 Short-Circuit          4,817       4,817
+      5 Degradation            7,415       7,415
+      5 Open-Circuit           4,815       4,815
+      5 Shadowing            158,612     158,612
+        TOTAL                497,362     334,271
+  This reduces but does not eliminate class imbalance. MLP versus
+  RF/HistGBM is therefore not a controlled isolation of architecture;
+  the within-MLP ELEC_FULL / NO_CURRENT / NO_VOLTAGE comparison is the
+  most defensible MLP evidence.
+
+  New configurations to run: 22 (6 MLP x original sets + 16 aggregate-signal)
+
+==============================================================================
+  RUNNING NEW CONFIGURATIONS
+==============================================================================
+  Electrical (full)                                    MLP      F1=0.9852 (0.9858±0.0085) bal=0.9806 4f=0.9774 429s
+  Electrical + irradiance                              MLP      F1=0.9856 (0.9858±0.0077) bal=0.9819 4f=0.9794 514s
+  Electrical + irradiance + module temp                MLP      F1=0.9842 (0.9838±0.0097) bal=0.9815 4f=0.9793 460s
+  No current sensors                                   MLP      F1=0.8556 (0.8578±0.0326) bal=0.8565 4f=0.8610 655s
+  No voltage sensors                                   MLP      F1=0.6698 (0.6680±0.0456) bal=0.6659 4f=0.6018 383s
+  Computed power + approximate measured-POA physics    MLP      F1=0.7712 (0.7819±0.0862) bal=0.7942 4f=0.7841 735s
+  Computed total power only                            LogReg   F1=0.2346 (0.2333±0.0172) bal=0.6083 4f=0.7213 3s
+  Computed total power only                            RF       F1=0.3598 (0.3578±0.0128) bal=0.3585 4f=0.2441 146s
+  Computed total power only                            HistGBM  F1=0.3635 (0.3604±0.0366) bal=0.5595 4f=0.5691 30s
+  Computed total power only                            MLP      F1=0.3353 (0.3342±0.0128) bal=0.3484 4f=0.2205 110s
+  Computed power + measured irradiance                 LogReg   F1=0.5160 (0.5264±0.0356) bal=0.6842 4f=0.6942 20s
+  Computed power + measured irradiance                 RF       F1=0.5702 (0.5472±0.0989) bal=0.5416 4f=0.4612 88s
+  Computed power + measured irradiance                 HistGBM  F1=0.6401 (0.6354±0.1226) bal=0.6649 4f=0.6227 28s
+  Computed power + measured irradiance                 MLP      F1=0.6938 (0.7128±0.1364) bal=0.7045 4f=0.6680 344s
+  Computed power + irradiance + module temp            LogReg   F1=0.5269 (0.5359±0.0469) bal=0.6997 4f=0.7263 25s
+  Computed power + irradiance + module temp            RF       F1=0.6466 (0.6343±0.0786) bal=0.5996 4f=0.5315 76s
+  Computed power + irradiance + module temp            HistGBM  F1=0.5444 (0.5681±0.2539) bal=0.6155 4f=0.5954 64s
+  Computed power + irradiance + module temp            MLP      F1=0.7485 (0.7576±0.0466) bal=0.7771 4f=0.7618 588s
+  HK-availability proxy (not a validated transfer mapping) LogReg   F1=0.6078 (0.6136±0.0375) bal=0.7914 4f=0.8198 40s
+  HK-availability proxy (not a validated transfer mapping) RF       F1=0.7155 (0.7001±0.0586) bal=0.6818 4f=0.6334 143s
+  HK-availability proxy (not a validated transfer mapping) HistGBM  F1=0.4613 (0.5874±0.2737) bal=0.6484 4f=0.6338 50s
+  HK-availability proxy (not a validated transfer mapping) MLP      F1=0.8164 (0.8077±0.0566) bal=0.8389 4f=0.8375 720s
+
+==============================================================================
+  SHARED-TRAINING-INDEX CHECK (within-MLP control)
+==============================================================================
+  MLP configurations fingerprinted: 10 feature sets x 5 folds = 50
+    fold 1: 10 configurations, 1 distinct index set(s) -> IDENTICAL  sha1 0b38d004a037
+    fold 2: 10 configurations, 1 distinct index set(s) -> IDENTICAL  sha1 d800e070ce07
+    fold 3: 10 configurations, 1 distinct index set(s) -> IDENTICAL  sha1 673c1711b8ae
+    fold 4: 10 configurations, 1 distinct index set(s) -> IDENTICAL  sha1 9bb09b23210f
+    fold 5: 10 configurations, 1 distinct index set(s) -> IDENTICAL  sha1 c88753ee94a8
+  ASSERT all MLP configurations within each fold used identical
+  training rows: PASS — the within-MLP sensor comparison varies
+  feature availability only.
+
+==============================================================================
+  OBJECTIVE 1 — CONSOLIDATED ABLATION (final)
+==============================================================================
+  Group-disjoint 5-fold CV, all 16 recording groups tested once
+  Pooled OOF Macro F1 (fold mean ± sample SD, ddof=1)
+
+  Feature Set                                         LogReg     RF         HistGBM    MLP        
+  --- Hardware sensor ablations ---
+  Electrical (full)                                   0.914      0.959      0.950      0.985      
+  Electrical + irradiance                             0.926      0.959      0.966      0.986      
+  Electrical + irradiance + module temp               0.915      0.955      0.957      0.984      
+  No current sensors                                  0.735      0.834      0.819      0.856      
+  No voltage sensors                                  0.540      0.649      0.635      0.670      
+  --- Aggregate-signal representations ---
+  Computed power + approximate measured-POA physics   0.600      0.729      0.628      0.771      
+  Computed total power only                           0.235      0.360      0.363      0.335      
+  Computed power + measured irradiance                0.516      0.570      0.640      0.694      
+  Computed power + irradiance + module temp           0.527      0.647      0.544      0.749      
+  HK-availability proxy (not a validated transfer mapping)0.608      0.716      0.461      0.816      
+
+  SENSOR REMOVAL UNDER INCREASING MODEL STRENGTH
+    Within-model comparison — imbalance strategy held constant per model.
+
+    Model      ELEC_FULL   NO_CURRENT   NO_VOLTAGE   drop(cur)  drop(volt) 
+    LogReg     0.914       0.735        0.540        0.179      0.374      
+    RF         0.959       0.834        0.649        0.125      0.309      
+    HistGBM    0.950       0.819        0.635        0.132      0.316      
+    MLP        0.985       0.856        0.670        0.130      0.315      
+
+    Ordered LogReg -> MLP -> RF -> HistGBM:
+      drop(current): 0.179 -> 0.130 -> 0.125 -> 0.132
+      drop(voltage): 0.374 -> 0.315 -> 0.309 -> 0.316
+    -> Current-removal penalty shrinks with model strength; voltage-removal penalty shrinks.
+       Voltage-removal penalty remains 0.309-0.374 across all four models, so the sensing gap
+       is not closed by model capacity.
+
+    CAVEAT: MLP used partial rebalancing by training-fold downsampling
+    (classes above the second-largest reduced to that size) because
+    scikit-learn 1.5.2 MLPClassifier supports neither class_weight nor
+    sample_weight. This REDUCES BUT DOES NOT ELIMINATE class imbalance,
+    so cross-model differences reflect combined architecture and
+    imbalance-strategy effects and are NOT a controlled isolation of
+    architecture. The within-MLP row is the controlled compensation
+    test: all MLP configurations within a fold trained on identical
+    rows, so only feature availability varies.
+
+  FEATURE-AVAILABILITY / SENSING-REQUIREMENT SUMMARY
+    Configuration                                       best F1   model    sensing requirement
+    Electrical + irradiance                             0.986     MLP      both string V + I sensors, plus pyranometer
+    Electrical (full)                                   0.985     MLP      both string voltage + both string current sensors
+    Electrical + irradiance + module temp               0.984     MLP      both string V + I sensors, pyranometer, module PT100s
+    No current sensors                                  0.856     MLP      both string voltage sensors only (current removed)
+    HK-availability proxy (not a validated transfer mapping)0.816     MLP      both string V + I sensors, plus pyranometer
+    Computed power + approximate measured-POA physics   0.771     MLP      both string V + I sensors, pyranometer, module PT100s
+    Computed power + irradiance + module temp           0.749     MLP      both string V + I sensors, pyranometer, module PT100s
+    Computed power + measured irradiance                0.694     MLP      both string V + I sensors, plus pyranometer
+    No voltage sensors                                  0.670     MLP      both string current sensors only (voltage removed)
+    Computed total power only                           0.363     HistGBM  both string V + I sensors (power is derived, not measured)
+
+    REMINDER: p_dc_computed = vdc1*idc1 + vdc2*idc2, so every
+    configuration containing it requires both string voltage and both
+    string current sensors. None of the aggregate-signal sets represents
+    a genuinely reduced sensor installation. A standalone independent
+    power-meter configuration cannot be evaluated on this dataset.
+
+    The HK-availability proxy is excluded from any transfer-related
+    interpretation and is reported as a preliminary feature-availability
+    experiment only. HK power semantics (AC inverter output versus DC
+    array power), units and aggregation remain unresolved.
+
+  DEGRADATION EVENT-CHARACTER SENSITIVITY
+    Standard rows 5,897 | anomalous rows 4,474 (events [1272, 1430])
+    model    best configuration                                  standard   anomalous  
+    LogReg   Electrical + irradiance                             0.9924     0.8699     
+    RF       Electrical + irradiance                             0.8718     0.8487     
+    HistGBM  Electrical + irradiance                             0.9778     0.7465     
+    MLP      Electrical + irradiance                             0.9790     0.8896     
+
+  CONFIGURATIONS EXCEEDING MACRO F1 0.99
+    None. Highest observed: 0.9856 (Electrical + irradiance / MLP)
+
+  No MLP configuration exceeded the 15-minute budget; max_iter remained 300.
+==============================================================================

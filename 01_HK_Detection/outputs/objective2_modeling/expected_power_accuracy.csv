@@ -1,0 +1,13 @@
+slice,arm,n,MAE_W,RMSE_W,nMAE_pct,mean_residual_W
+Slice 1,Reference (measured irradiance),4783,1698.0,2386.7,20.81,-1343.3
+Slice 1,Arm A (pvlib only),4783,2317.4,3333.9,28.4,-568.7
+Slice 1,Arm B (ML estimate),4783,1866.4,2765.0,22.87,-969.5
+Slice 1,Arm C (pvlib + ML estimate),4783,1811.0,2721.7,22.19,-942.3
+Slice 2,Reference (measured irradiance),15707,3846.4,5403.3,46.04,-3707.3
+Slice 2,Arm A (pvlib only),15707,2861.4,4190.4,34.25,-1472.6
+Slice 2,Arm B (ML estimate),15707,2479.8,3705.8,29.68,-1194.1
+Slice 2,Arm C (pvlib + ML estimate),15707,2470.3,3737.8,29.57,-1322.1
+Slice 3,Reference (measured irradiance),416,3341.2,4239.5,61.23,-3339.4
+Slice 3,Arm A (pvlib only),416,2280.2,3520.5,41.78,-1523.7
+Slice 3,Arm B (ML estimate),416,2208.8,3515.7,40.48,-1215.2
+Slice 3,Arm C (pvlib + ML estimate),416,2070.7,3392.3,37.95,-986.0

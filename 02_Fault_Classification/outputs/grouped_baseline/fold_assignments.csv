@@ -1,0 +1,6 @@
+fold,test_groups,test_rows,n_long_deg_rows,label_0_Normal,label_1_Short-Circuit,label_2_Degradation,label_3_Open-Circuit,label_4_Shadowing,sc_events,deg_events,oc_events
+1,2 10 11,115520,0,77440,1226,1221,1199,34434,2,2,2
+2,1 3 7 12,150009,0,92815,1232,1222,1206,53534,2,2,2
+3,0 9 13,115381,2695,71063,1180,3879,1205,38054,2,3,2
+4,5 6 14,116452,0,80385,1179,1093,1205,32590,2,2,2
+5,4 8 15,116349,1779,81141,1182,2956,1209,29861,2,3,2

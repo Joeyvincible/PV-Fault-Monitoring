@@ -1,0 +1,5 @@
+arm,proxy_anomaly_slots,proxy_slots,event_window_detection_rate_pct,alert_rate_outside_proxy_pct,total_2023_anomaly_slots,alert_z_threshold
+Reference (measured irradiance),19,416,4.57,9.48,1469,-3.576
+Arm A (pvlib only),11,416,2.64,2.75,431,-3.03
+Arm B (ML estimate),15,416,3.61,2.19,350,-3.025
+Arm C (pvlib + ML estimate),15,416,3.61,2.14,342,-3.112

@@ -1,0 +1,28 @@
+# macOS
+.DS_Store
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Python virtual environments
+.venv/
+venv/
+
+# Common Python tool caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# External source data and reproducible generated data (not distributed publicly)
+02_Fault_Classification/raw_data/dataset_amb.mat
+02_Fault_Classification/raw_data/dataset_elec.mat
+02_Fault_Classification/raw_data/converted_csv/
+02_Fault_Classification/data/fault_dataset.csv
+02_Fault_Classification/outputs/grouped_baseline/out_of_fold_predictions.csv
+01_HK_Detection/raw_data/dryad_dataset/
+01_HK_Detection/outputs/objective2_modeling/objective2_grid.csv
+
+# Optional historical logs with local-machine paths
+02_Fault_Classification/outputs/historical_run_log.txt
+02_Fault_Classification/outputs/run_log.txt

@@ -1,0 +1,1001 @@
+feature_set,model,true,pred,count
+Electrical (full),LogReg,Normal,Normal,357280
+Electrical (full),LogReg,Normal,Short-Circuit,0
+Electrical (full),LogReg,Normal,Degradation,68
+Electrical (full),LogReg,Normal,Open-Circuit,0
+Electrical (full),LogReg,Normal,Shadowing,45496
+Electrical (full),LogReg,Short-Circuit,Normal,0
+Electrical (full),LogReg,Short-Circuit,Short-Circuit,5970
+Electrical (full),LogReg,Short-Circuit,Degradation,29
+Electrical (full),LogReg,Short-Circuit,Open-Circuit,0
+Electrical (full),LogReg,Short-Circuit,Shadowing,0
+Electrical (full),LogReg,Degradation,Normal,486
+Electrical (full),LogReg,Degradation,Short-Circuit,11
+Electrical (full),LogReg,Degradation,Degradation,9801
+Electrical (full),LogReg,Degradation,Open-Circuit,16
+Electrical (full),LogReg,Degradation,Shadowing,57
+Electrical (full),LogReg,Open-Circuit,Normal,0
+Electrical (full),LogReg,Open-Circuit,Short-Circuit,1
+Electrical (full),LogReg,Open-Circuit,Degradation,3
+Electrical (full),LogReg,Open-Circuit,Open-Circuit,6020
+Electrical (full),LogReg,Open-Circuit,Shadowing,0
+Electrical (full),LogReg,Shadowing,Normal,40173
+Electrical (full),LogReg,Shadowing,Short-Circuit,595
+Electrical (full),LogReg,Shadowing,Degradation,200
+Electrical (full),LogReg,Shadowing,Open-Circuit,6
+Electrical (full),LogReg,Shadowing,Shadowing,147499
+Electrical (full),RF,Normal,Normal,400237
+Electrical (full),RF,Normal,Short-Circuit,0
+Electrical (full),RF,Normal,Degradation,0
+Electrical (full),RF,Normal,Open-Circuit,0
+Electrical (full),RF,Normal,Shadowing,2607
+Electrical (full),RF,Short-Circuit,Normal,2
+Electrical (full),RF,Short-Circuit,Short-Circuit,4969
+Electrical (full),RF,Short-Circuit,Degradation,18
+Electrical (full),RF,Short-Circuit,Open-Circuit,0
+Electrical (full),RF,Short-Circuit,Shadowing,1010
+Electrical (full),RF,Degradation,Normal,833
+Electrical (full),RF,Degradation,Short-Circuit,20
+Electrical (full),RF,Degradation,Degradation,8967
+Electrical (full),RF,Degradation,Open-Circuit,20
+Electrical (full),RF,Degradation,Shadowing,531
+Electrical (full),RF,Open-Circuit,Normal,0
+Electrical (full),RF,Open-Circuit,Short-Circuit,0
+Electrical (full),RF,Open-Circuit,Degradation,2
+Electrical (full),RF,Open-Circuit,Open-Circuit,6022
+Electrical (full),RF,Open-Circuit,Shadowing,0
+Electrical (full),RF,Shadowing,Normal,3678
+Electrical (full),RF,Shadowing,Short-Circuit,54
+Electrical (full),RF,Shadowing,Degradation,42
+Electrical (full),RF,Shadowing,Open-Circuit,0
+Electrical (full),RF,Shadowing,Shadowing,184699
+Electrical (full),HistGBM,Normal,Normal,397654
+Electrical (full),HistGBM,Normal,Short-Circuit,0
+Electrical (full),HistGBM,Normal,Degradation,0
+Electrical (full),HistGBM,Normal,Open-Circuit,1326
+Electrical (full),HistGBM,Normal,Shadowing,3864
+Electrical (full),HistGBM,Short-Circuit,Normal,2
+Electrical (full),HistGBM,Short-Circuit,Short-Circuit,5806
+Electrical (full),HistGBM,Short-Circuit,Degradation,26
+Electrical (full),HistGBM,Short-Circuit,Open-Circuit,0
+Electrical (full),HistGBM,Short-Circuit,Shadowing,165
+Electrical (full),HistGBM,Degradation,Normal,1
+Electrical (full),HistGBM,Degradation,Short-Circuit,36
+Electrical (full),HistGBM,Degradation,Degradation,9089
+Electrical (full),HistGBM,Degradation,Open-Circuit,21
+Electrical (full),HistGBM,Degradation,Shadowing,1224
+Electrical (full),HistGBM,Open-Circuit,Normal,0
+Electrical (full),HistGBM,Open-Circuit,Short-Circuit,0
+Electrical (full),HistGBM,Open-Circuit,Degradation,15
+Electrical (full),HistGBM,Open-Circuit,Open-Circuit,5792
+Electrical (full),HistGBM,Open-Circuit,Shadowing,217
+Electrical (full),HistGBM,Shadowing,Normal,2293
+Electrical (full),HistGBM,Shadowing,Short-Circuit,73
+Electrical (full),HistGBM,Shadowing,Degradation,59
+Electrical (full),HistGBM,Shadowing,Open-Circuit,28
+Electrical (full),HistGBM,Shadowing,Shadowing,186020
+Electrical + irradiance,LogReg,Normal,Normal,365817
+Electrical + irradiance,LogReg,Normal,Short-Circuit,0
+Electrical + irradiance,LogReg,Normal,Degradation,68
+Electrical + irradiance,LogReg,Normal,Open-Circuit,0
+Electrical + irradiance,LogReg,Normal,Shadowing,36959
+Electrical + irradiance,LogReg,Short-Circuit,Normal,0
+Electrical + irradiance,LogReg,Short-Circuit,Short-Circuit,5973
+Electrical + irradiance,LogReg,Short-Circuit,Degradation,26
+Electrical + irradiance,LogReg,Short-Circuit,Open-Circuit,0
+Electrical + irradiance,LogReg,Short-Circuit,Shadowing,0
+Electrical + irradiance,LogReg,Degradation,Normal,423
+Electrical + irradiance,LogReg,Degradation,Short-Circuit,13
+Electrical + irradiance,LogReg,Degradation,Degradation,9744
+Electrical + irradiance,LogReg,Degradation,Open-Circuit,16
+Electrical + irradiance,LogReg,Degradation,Shadowing,175
+Electrical + irradiance,LogReg,Open-Circuit,Normal,0
+Electrical + irradiance,LogReg,Open-Circuit,Short-Circuit,1
+Electrical + irradiance,LogReg,Open-Circuit,Degradation,6
+Electrical + irradiance,LogReg,Open-Circuit,Open-Circuit,6017
+Electrical + irradiance,LogReg,Open-Circuit,Shadowing,0
+Electrical + irradiance,LogReg,Shadowing,Normal,34617
+Electrical + irradiance,LogReg,Shadowing,Short-Circuit,476
+Electrical + irradiance,LogReg,Shadowing,Degradation,177
+Electrical + irradiance,LogReg,Shadowing,Open-Circuit,0
+Electrical + irradiance,LogReg,Shadowing,Shadowing,153203
+Electrical + irradiance,RF,Normal,Normal,400707
+Electrical + irradiance,RF,Normal,Short-Circuit,0
+Electrical + irradiance,RF,Normal,Degradation,0
+Electrical + irradiance,RF,Normal,Open-Circuit,0
+Electrical + irradiance,RF,Normal,Shadowing,2137
+Electrical + irradiance,RF,Short-Circuit,Normal,2
+Electrical + irradiance,RF,Short-Circuit,Short-Circuit,5005
+Electrical + irradiance,RF,Short-Circuit,Degradation,20
+Electrical + irradiance,RF,Short-Circuit,Open-Circuit,0
+Electrical + irradiance,RF,Short-Circuit,Shadowing,972
+Electrical + irradiance,RF,Degradation,Normal,880
+Electrical + irradiance,RF,Degradation,Short-Circuit,22
+Electrical + irradiance,RF,Degradation,Degradation,8938
+Electrical + irradiance,RF,Degradation,Open-Circuit,16
+Electrical + irradiance,RF,Degradation,Shadowing,515
+Electrical + irradiance,RF,Open-Circuit,Normal,0
+Electrical + irradiance,RF,Open-Circuit,Short-Circuit,0
+Electrical + irradiance,RF,Open-Circuit,Degradation,2
+Electrical + irradiance,RF,Open-Circuit,Open-Circuit,6022
+Electrical + irradiance,RF,Open-Circuit,Shadowing,0
+Electrical + irradiance,RF,Shadowing,Normal,4281
+Electrical + irradiance,RF,Shadowing,Short-Circuit,63
+Electrical + irradiance,RF,Shadowing,Degradation,27
+Electrical + irradiance,RF,Shadowing,Open-Circuit,0
+Electrical + irradiance,RF,Shadowing,Shadowing,184102
+Electrical + irradiance,HistGBM,Normal,Normal,400468
+Electrical + irradiance,HistGBM,Normal,Short-Circuit,0
+Electrical + irradiance,HistGBM,Normal,Degradation,0
+Electrical + irradiance,HistGBM,Normal,Open-Circuit,0
+Electrical + irradiance,HistGBM,Normal,Shadowing,2376
+Electrical + irradiance,HistGBM,Short-Circuit,Normal,1
+Electrical + irradiance,HistGBM,Short-Circuit,Short-Circuit,5316
+Electrical + irradiance,HistGBM,Short-Circuit,Degradation,33
+Electrical + irradiance,HistGBM,Short-Circuit,Open-Circuit,0
+Electrical + irradiance,HistGBM,Short-Circuit,Shadowing,649
+Electrical + irradiance,HistGBM,Degradation,Normal,247
+Electrical + irradiance,HistGBM,Degradation,Short-Circuit,25
+Electrical + irradiance,HistGBM,Degradation,Degradation,9106
+Electrical + irradiance,HistGBM,Degradation,Open-Circuit,17
+Electrical + irradiance,HistGBM,Degradation,Shadowing,976
+Electrical + irradiance,HistGBM,Open-Circuit,Normal,0
+Electrical + irradiance,HistGBM,Open-Circuit,Short-Circuit,0
+Electrical + irradiance,HistGBM,Open-Circuit,Degradation,61
+Electrical + irradiance,HistGBM,Open-Circuit,Open-Circuit,5963
+Electrical + irradiance,HistGBM,Open-Circuit,Shadowing,0
+Electrical + irradiance,HistGBM,Shadowing,Normal,2751
+Electrical + irradiance,HistGBM,Shadowing,Short-Circuit,66
+Electrical + irradiance,HistGBM,Shadowing,Degradation,24
+Electrical + irradiance,HistGBM,Shadowing,Open-Circuit,0
+Electrical + irradiance,HistGBM,Shadowing,Shadowing,185632
+Electrical + irradiance + module temp,LogReg,Normal,Normal,362960
+Electrical + irradiance + module temp,LogReg,Normal,Short-Circuit,0
+Electrical + irradiance + module temp,LogReg,Normal,Degradation,57
+Electrical + irradiance + module temp,LogReg,Normal,Open-Circuit,176
+Electrical + irradiance + module temp,LogReg,Normal,Shadowing,39651
+Electrical + irradiance + module temp,LogReg,Short-Circuit,Normal,0
+Electrical + irradiance + module temp,LogReg,Short-Circuit,Short-Circuit,5955
+Electrical + irradiance + module temp,LogReg,Short-Circuit,Degradation,44
+Electrical + irradiance + module temp,LogReg,Short-Circuit,Open-Circuit,0
+Electrical + irradiance + module temp,LogReg,Short-Circuit,Shadowing,0
+Electrical + irradiance + module temp,LogReg,Degradation,Normal,538
+Electrical + irradiance + module temp,LogReg,Degradation,Short-Circuit,20
+Electrical + irradiance + module temp,LogReg,Degradation,Degradation,9694
+Electrical + irradiance + module temp,LogReg,Degradation,Open-Circuit,21
+Electrical + irradiance + module temp,LogReg,Degradation,Shadowing,98
+Electrical + irradiance + module temp,LogReg,Open-Circuit,Normal,0
+Electrical + irradiance + module temp,LogReg,Open-Circuit,Short-Circuit,1
+Electrical + irradiance + module temp,LogReg,Open-Circuit,Degradation,2
+Electrical + irradiance + module temp,LogReg,Open-Circuit,Open-Circuit,6021
+Electrical + irradiance + module temp,LogReg,Open-Circuit,Shadowing,0
+Electrical + irradiance + module temp,LogReg,Shadowing,Normal,31589
+Electrical + irradiance + module temp,LogReg,Shadowing,Short-Circuit,964
+Electrical + irradiance + module temp,LogReg,Shadowing,Degradation,183
+Electrical + irradiance + module temp,LogReg,Shadowing,Open-Circuit,7
+Electrical + irradiance + module temp,LogReg,Shadowing,Shadowing,155730
+Electrical + irradiance + module temp,RF,Normal,Normal,400841
+Electrical + irradiance + module temp,RF,Normal,Short-Circuit,0
+Electrical + irradiance + module temp,RF,Normal,Degradation,0
+Electrical + irradiance + module temp,RF,Normal,Open-Circuit,0
+Electrical + irradiance + module temp,RF,Normal,Shadowing,2003
+Electrical + irradiance + module temp,RF,Short-Circuit,Normal,2
+Electrical + irradiance + module temp,RF,Short-Circuit,Short-Circuit,4975
+Electrical + irradiance + module temp,RF,Short-Circuit,Degradation,19
+Electrical + irradiance + module temp,RF,Short-Circuit,Open-Circuit,0
+Electrical + irradiance + module temp,RF,Short-Circuit,Shadowing,1003
+Electrical + irradiance + module temp,RF,Degradation,Normal,1136
+Electrical + irradiance + module temp,RF,Degradation,Short-Circuit,30
+Electrical + irradiance + module temp,RF,Degradation,Degradation,8672
+Electrical + irradiance + module temp,RF,Degradation,Open-Circuit,16
+Electrical + irradiance + module temp,RF,Degradation,Shadowing,517
+Electrical + irradiance + module temp,RF,Open-Circuit,Normal,0
+Electrical + irradiance + module temp,RF,Open-Circuit,Short-Circuit,0
+Electrical + irradiance + module temp,RF,Open-Circuit,Degradation,0
+Electrical + irradiance + module temp,RF,Open-Circuit,Open-Circuit,6024
+Electrical + irradiance + module temp,RF,Open-Circuit,Shadowing,0
+Electrical + irradiance + module temp,RF,Shadowing,Normal,4156
+Electrical + irradiance + module temp,RF,Shadowing,Short-Circuit,68
+Electrical + irradiance + module temp,RF,Shadowing,Degradation,27
+Electrical + irradiance + module temp,RF,Shadowing,Open-Circuit,0
+Electrical + irradiance + module temp,RF,Shadowing,Shadowing,184222
+Electrical + irradiance + module temp,HistGBM,Normal,Normal,400276
+Electrical + irradiance + module temp,HistGBM,Normal,Short-Circuit,0
+Electrical + irradiance + module temp,HistGBM,Normal,Degradation,0
+Electrical + irradiance + module temp,HistGBM,Normal,Open-Circuit,0
+Electrical + irradiance + module temp,HistGBM,Normal,Shadowing,2568
+Electrical + irradiance + module temp,HistGBM,Short-Circuit,Normal,1
+Electrical + irradiance + module temp,HistGBM,Short-Circuit,Short-Circuit,5315
+Electrical + irradiance + module temp,HistGBM,Short-Circuit,Degradation,26
+Electrical + irradiance + module temp,HistGBM,Short-Circuit,Open-Circuit,0
+Electrical + irradiance + module temp,HistGBM,Short-Circuit,Shadowing,657
+Electrical + irradiance + module temp,HistGBM,Degradation,Normal,174
+Electrical + irradiance + module temp,HistGBM,Degradation,Short-Circuit,71
+Electrical + irradiance + module temp,HistGBM,Degradation,Degradation,8379
+Electrical + irradiance + module temp,HistGBM,Degradation,Open-Circuit,23
+Electrical + irradiance + module temp,HistGBM,Degradation,Shadowing,1724
+Electrical + irradiance + module temp,HistGBM,Open-Circuit,Normal,0
+Electrical + irradiance + module temp,HistGBM,Open-Circuit,Short-Circuit,0
+Electrical + irradiance + module temp,HistGBM,Open-Circuit,Degradation,46
+Electrical + irradiance + module temp,HistGBM,Open-Circuit,Open-Circuit,5978
+Electrical + irradiance + module temp,HistGBM,Open-Circuit,Shadowing,0
+Electrical + irradiance + module temp,HistGBM,Shadowing,Normal,3146
+Electrical + irradiance + module temp,HistGBM,Shadowing,Short-Circuit,65
+Electrical + irradiance + module temp,HistGBM,Shadowing,Degradation,23
+Electrical + irradiance + module temp,HistGBM,Shadowing,Open-Circuit,0
+Electrical + irradiance + module temp,HistGBM,Shadowing,Shadowing,185239
+No current sensors,LogReg,Normal,Normal,323127
+No current sensors,LogReg,Normal,Short-Circuit,1420
+No current sensors,LogReg,Normal,Degradation,25301
+No current sensors,LogReg,Normal,Open-Circuit,0
+No current sensors,LogReg,Normal,Shadowing,52996
+No current sensors,LogReg,Short-Circuit,Normal,6
+No current sensors,LogReg,Short-Circuit,Short-Circuit,5946
+No current sensors,LogReg,Short-Circuit,Degradation,47
+No current sensors,LogReg,Short-Circuit,Open-Circuit,0
+No current sensors,LogReg,Short-Circuit,Shadowing,0
+No current sensors,LogReg,Degradation,Normal,362
+No current sensors,LogReg,Degradation,Short-Circuit,8
+No current sensors,LogReg,Degradation,Degradation,9879
+No current sensors,LogReg,Degradation,Open-Circuit,24
+No current sensors,LogReg,Degradation,Shadowing,98
+No current sensors,LogReg,Open-Circuit,Normal,0
+No current sensors,LogReg,Open-Circuit,Short-Circuit,1
+No current sensors,LogReg,Open-Circuit,Degradation,4
+No current sensors,LogReg,Open-Circuit,Open-Circuit,6019
+No current sensors,LogReg,Open-Circuit,Shadowing,0
+No current sensors,LogReg,Shadowing,Normal,45072
+No current sensors,LogReg,Shadowing,Short-Circuit,1404
+No current sensors,LogReg,Shadowing,Degradation,12739
+No current sensors,LogReg,Shadowing,Open-Circuit,0
+No current sensors,LogReg,Shadowing,Shadowing,129258
+No current sensors,RF,Normal,Normal,349337
+No current sensors,RF,Normal,Short-Circuit,144
+No current sensors,RF,Normal,Degradation,968
+No current sensors,RF,Normal,Open-Circuit,0
+No current sensors,RF,Normal,Shadowing,52395
+No current sensors,RF,Short-Circuit,Normal,299
+No current sensors,RF,Short-Circuit,Short-Circuit,5647
+No current sensors,RF,Short-Circuit,Degradation,11
+No current sensors,RF,Short-Circuit,Open-Circuit,0
+No current sensors,RF,Short-Circuit,Shadowing,42
+No current sensors,RF,Degradation,Normal,2814
+No current sensors,RF,Degradation,Short-Circuit,1
+No current sensors,RF,Degradation,Degradation,6199
+No current sensors,RF,Degradation,Open-Circuit,21
+No current sensors,RF,Degradation,Shadowing,1336
+No current sensors,RF,Open-Circuit,Normal,0
+No current sensors,RF,Open-Circuit,Short-Circuit,0
+No current sensors,RF,Open-Circuit,Degradation,8
+No current sensors,RF,Open-Circuit,Open-Circuit,6016
+No current sensors,RF,Open-Circuit,Shadowing,0
+No current sensors,RF,Shadowing,Normal,57156
+No current sensors,RF,Shadowing,Short-Circuit,80
+No current sensors,RF,Shadowing,Degradation,1174
+No current sensors,RF,Shadowing,Open-Circuit,0
+No current sensors,RF,Shadowing,Shadowing,130063
+No current sensors,HistGBM,Normal,Normal,334079
+No current sensors,HistGBM,Normal,Short-Circuit,401
+No current sensors,HistGBM,Normal,Degradation,6074
+No current sensors,HistGBM,Normal,Open-Circuit,0
+No current sensors,HistGBM,Normal,Shadowing,62290
+No current sensors,HistGBM,Short-Circuit,Normal,231
+No current sensors,HistGBM,Short-Circuit,Short-Circuit,5710
+No current sensors,HistGBM,Short-Circuit,Degradation,44
+No current sensors,HistGBM,Short-Circuit,Open-Circuit,1
+No current sensors,HistGBM,Short-Circuit,Shadowing,13
+No current sensors,HistGBM,Degradation,Normal,1248
+No current sensors,HistGBM,Degradation,Short-Circuit,45
+No current sensors,HistGBM,Degradation,Degradation,8729
+No current sensors,HistGBM,Degradation,Open-Circuit,19
+No current sensors,HistGBM,Degradation,Shadowing,330
+No current sensors,HistGBM,Open-Circuit,Normal,2
+No current sensors,HistGBM,Open-Circuit,Short-Circuit,0
+No current sensors,HistGBM,Open-Circuit,Degradation,9
+No current sensors,HistGBM,Open-Circuit,Open-Circuit,5956
+No current sensors,HistGBM,Open-Circuit,Shadowing,57
+No current sensors,HistGBM,Shadowing,Normal,37402
+No current sensors,HistGBM,Shadowing,Short-Circuit,167
+No current sensors,HistGBM,Shadowing,Degradation,4996
+No current sensors,HistGBM,Shadowing,Open-Circuit,2
+No current sensors,HistGBM,Shadowing,Shadowing,145906
+No voltage sensors,LogReg,Normal,Normal,243852
+No voltage sensors,LogReg,Normal,Short-Circuit,59796
+No voltage sensors,LogReg,Normal,Degradation,17690
+No voltage sensors,LogReg,Normal,Open-Circuit,0
+No voltage sensors,LogReg,Normal,Shadowing,81506
+No voltage sensors,LogReg,Short-Circuit,Normal,592
+No voltage sensors,LogReg,Short-Circuit,Short-Circuit,4549
+No voltage sensors,LogReg,Short-Circuit,Degradation,843
+No voltage sensors,LogReg,Short-Circuit,Open-Circuit,6
+No voltage sensors,LogReg,Short-Circuit,Shadowing,9
+No voltage sensors,LogReg,Degradation,Normal,1813
+No voltage sensors,LogReg,Degradation,Short-Circuit,1434
+No voltage sensors,LogReg,Degradation,Degradation,6883
+No voltage sensors,LogReg,Degradation,Open-Circuit,30
+No voltage sensors,LogReg,Degradation,Shadowing,211
+No voltage sensors,LogReg,Open-Circuit,Normal,0
+No voltage sensors,LogReg,Open-Circuit,Short-Circuit,0
+No voltage sensors,LogReg,Open-Circuit,Degradation,0
+No voltage sensors,LogReg,Open-Circuit,Open-Circuit,6024
+No voltage sensors,LogReg,Open-Circuit,Shadowing,0
+No voltage sensors,LogReg,Shadowing,Normal,76795
+No voltage sensors,LogReg,Shadowing,Short-Circuit,91
+No voltage sensors,LogReg,Shadowing,Degradation,4519
+No voltage sensors,LogReg,Shadowing,Open-Circuit,40
+No voltage sensors,LogReg,Shadowing,Shadowing,107028
+No voltage sensors,RF,Normal,Normal,378668
+No voltage sensors,RF,Normal,Short-Circuit,752
+No voltage sensors,RF,Normal,Degradation,1916
+No voltage sensors,RF,Normal,Open-Circuit,0
+No voltage sensors,RF,Normal,Shadowing,21508
+No voltage sensors,RF,Short-Circuit,Normal,5730
+No voltage sensors,RF,Short-Circuit,Short-Circuit,53
+No voltage sensors,RF,Short-Circuit,Degradation,165
+No voltage sensors,RF,Short-Circuit,Open-Circuit,4
+No voltage sensors,RF,Short-Circuit,Shadowing,47
+No voltage sensors,RF,Degradation,Normal,5989
+No voltage sensors,RF,Degradation,Short-Circuit,71
+No voltage sensors,RF,Degradation,Degradation,3938
+No voltage sensors,RF,Degradation,Open-Circuit,25
+No voltage sensors,RF,Degradation,Shadowing,348
+No voltage sensors,RF,Open-Circuit,Normal,0
+No voltage sensors,RF,Open-Circuit,Short-Circuit,1
+No voltage sensors,RF,Open-Circuit,Degradation,6
+No voltage sensors,RF,Open-Circuit,Open-Circuit,5409
+No voltage sensors,RF,Open-Circuit,Shadowing,608
+No voltage sensors,RF,Shadowing,Normal,21657
+No voltage sensors,RF,Shadowing,Short-Circuit,29
+No voltage sensors,RF,Shadowing,Degradation,61
+No voltage sensors,RF,Shadowing,Open-Circuit,34
+No voltage sensors,RF,Shadowing,Shadowing,166692
+No voltage sensors,HistGBM,Normal,Normal,300680
+No voltage sensors,HistGBM,Normal,Short-Circuit,53845
+No voltage sensors,HistGBM,Normal,Degradation,19641
+No voltage sensors,HistGBM,Normal,Open-Circuit,0
+No voltage sensors,HistGBM,Normal,Shadowing,28678
+No voltage sensors,HistGBM,Short-Circuit,Normal,1427
+No voltage sensors,HistGBM,Short-Circuit,Short-Circuit,3605
+No voltage sensors,HistGBM,Short-Circuit,Degradation,936
+No voltage sensors,HistGBM,Short-Circuit,Open-Circuit,7
+No voltage sensors,HistGBM,Short-Circuit,Shadowing,24
+No voltage sensors,HistGBM,Degradation,Normal,1939
+No voltage sensors,HistGBM,Degradation,Short-Circuit,1722
+No voltage sensors,HistGBM,Degradation,Degradation,6387
+No voltage sensors,HistGBM,Degradation,Open-Circuit,33
+No voltage sensors,HistGBM,Degradation,Shadowing,290
+No voltage sensors,HistGBM,Open-Circuit,Normal,0
+No voltage sensors,HistGBM,Open-Circuit,Short-Circuit,0
+No voltage sensors,HistGBM,Open-Circuit,Degradation,2
+No voltage sensors,HistGBM,Open-Circuit,Open-Circuit,6022
+No voltage sensors,HistGBM,Open-Circuit,Shadowing,0
+No voltage sensors,HistGBM,Shadowing,Normal,12441
+No voltage sensors,HistGBM,Shadowing,Short-Circuit,137
+No voltage sensors,HistGBM,Shadowing,Degradation,139
+No voltage sensors,HistGBM,Shadowing,Open-Circuit,38
+No voltage sensors,HistGBM,Shadowing,Shadowing,175718
+Computed power + approximate measured-POA physics,LogReg,Normal,Normal,267854
+Computed power + approximate measured-POA physics,LogReg,Normal,Short-Circuit,3427
+Computed power + approximate measured-POA physics,LogReg,Normal,Degradation,69988
+Computed power + approximate measured-POA physics,LogReg,Normal,Open-Circuit,102
+Computed power + approximate measured-POA physics,LogReg,Normal,Shadowing,61473
+Computed power + approximate measured-POA physics,LogReg,Short-Circuit,Normal,1
+Computed power + approximate measured-POA physics,LogReg,Short-Circuit,Short-Circuit,5352
+Computed power + approximate measured-POA physics,LogReg,Short-Circuit,Degradation,41
+Computed power + approximate measured-POA physics,LogReg,Short-Circuit,Open-Circuit,15
+Computed power + approximate measured-POA physics,LogReg,Short-Circuit,Shadowing,590
+Computed power + approximate measured-POA physics,LogReg,Degradation,Normal,2376
+Computed power + approximate measured-POA physics,LogReg,Degradation,Short-Circuit,2014
+Computed power + approximate measured-POA physics,LogReg,Degradation,Degradation,5936
+Computed power + approximate measured-POA physics,LogReg,Degradation,Open-Circuit,45
+Computed power + approximate measured-POA physics,LogReg,Degradation,Shadowing,0
+Computed power + approximate measured-POA physics,LogReg,Open-Circuit,Normal,0
+Computed power + approximate measured-POA physics,LogReg,Open-Circuit,Short-Circuit,31
+Computed power + approximate measured-POA physics,LogReg,Open-Circuit,Degradation,0
+Computed power + approximate measured-POA physics,LogReg,Open-Circuit,Open-Circuit,5993
+Computed power + approximate measured-POA physics,LogReg,Open-Circuit,Shadowing,0
+Computed power + approximate measured-POA physics,LogReg,Shadowing,Normal,25721
+Computed power + approximate measured-POA physics,LogReg,Shadowing,Short-Circuit,9206
+Computed power + approximate measured-POA physics,LogReg,Shadowing,Degradation,1246
+Computed power + approximate measured-POA physics,LogReg,Shadowing,Open-Circuit,687
+Computed power + approximate measured-POA physics,LogReg,Shadowing,Shadowing,151613
+Computed power + approximate measured-POA physics,RF,Normal,Normal,348217
+Computed power + approximate measured-POA physics,RF,Normal,Short-Circuit,1451
+Computed power + approximate measured-POA physics,RF,Normal,Degradation,3409
+Computed power + approximate measured-POA physics,RF,Normal,Open-Circuit,0
+Computed power + approximate measured-POA physics,RF,Normal,Shadowing,49767
+Computed power + approximate measured-POA physics,RF,Short-Circuit,Normal,146
+Computed power + approximate measured-POA physics,RF,Short-Circuit,Short-Circuit,2974
+Computed power + approximate measured-POA physics,RF,Short-Circuit,Degradation,603
+Computed power + approximate measured-POA physics,RF,Short-Circuit,Open-Circuit,8
+Computed power + approximate measured-POA physics,RF,Short-Circuit,Shadowing,2268
+Computed power + approximate measured-POA physics,RF,Degradation,Normal,3307
+Computed power + approximate measured-POA physics,RF,Degradation,Short-Circuit,145
+Computed power + approximate measured-POA physics,RF,Degradation,Degradation,5941
+Computed power + approximate measured-POA physics,RF,Degradation,Open-Circuit,14
+Computed power + approximate measured-POA physics,RF,Degradation,Shadowing,964
+Computed power + approximate measured-POA physics,RF,Open-Circuit,Normal,0
+Computed power + approximate measured-POA physics,RF,Open-Circuit,Short-Circuit,188
+Computed power + approximate measured-POA physics,RF,Open-Circuit,Degradation,601
+Computed power + approximate measured-POA physics,RF,Open-Circuit,Open-Circuit,4088
+Computed power + approximate measured-POA physics,RF,Open-Circuit,Shadowing,1147
+Computed power + approximate measured-POA physics,RF,Shadowing,Normal,17240
+Computed power + approximate measured-POA physics,RF,Shadowing,Short-Circuit,120
+Computed power + approximate measured-POA physics,RF,Shadowing,Degradation,88
+Computed power + approximate measured-POA physics,RF,Shadowing,Open-Circuit,28
+Computed power + approximate measured-POA physics,RF,Shadowing,Shadowing,170997
+Computed power + approximate measured-POA physics,HistGBM,Normal,Normal,343985
+Computed power + approximate measured-POA physics,HistGBM,Normal,Short-Circuit,447
+Computed power + approximate measured-POA physics,HistGBM,Normal,Degradation,13255
+Computed power + approximate measured-POA physics,HistGBM,Normal,Open-Circuit,1332
+Computed power + approximate measured-POA physics,HistGBM,Normal,Shadowing,43825
+Computed power + approximate measured-POA physics,HistGBM,Short-Circuit,Normal,286
+Computed power + approximate measured-POA physics,HistGBM,Short-Circuit,Short-Circuit,2714
+Computed power + approximate measured-POA physics,HistGBM,Short-Circuit,Degradation,32
+Computed power + approximate measured-POA physics,HistGBM,Short-Circuit,Open-Circuit,12
+Computed power + approximate measured-POA physics,HistGBM,Short-Circuit,Shadowing,2955
+Computed power + approximate measured-POA physics,HistGBM,Degradation,Normal,2007
+Computed power + approximate measured-POA physics,HistGBM,Degradation,Short-Circuit,241
+Computed power + approximate measured-POA physics,HistGBM,Degradation,Degradation,5288
+Computed power + approximate measured-POA physics,HistGBM,Degradation,Open-Circuit,14
+Computed power + approximate measured-POA physics,HistGBM,Degradation,Shadowing,2821
+Computed power + approximate measured-POA physics,HistGBM,Open-Circuit,Normal,0
+Computed power + approximate measured-POA physics,HistGBM,Open-Circuit,Short-Circuit,1110
+Computed power + approximate measured-POA physics,HistGBM,Open-Circuit,Degradation,182
+Computed power + approximate measured-POA physics,HistGBM,Open-Circuit,Open-Circuit,3977
+Computed power + approximate measured-POA physics,HistGBM,Open-Circuit,Shadowing,755
+Computed power + approximate measured-POA physics,HistGBM,Shadowing,Normal,20988
+Computed power + approximate measured-POA physics,HistGBM,Shadowing,Short-Circuit,295
+Computed power + approximate measured-POA physics,HistGBM,Shadowing,Degradation,723
+Computed power + approximate measured-POA physics,HistGBM,Shadowing,Open-Circuit,2460
+Computed power + approximate measured-POA physics,HistGBM,Shadowing,Shadowing,164007
+Electrical (full),MLP,Normal,Normal,400265
+Electrical (full),MLP,Normal,Short-Circuit,0
+Electrical (full),MLP,Normal,Degradation,0
+Electrical (full),MLP,Normal,Open-Circuit,0
+Electrical (full),MLP,Normal,Shadowing,2579
+Electrical (full),MLP,Short-Circuit,Normal,0
+Electrical (full),MLP,Short-Circuit,Short-Circuit,5917
+Electrical (full),MLP,Short-Circuit,Degradation,17
+Electrical (full),MLP,Short-Circuit,Open-Circuit,0
+Electrical (full),MLP,Short-Circuit,Shadowing,65
+Electrical (full),MLP,Degradation,Normal,0
+Electrical (full),MLP,Degradation,Short-Circuit,6
+Electrical (full),MLP,Degradation,Degradation,9693
+Electrical (full),MLP,Degradation,Open-Circuit,22
+Electrical (full),MLP,Degradation,Shadowing,650
+Electrical (full),MLP,Open-Circuit,Normal,0
+Electrical (full),MLP,Open-Circuit,Short-Circuit,1
+Electrical (full),MLP,Open-Circuit,Degradation,5
+Electrical (full),MLP,Open-Circuit,Open-Circuit,6018
+Electrical (full),MLP,Open-Circuit,Shadowing,0
+Electrical (full),MLP,Shadowing,Normal,1802
+Electrical (full),MLP,Shadowing,Short-Circuit,81
+Electrical (full),MLP,Shadowing,Degradation,66
+Electrical (full),MLP,Shadowing,Open-Circuit,0
+Electrical (full),MLP,Shadowing,Shadowing,186524
+Electrical + irradiance,MLP,Normal,Normal,399500
+Electrical + irradiance,MLP,Normal,Short-Circuit,0
+Electrical + irradiance,MLP,Normal,Degradation,0
+Electrical + irradiance,MLP,Normal,Open-Circuit,0
+Electrical + irradiance,MLP,Normal,Shadowing,3344
+Electrical + irradiance,MLP,Short-Circuit,Normal,0
+Electrical + irradiance,MLP,Short-Circuit,Short-Circuit,5915
+Electrical + irradiance,MLP,Short-Circuit,Degradation,25
+Electrical + irradiance,MLP,Short-Circuit,Open-Circuit,0
+Electrical + irradiance,MLP,Short-Circuit,Shadowing,59
+Electrical + irradiance,MLP,Degradation,Normal,0
+Electrical + irradiance,MLP,Degradation,Short-Circuit,10
+Electrical + irradiance,MLP,Degradation,Degradation,9753
+Electrical + irradiance,MLP,Degradation,Open-Circuit,23
+Electrical + irradiance,MLP,Degradation,Shadowing,585
+Electrical + irradiance,MLP,Open-Circuit,Normal,0
+Electrical + irradiance,MLP,Open-Circuit,Short-Circuit,0
+Electrical + irradiance,MLP,Open-Circuit,Degradation,1
+Electrical + irradiance,MLP,Open-Circuit,Open-Circuit,6023
+Electrical + irradiance,MLP,Open-Circuit,Shadowing,0
+Electrical + irradiance,MLP,Shadowing,Normal,1440
+Electrical + irradiance,MLP,Shadowing,Short-Circuit,68
+Electrical + irradiance,MLP,Shadowing,Degradation,84
+Electrical + irradiance,MLP,Shadowing,Open-Circuit,0
+Electrical + irradiance,MLP,Shadowing,Shadowing,186881
+Electrical + irradiance + module temp,MLP,Normal,Normal,398939
+Electrical + irradiance + module temp,MLP,Normal,Short-Circuit,0
+Electrical + irradiance + module temp,MLP,Normal,Degradation,0
+Electrical + irradiance + module temp,MLP,Normal,Open-Circuit,0
+Electrical + irradiance + module temp,MLP,Normal,Shadowing,3905
+Electrical + irradiance + module temp,MLP,Short-Circuit,Normal,0
+Electrical + irradiance + module temp,MLP,Short-Circuit,Short-Circuit,5914
+Electrical + irradiance + module temp,MLP,Short-Circuit,Degradation,20
+Electrical + irradiance + module temp,MLP,Short-Circuit,Open-Circuit,0
+Electrical + irradiance + module temp,MLP,Short-Circuit,Shadowing,65
+Electrical + irradiance + module temp,MLP,Degradation,Normal,0
+Electrical + irradiance + module temp,MLP,Degradation,Short-Circuit,4
+Electrical + irradiance + module temp,MLP,Degradation,Degradation,9834
+Electrical + irradiance + module temp,MLP,Degradation,Open-Circuit,23
+Electrical + irradiance + module temp,MLP,Degradation,Shadowing,510
+Electrical + irradiance + module temp,MLP,Open-Circuit,Normal,0
+Electrical + irradiance + module temp,MLP,Open-Circuit,Short-Circuit,0
+Electrical + irradiance + module temp,MLP,Open-Circuit,Degradation,10
+Electrical + irradiance + module temp,MLP,Open-Circuit,Open-Circuit,6014
+Electrical + irradiance + module temp,MLP,Open-Circuit,Shadowing,0
+Electrical + irradiance + module temp,MLP,Shadowing,Normal,2664
+Electrical + irradiance + module temp,MLP,Shadowing,Short-Circuit,68
+Electrical + irradiance + module temp,MLP,Shadowing,Degradation,156
+Electrical + irradiance + module temp,MLP,Shadowing,Open-Circuit,0
+Electrical + irradiance + module temp,MLP,Shadowing,Shadowing,185585
+No current sensors,MLP,Normal,Normal,337732
+No current sensors,MLP,Normal,Short-Circuit,185
+No current sensors,MLP,Normal,Degradation,1107
+No current sensors,MLP,Normal,Open-Circuit,0
+No current sensors,MLP,Normal,Shadowing,63820
+No current sensors,MLP,Short-Circuit,Normal,32
+No current sensors,MLP,Short-Circuit,Short-Circuit,5929
+No current sensors,MLP,Short-Circuit,Degradation,11
+No current sensors,MLP,Short-Circuit,Open-Circuit,0
+No current sensors,MLP,Short-Circuit,Shadowing,27
+No current sensors,MLP,Degradation,Normal,2258
+No current sensors,MLP,Degradation,Short-Circuit,0
+No current sensors,MLP,Degradation,Degradation,6884
+No current sensors,MLP,Degradation,Open-Circuit,25
+No current sensors,MLP,Degradation,Shadowing,1204
+No current sensors,MLP,Open-Circuit,Normal,0
+No current sensors,MLP,Open-Circuit,Short-Circuit,0
+No current sensors,MLP,Open-Circuit,Degradation,4
+No current sensors,MLP,Open-Circuit,Open-Circuit,6019
+No current sensors,MLP,Open-Circuit,Shadowing,1
+No current sensors,MLP,Shadowing,Normal,37733
+No current sensors,MLP,Shadowing,Short-Circuit,120
+No current sensors,MLP,Shadowing,Degradation,1175
+No current sensors,MLP,Shadowing,Open-Circuit,1
+No current sensors,MLP,Shadowing,Shadowing,149444
+No voltage sensors,MLP,Normal,Normal,371547
+No voltage sensors,MLP,Normal,Short-Circuit,23
+No voltage sensors,MLP,Normal,Degradation,3035
+No voltage sensors,MLP,Normal,Open-Circuit,0
+No voltage sensors,MLP,Normal,Shadowing,28239
+No voltage sensors,MLP,Short-Circuit,Normal,5686
+No voltage sensors,MLP,Short-Circuit,Short-Circuit,7
+No voltage sensors,MLP,Short-Circuit,Degradation,268
+No voltage sensors,MLP,Short-Circuit,Open-Circuit,6
+No voltage sensors,MLP,Short-Circuit,Shadowing,32
+No voltage sensors,MLP,Degradation,Normal,5096
+No voltage sensors,MLP,Degradation,Short-Circuit,16
+No voltage sensors,MLP,Degradation,Degradation,4956
+No voltage sensors,MLP,Degradation,Open-Circuit,33
+No voltage sensors,MLP,Degradation,Shadowing,270
+No voltage sensors,MLP,Open-Circuit,Normal,0
+No voltage sensors,MLP,Open-Circuit,Short-Circuit,0
+No voltage sensors,MLP,Open-Circuit,Degradation,0
+No voltage sensors,MLP,Open-Circuit,Open-Circuit,6024
+No voltage sensors,MLP,Open-Circuit,Shadowing,0
+No voltage sensors,MLP,Shadowing,Normal,13416
+No voltage sensors,MLP,Shadowing,Short-Circuit,45
+No voltage sensors,MLP,Shadowing,Degradation,66
+No voltage sensors,MLP,Shadowing,Open-Circuit,41
+No voltage sensors,MLP,Shadowing,Shadowing,174905
+Computed power + approximate measured-POA physics,MLP,Normal,Normal,336077
+Computed power + approximate measured-POA physics,MLP,Normal,Short-Circuit,0
+Computed power + approximate measured-POA physics,MLP,Normal,Degradation,4565
+Computed power + approximate measured-POA physics,MLP,Normal,Open-Circuit,58
+Computed power + approximate measured-POA physics,MLP,Normal,Shadowing,62144
+Computed power + approximate measured-POA physics,MLP,Short-Circuit,Normal,18
+Computed power + approximate measured-POA physics,MLP,Short-Circuit,Short-Circuit,5319
+Computed power + approximate measured-POA physics,MLP,Short-Circuit,Degradation,18
+Computed power + approximate measured-POA physics,MLP,Short-Circuit,Open-Circuit,10
+Computed power + approximate measured-POA physics,MLP,Short-Circuit,Shadowing,634
+Computed power + approximate measured-POA physics,MLP,Degradation,Normal,3290
+Computed power + approximate measured-POA physics,MLP,Degradation,Short-Circuit,2226
+Computed power + approximate measured-POA physics,MLP,Degradation,Degradation,4537
+Computed power + approximate measured-POA physics,MLP,Degradation,Open-Circuit,35
+Computed power + approximate measured-POA physics,MLP,Degradation,Shadowing,283
+Computed power + approximate measured-POA physics,MLP,Open-Circuit,Normal,0
+Computed power + approximate measured-POA physics,MLP,Open-Circuit,Short-Circuit,0
+Computed power + approximate measured-POA physics,MLP,Open-Circuit,Degradation,0
+Computed power + approximate measured-POA physics,MLP,Open-Circuit,Open-Circuit,5420
+Computed power + approximate measured-POA physics,MLP,Open-Circuit,Shadowing,604
+Computed power + approximate measured-POA physics,MLP,Shadowing,Normal,15732
+Computed power + approximate measured-POA physics,MLP,Shadowing,Short-Circuit,363
+Computed power + approximate measured-POA physics,MLP,Shadowing,Degradation,309
+Computed power + approximate measured-POA physics,MLP,Shadowing,Open-Circuit,50
+Computed power + approximate measured-POA physics,MLP,Shadowing,Shadowing,172019
+Computed total power only,LogReg,Normal,Normal,63006
+Computed total power only,LogReg,Normal,Short-Circuit,91403
+Computed total power only,LogReg,Normal,Degradation,111660
+Computed total power only,LogReg,Normal,Open-Circuit,7090
+Computed total power only,LogReg,Normal,Shadowing,129685
+Computed total power only,LogReg,Short-Circuit,Normal,605
+Computed total power only,LogReg,Short-Circuit,Short-Circuit,3594
+Computed total power only,LogReg,Short-Circuit,Degradation,1791
+Computed total power only,LogReg,Short-Circuit,Open-Circuit,9
+Computed total power only,LogReg,Short-Circuit,Shadowing,0
+Computed total power only,LogReg,Degradation,Normal,49
+Computed total power only,LogReg,Degradation,Short-Circuit,2802
+Computed total power only,LogReg,Degradation,Degradation,7485
+Computed total power only,LogReg,Degradation,Open-Circuit,35
+Computed total power only,LogReg,Degradation,Shadowing,0
+Computed total power only,LogReg,Open-Circuit,Normal,0
+Computed total power only,LogReg,Open-Circuit,Short-Circuit,0
+Computed total power only,LogReg,Open-Circuit,Degradation,0
+Computed total power only,LogReg,Open-Circuit,Open-Circuit,6021
+Computed total power only,LogReg,Open-Circuit,Shadowing,3
+Computed total power only,LogReg,Shadowing,Normal,46001
+Computed total power only,LogReg,Shadowing,Short-Circuit,6050
+Computed total power only,LogReg,Shadowing,Degradation,337
+Computed total power only,LogReg,Shadowing,Open-Circuit,29652
+Computed total power only,LogReg,Shadowing,Shadowing,106433
+Computed total power only,RF,Normal,Normal,328789
+Computed total power only,RF,Normal,Short-Circuit,5207
+Computed total power only,RF,Normal,Degradation,9987
+Computed total power only,RF,Normal,Open-Circuit,817
+Computed total power only,RF,Normal,Shadowing,58044
+Computed total power only,RF,Short-Circuit,Normal,5280
+Computed total power only,RF,Short-Circuit,Short-Circuit,205
+Computed total power only,RF,Short-Circuit,Degradation,280
+Computed total power only,RF,Short-Circuit,Open-Circuit,0
+Computed total power only,RF,Short-Circuit,Shadowing,234
+Computed total power only,RF,Degradation,Normal,9343
+Computed total power only,RF,Degradation,Short-Circuit,277
+Computed total power only,RF,Degradation,Degradation,525
+Computed total power only,RF,Degradation,Open-Circuit,5
+Computed total power only,RF,Degradation,Shadowing,221
+Computed total power only,RF,Open-Circuit,Normal,910
+Computed total power only,RF,Open-Circuit,Short-Circuit,1
+Computed total power only,RF,Open-Circuit,Degradation,5
+Computed total power only,RF,Open-Circuit,Open-Circuit,1273
+Computed total power only,RF,Open-Circuit,Shadowing,3835
+Computed total power only,RF,Shadowing,Normal,56461
+Computed total power only,RF,Shadowing,Short-Circuit,196
+Computed total power only,RF,Shadowing,Degradation,231
+Computed total power only,RF,Shadowing,Open-Circuit,3406
+Computed total power only,RF,Shadowing,Shadowing,128179
+Computed total power only,HistGBM,Normal,Normal,209991
+Computed total power only,HistGBM,Normal,Short-Circuit,52234
+Computed total power only,HistGBM,Normal,Degradation,84313
+Computed total power only,HistGBM,Normal,Open-Circuit,4455
+Computed total power only,HistGBM,Normal,Shadowing,51851
+Computed total power only,HistGBM,Short-Circuit,Normal,1499
+Computed total power only,HistGBM,Short-Circuit,Short-Circuit,2360
+Computed total power only,HistGBM,Short-Circuit,Degradation,2122
+Computed total power only,HistGBM,Short-Circuit,Open-Circuit,6
+Computed total power only,HistGBM,Short-Circuit,Shadowing,12
+Computed total power only,HistGBM,Degradation,Normal,4538
+Computed total power only,HistGBM,Degradation,Short-Circuit,1783
+Computed total power only,HistGBM,Degradation,Degradation,4000
+Computed total power only,HistGBM,Degradation,Open-Circuit,14
+Computed total power only,HistGBM,Degradation,Shadowing,36
+Computed total power only,HistGBM,Open-Circuit,Normal,0
+Computed total power only,HistGBM,Open-Circuit,Short-Circuit,0
+Computed total power only,HistGBM,Open-Circuit,Degradation,0
+Computed total power only,HistGBM,Open-Circuit,Open-Circuit,4329
+Computed total power only,HistGBM,Open-Circuit,Shadowing,1695
+Computed total power only,HistGBM,Shadowing,Normal,18977
+Computed total power only,HistGBM,Shadowing,Short-Circuit,1697
+Computed total power only,HistGBM,Shadowing,Degradation,1541
+Computed total power only,HistGBM,Shadowing,Open-Circuit,19490
+Computed total power only,HistGBM,Shadowing,Shadowing,146768
+Computed total power only,MLP,Normal,Normal,346545
+Computed total power only,MLP,Normal,Short-Circuit,0
+Computed total power only,MLP,Normal,Degradation,0
+Computed total power only,MLP,Normal,Open-Circuit,2
+Computed total power only,MLP,Normal,Shadowing,56297
+Computed total power only,MLP,Short-Circuit,Normal,5981
+Computed total power only,MLP,Short-Circuit,Short-Circuit,0
+Computed total power only,MLP,Short-Circuit,Degradation,0
+Computed total power only,MLP,Short-Circuit,Open-Circuit,0
+Computed total power only,MLP,Short-Circuit,Shadowing,18
+Computed total power only,MLP,Degradation,Normal,10321
+Computed total power only,MLP,Degradation,Short-Circuit,0
+Computed total power only,MLP,Degradation,Degradation,0
+Computed total power only,MLP,Degradation,Open-Circuit,0
+Computed total power only,MLP,Degradation,Shadowing,50
+Computed total power only,MLP,Open-Circuit,Normal,0
+Computed total power only,MLP,Open-Circuit,Short-Circuit,0
+Computed total power only,MLP,Open-Circuit,Degradation,0
+Computed total power only,MLP,Open-Circuit,Open-Circuit,0
+Computed total power only,MLP,Open-Circuit,Shadowing,6024
+Computed total power only,MLP,Shadowing,Normal,22236
+Computed total power only,MLP,Shadowing,Short-Circuit,0
+Computed total power only,MLP,Shadowing,Degradation,0
+Computed total power only,MLP,Shadowing,Open-Circuit,23
+Computed total power only,MLP,Shadowing,Shadowing,166214
+Computed power + measured irradiance,LogReg,Normal,Normal,259498
+Computed power + measured irradiance,LogReg,Normal,Short-Circuit,836
+Computed power + measured irradiance,LogReg,Normal,Degradation,88179
+Computed power + measured irradiance,LogReg,Normal,Open-Circuit,102
+Computed power + measured irradiance,LogReg,Normal,Shadowing,54229
+Computed power + measured irradiance,LogReg,Short-Circuit,Normal,1
+Computed power + measured irradiance,LogReg,Short-Circuit,Short-Circuit,5231
+Computed power + measured irradiance,LogReg,Short-Circuit,Degradation,159
+Computed power + measured irradiance,LogReg,Short-Circuit,Open-Circuit,18
+Computed power + measured irradiance,LogReg,Short-Circuit,Shadowing,590
+Computed power + measured irradiance,LogReg,Degradation,Normal,2374
+Computed power + measured irradiance,LogReg,Degradation,Short-Circuit,3250
+Computed power + measured irradiance,LogReg,Degradation,Degradation,4692
+Computed power + measured irradiance,LogReg,Degradation,Open-Circuit,55
+Computed power + measured irradiance,LogReg,Degradation,Shadowing,0
+Computed power + measured irradiance,LogReg,Open-Circuit,Normal,0
+Computed power + measured irradiance,LogReg,Open-Circuit,Short-Circuit,594
+Computed power + measured irradiance,LogReg,Open-Circuit,Degradation,0
+Computed power + measured irradiance,LogReg,Open-Circuit,Open-Circuit,5430
+Computed power + measured irradiance,LogReg,Open-Circuit,Shadowing,0
+Computed power + measured irradiance,LogReg,Shadowing,Normal,71150
+Computed power + measured irradiance,LogReg,Shadowing,Short-Circuit,10030
+Computed power + measured irradiance,LogReg,Shadowing,Degradation,1231
+Computed power + measured irradiance,LogReg,Shadowing,Open-Circuit,2231
+Computed power + measured irradiance,LogReg,Shadowing,Shadowing,103831
+Computed power + measured irradiance,RF,Normal,Normal,347745
+Computed power + measured irradiance,RF,Normal,Short-Circuit,1504
+Computed power + measured irradiance,RF,Normal,Degradation,5830
+Computed power + measured irradiance,RF,Normal,Open-Circuit,0
+Computed power + measured irradiance,RF,Normal,Shadowing,47765
+Computed power + measured irradiance,RF,Short-Circuit,Normal,130
+Computed power + measured irradiance,RF,Short-Circuit,Short-Circuit,1038
+Computed power + measured irradiance,RF,Short-Circuit,Degradation,2119
+Computed power + measured irradiance,RF,Short-Circuit,Open-Circuit,8
+Computed power + measured irradiance,RF,Short-Circuit,Shadowing,2704
+Computed power + measured irradiance,RF,Degradation,Normal,5113
+Computed power + measured irradiance,RF,Degradation,Short-Circuit,1222
+Computed power + measured irradiance,RF,Degradation,Degradation,2493
+Computed power + measured irradiance,RF,Degradation,Open-Circuit,14
+Computed power + measured irradiance,RF,Degradation,Shadowing,1529
+Computed power + measured irradiance,RF,Open-Circuit,Normal,0
+Computed power + measured irradiance,RF,Open-Circuit,Short-Circuit,56
+Computed power + measured irradiance,RF,Open-Circuit,Degradation,959
+Computed power + measured irradiance,RF,Open-Circuit,Open-Circuit,3521
+Computed power + measured irradiance,RF,Open-Circuit,Shadowing,1488
+Computed power + measured irradiance,RF,Shadowing,Normal,28483
+Computed power + measured irradiance,RF,Shadowing,Short-Circuit,168
+Computed power + measured irradiance,RF,Shadowing,Degradation,151
+Computed power + measured irradiance,RF,Shadowing,Open-Circuit,26
+Computed power + measured irradiance,RF,Shadowing,Shadowing,159645
+Computed power + measured irradiance,HistGBM,Normal,Normal,335913
+Computed power + measured irradiance,HistGBM,Normal,Short-Circuit,4358
+Computed power + measured irradiance,HistGBM,Normal,Degradation,10616
+Computed power + measured irradiance,HistGBM,Normal,Open-Circuit,0
+Computed power + measured irradiance,HistGBM,Normal,Shadowing,51957
+Computed power + measured irradiance,HistGBM,Short-Circuit,Normal,324
+Computed power + measured irradiance,HistGBM,Short-Circuit,Short-Circuit,2709
+Computed power + measured irradiance,HistGBM,Short-Circuit,Degradation,2129
+Computed power + measured irradiance,HistGBM,Short-Circuit,Open-Circuit,8
+Computed power + measured irradiance,HistGBM,Short-Circuit,Shadowing,829
+Computed power + measured irradiance,HistGBM,Degradation,Normal,4886
+Computed power + measured irradiance,HistGBM,Degradation,Short-Circuit,1567
+Computed power + measured irradiance,HistGBM,Degradation,Degradation,3559
+Computed power + measured irradiance,HistGBM,Degradation,Open-Circuit,24
+Computed power + measured irradiance,HistGBM,Degradation,Shadowing,335
+Computed power + measured irradiance,HistGBM,Open-Circuit,Normal,0
+Computed power + measured irradiance,HistGBM,Open-Circuit,Short-Circuit,32
+Computed power + measured irradiance,HistGBM,Open-Circuit,Degradation,880
+Computed power + measured irradiance,HistGBM,Open-Circuit,Open-Circuit,4858
+Computed power + measured irradiance,HistGBM,Open-Circuit,Shadowing,254
+Computed power + measured irradiance,HistGBM,Shadowing,Normal,20001
+Computed power + measured irradiance,HistGBM,Shadowing,Short-Circuit,277
+Computed power + measured irradiance,HistGBM,Shadowing,Degradation,451
+Computed power + measured irradiance,HistGBM,Shadowing,Open-Circuit,62
+Computed power + measured irradiance,HistGBM,Shadowing,Shadowing,167682
+Computed power + measured irradiance,MLP,Normal,Normal,342633
+Computed power + measured irradiance,MLP,Normal,Short-Circuit,7
+Computed power + measured irradiance,MLP,Normal,Degradation,6879
+Computed power + measured irradiance,MLP,Normal,Open-Circuit,0
+Computed power + measured irradiance,MLP,Normal,Shadowing,53325
+Computed power + measured irradiance,MLP,Short-Circuit,Normal,26
+Computed power + measured irradiance,MLP,Short-Circuit,Short-Circuit,3695
+Computed power + measured irradiance,MLP,Short-Circuit,Degradation,1498
+Computed power + measured irradiance,MLP,Short-Circuit,Open-Circuit,10
+Computed power + measured irradiance,MLP,Short-Circuit,Shadowing,770
+Computed power + measured irradiance,MLP,Degradation,Normal,4592
+Computed power + measured irradiance,MLP,Degradation,Short-Circuit,2695
+Computed power + measured irradiance,MLP,Degradation,Degradation,2699
+Computed power + measured irradiance,MLP,Degradation,Open-Circuit,38
+Computed power + measured irradiance,MLP,Degradation,Shadowing,347
+Computed power + measured irradiance,MLP,Open-Circuit,Normal,0
+Computed power + measured irradiance,MLP,Open-Circuit,Short-Circuit,0
+Computed power + measured irradiance,MLP,Open-Circuit,Degradation,0
+Computed power + measured irradiance,MLP,Open-Circuit,Open-Circuit,5418
+Computed power + measured irradiance,MLP,Open-Circuit,Shadowing,606
+Computed power + measured irradiance,MLP,Shadowing,Normal,18635
+Computed power + measured irradiance,MLP,Shadowing,Short-Circuit,533
+Computed power + measured irradiance,MLP,Shadowing,Degradation,339
+Computed power + measured irradiance,MLP,Shadowing,Open-Circuit,50
+Computed power + measured irradiance,MLP,Shadowing,Shadowing,168916
+Computed power + irradiance + module temp,LogReg,Normal,Normal,238976
+Computed power + irradiance + module temp,LogReg,Normal,Short-Circuit,3193
+Computed power + irradiance + module temp,LogReg,Normal,Degradation,91213
+Computed power + irradiance + module temp,LogReg,Normal,Open-Circuit,102
+Computed power + irradiance + module temp,LogReg,Normal,Shadowing,69360
+Computed power + irradiance + module temp,LogReg,Short-Circuit,Normal,1
+Computed power + irradiance + module temp,LogReg,Short-Circuit,Short-Circuit,5352
+Computed power + irradiance + module temp,LogReg,Short-Circuit,Degradation,38
+Computed power + irradiance + module temp,LogReg,Short-Circuit,Open-Circuit,18
+Computed power + irradiance + module temp,LogReg,Short-Circuit,Shadowing,590
+Computed power + irradiance + module temp,LogReg,Degradation,Normal,2375
+Computed power + irradiance + module temp,LogReg,Degradation,Short-Circuit,3199
+Computed power + irradiance + module temp,LogReg,Degradation,Degradation,4745
+Computed power + irradiance + module temp,LogReg,Degradation,Open-Circuit,52
+Computed power + irradiance + module temp,LogReg,Degradation,Shadowing,0
+Computed power + irradiance + module temp,LogReg,Open-Circuit,Normal,0
+Computed power + irradiance + module temp,LogReg,Open-Circuit,Short-Circuit,2
+Computed power + irradiance + module temp,LogReg,Open-Circuit,Degradation,0
+Computed power + irradiance + module temp,LogReg,Open-Circuit,Open-Circuit,6022
+Computed power + irradiance + module temp,LogReg,Open-Circuit,Shadowing,0
+Computed power + irradiance + module temp,LogReg,Shadowing,Normal,70798
+Computed power + irradiance + module temp,LogReg,Shadowing,Short-Circuit,10793
+Computed power + irradiance + module temp,LogReg,Shadowing,Degradation,1333
+Computed power + irradiance + module temp,LogReg,Shadowing,Open-Circuit,787
+Computed power + irradiance + module temp,LogReg,Shadowing,Shadowing,104762
+Computed power + irradiance + module temp,RF,Normal,Normal,351257
+Computed power + irradiance + module temp,RF,Normal,Short-Circuit,865
+Computed power + irradiance + module temp,RF,Normal,Degradation,2377
+Computed power + irradiance + module temp,RF,Normal,Open-Circuit,0
+Computed power + irradiance + module temp,RF,Normal,Shadowing,48345
+Computed power + irradiance + module temp,RF,Short-Circuit,Normal,496
+Computed power + irradiance + module temp,RF,Short-Circuit,Short-Circuit,2158
+Computed power + irradiance + module temp,RF,Short-Circuit,Degradation,1127
+Computed power + irradiance + module temp,RF,Short-Circuit,Open-Circuit,8
+Computed power + irradiance + module temp,RF,Short-Circuit,Shadowing,2210
+Computed power + irradiance + module temp,RF,Degradation,Normal,7766
+Computed power + irradiance + module temp,RF,Degradation,Short-Circuit,86
+Computed power + irradiance + module temp,RF,Degradation,Degradation,2238
+Computed power + irradiance + module temp,RF,Degradation,Open-Circuit,24
+Computed power + irradiance + module temp,RF,Degradation,Shadowing,257
+Computed power + irradiance + module temp,RF,Open-Circuit,Normal,0
+Computed power + irradiance + module temp,RF,Open-Circuit,Short-Circuit,183
+Computed power + irradiance + module temp,RF,Open-Circuit,Degradation,383
+Computed power + irradiance + module temp,RF,Open-Circuit,Open-Circuit,4221
+Computed power + irradiance + module temp,RF,Open-Circuit,Shadowing,1237
+Computed power + irradiance + module temp,RF,Shadowing,Normal,27973
+Computed power + irradiance + module temp,RF,Shadowing,Short-Circuit,168
+Computed power + irradiance + module temp,RF,Shadowing,Degradation,125
+Computed power + irradiance + module temp,RF,Shadowing,Open-Circuit,32
+Computed power + irradiance + module temp,RF,Shadowing,Shadowing,160175
+Computed power + irradiance + module temp,HistGBM,Normal,Normal,280221
+Computed power + irradiance + module temp,HistGBM,Normal,Short-Circuit,8518
+Computed power + irradiance + module temp,HistGBM,Normal,Degradation,7815
+Computed power + irradiance + module temp,HistGBM,Normal,Open-Circuit,3205
+Computed power + irradiance + module temp,HistGBM,Normal,Shadowing,103085
+Computed power + irradiance + module temp,HistGBM,Short-Circuit,Normal,576
+Computed power + irradiance + module temp,HistGBM,Short-Circuit,Short-Circuit,3009
+Computed power + irradiance + module temp,HistGBM,Short-Circuit,Degradation,14
+Computed power + irradiance + module temp,HistGBM,Short-Circuit,Open-Circuit,6
+Computed power + irradiance + module temp,HistGBM,Short-Circuit,Shadowing,2394
+Computed power + irradiance + module temp,HistGBM,Degradation,Normal,2897
+Computed power + irradiance + module temp,HistGBM,Degradation,Short-Circuit,1864
+Computed power + irradiance + module temp,HistGBM,Degradation,Degradation,4379
+Computed power + irradiance + module temp,HistGBM,Degradation,Open-Circuit,21
+Computed power + irradiance + module temp,HistGBM,Degradation,Shadowing,1210
+Computed power + irradiance + module temp,HistGBM,Open-Circuit,Normal,0
+Computed power + irradiance + module temp,HistGBM,Open-Circuit,Short-Circuit,678
+Computed power + irradiance + module temp,HistGBM,Open-Circuit,Degradation,773
+Computed power + irradiance + module temp,HistGBM,Open-Circuit,Open-Circuit,3493
+Computed power + irradiance + module temp,HistGBM,Open-Circuit,Shadowing,1080
+Computed power + irradiance + module temp,HistGBM,Shadowing,Normal,22518
+Computed power + irradiance + module temp,HistGBM,Shadowing,Short-Circuit,247
+Computed power + irradiance + module temp,HistGBM,Shadowing,Degradation,187
+Computed power + irradiance + module temp,HistGBM,Shadowing,Open-Circuit,32
+Computed power + irradiance + module temp,HistGBM,Shadowing,Shadowing,165489
+Computed power + irradiance + module temp,MLP,Normal,Normal,337867
+Computed power + irradiance + module temp,MLP,Normal,Short-Circuit,21
+Computed power + irradiance + module temp,MLP,Normal,Degradation,6602
+Computed power + irradiance + module temp,MLP,Normal,Open-Circuit,100
+Computed power + irradiance + module temp,MLP,Normal,Shadowing,58254
+Computed power + irradiance + module temp,MLP,Short-Circuit,Normal,20
+Computed power + irradiance + module temp,MLP,Short-Circuit,Short-Circuit,4912
+Computed power + irradiance + module temp,MLP,Short-Circuit,Degradation,431
+Computed power + irradiance + module temp,MLP,Short-Circuit,Open-Circuit,8
+Computed power + irradiance + module temp,MLP,Short-Circuit,Shadowing,628
+Computed power + irradiance + module temp,MLP,Degradation,Normal,2827
+Computed power + irradiance + module temp,MLP,Degradation,Short-Circuit,2131
+Computed power + irradiance + module temp,MLP,Degradation,Degradation,4890
+Computed power + irradiance + module temp,MLP,Degradation,Open-Circuit,22
+Computed power + irradiance + module temp,MLP,Degradation,Shadowing,501
+Computed power + irradiance + module temp,MLP,Open-Circuit,Normal,0
+Computed power + irradiance + module temp,MLP,Open-Circuit,Short-Circuit,0
+Computed power + irradiance + module temp,MLP,Open-Circuit,Degradation,0
+Computed power + irradiance + module temp,MLP,Open-Circuit,Open-Circuit,5192
+Computed power + irradiance + module temp,MLP,Open-Circuit,Shadowing,832
+Computed power + irradiance + module temp,MLP,Shadowing,Normal,18717
+Computed power + irradiance + module temp,MLP,Shadowing,Short-Circuit,432
+Computed power + irradiance + module temp,MLP,Shadowing,Degradation,310
+Computed power + irradiance + module temp,MLP,Shadowing,Open-Circuit,360
+Computed power + irradiance + module temp,MLP,Shadowing,Shadowing,168654
+HK-availability proxy (not a validated transfer mapping),LogReg,Normal,Normal,272907
+HK-availability proxy (not a validated transfer mapping),LogReg,Normal,Short-Circuit,3154
+HK-availability proxy (not a validated transfer mapping),LogReg,Normal,Degradation,67039
+HK-availability proxy (not a validated transfer mapping),LogReg,Normal,Open-Circuit,103
+HK-availability proxy (not a validated transfer mapping),LogReg,Normal,Shadowing,59641
+HK-availability proxy (not a validated transfer mapping),LogReg,Short-Circuit,Normal,1
+HK-availability proxy (not a validated transfer mapping),LogReg,Short-Circuit,Short-Circuit,5349
+HK-availability proxy (not a validated transfer mapping),LogReg,Short-Circuit,Degradation,41
+HK-availability proxy (not a validated transfer mapping),LogReg,Short-Circuit,Open-Circuit,18
+HK-availability proxy (not a validated transfer mapping),LogReg,Short-Circuit,Shadowing,590
+HK-availability proxy (not a validated transfer mapping),LogReg,Degradation,Normal,2375
+HK-availability proxy (not a validated transfer mapping),LogReg,Degradation,Short-Circuit,1787
+HK-availability proxy (not a validated transfer mapping),LogReg,Degradation,Degradation,6157
+HK-availability proxy (not a validated transfer mapping),LogReg,Degradation,Open-Circuit,52
+HK-availability proxy (not a validated transfer mapping),LogReg,Degradation,Shadowing,0
+HK-availability proxy (not a validated transfer mapping),LogReg,Open-Circuit,Normal,0
+HK-availability proxy (not a validated transfer mapping),LogReg,Open-Circuit,Short-Circuit,0
+HK-availability proxy (not a validated transfer mapping),LogReg,Open-Circuit,Degradation,0
+HK-availability proxy (not a validated transfer mapping),LogReg,Open-Circuit,Open-Circuit,6022
+HK-availability proxy (not a validated transfer mapping),LogReg,Open-Circuit,Shadowing,2
+HK-availability proxy (not a validated transfer mapping),LogReg,Shadowing,Normal,28755
+HK-availability proxy (not a validated transfer mapping),LogReg,Shadowing,Short-Circuit,7988
+HK-availability proxy (not a validated transfer mapping),LogReg,Shadowing,Degradation,1276
+HK-availability proxy (not a validated transfer mapping),LogReg,Shadowing,Open-Circuit,738
+HK-availability proxy (not a validated transfer mapping),LogReg,Shadowing,Shadowing,149716
+HK-availability proxy (not a validated transfer mapping),RF,Normal,Normal,352693
+HK-availability proxy (not a validated transfer mapping),RF,Normal,Short-Circuit,1257
+HK-availability proxy (not a validated transfer mapping),RF,Normal,Degradation,2541
+HK-availability proxy (not a validated transfer mapping),RF,Normal,Open-Circuit,0
+HK-availability proxy (not a validated transfer mapping),RF,Normal,Shadowing,46353
+HK-availability proxy (not a validated transfer mapping),RF,Short-Circuit,Normal,275
+HK-availability proxy (not a validated transfer mapping),RF,Short-Circuit,Short-Circuit,3204
+HK-availability proxy (not a validated transfer mapping),RF,Short-Circuit,Degradation,609
+HK-availability proxy (not a validated transfer mapping),RF,Short-Circuit,Open-Circuit,7
+HK-availability proxy (not a validated transfer mapping),RF,Short-Circuit,Shadowing,1904
+HK-availability proxy (not a validated transfer mapping),RF,Degradation,Normal,2938
+HK-availability proxy (not a validated transfer mapping),RF,Degradation,Short-Circuit,612
+HK-availability proxy (not a validated transfer mapping),RF,Degradation,Degradation,4202
+HK-availability proxy (not a validated transfer mapping),RF,Degradation,Open-Circuit,19
+HK-availability proxy (not a validated transfer mapping),RF,Degradation,Shadowing,2600
+HK-availability proxy (not a validated transfer mapping),RF,Open-Circuit,Normal,0
+HK-availability proxy (not a validated transfer mapping),RF,Open-Circuit,Short-Circuit,28
+HK-availability proxy (not a validated transfer mapping),RF,Open-Circuit,Degradation,642
+HK-availability proxy (not a validated transfer mapping),RF,Open-Circuit,Open-Circuit,4170
+HK-availability proxy (not a validated transfer mapping),RF,Open-Circuit,Shadowing,1184
+HK-availability proxy (not a validated transfer mapping),RF,Shadowing,Normal,18235
+HK-availability proxy (not a validated transfer mapping),RF,Shadowing,Short-Circuit,104
+HK-availability proxy (not a validated transfer mapping),RF,Shadowing,Degradation,79
+HK-availability proxy (not a validated transfer mapping),RF,Shadowing,Open-Circuit,26
+HK-availability proxy (not a validated transfer mapping),RF,Shadowing,Shadowing,170029
+HK-availability proxy (not a validated transfer mapping),HistGBM,Normal,Normal,284767
+HK-availability proxy (not a validated transfer mapping),HistGBM,Normal,Short-Circuit,5564
+HK-availability proxy (not a validated transfer mapping),HistGBM,Normal,Degradation,39594
+HK-availability proxy (not a validated transfer mapping),HistGBM,Normal,Open-Circuit,17432
+HK-availability proxy (not a validated transfer mapping),HistGBM,Normal,Shadowing,55487
+HK-availability proxy (not a validated transfer mapping),HistGBM,Short-Circuit,Normal,288
+HK-availability proxy (not a validated transfer mapping),HistGBM,Short-Circuit,Short-Circuit,2851
+HK-availability proxy (not a validated transfer mapping),HistGBM,Short-Circuit,Degradation,1157
+HK-availability proxy (not a validated transfer mapping),HistGBM,Short-Circuit,Open-Circuit,613
+HK-availability proxy (not a validated transfer mapping),HistGBM,Short-Circuit,Shadowing,1090
+HK-availability proxy (not a validated transfer mapping),HistGBM,Degradation,Normal,2361
+HK-availability proxy (not a validated transfer mapping),HistGBM,Degradation,Short-Circuit,1077
+HK-availability proxy (not a validated transfer mapping),HistGBM,Degradation,Degradation,5901
+HK-availability proxy (not a validated transfer mapping),HistGBM,Degradation,Open-Circuit,57
+HK-availability proxy (not a validated transfer mapping),HistGBM,Degradation,Shadowing,975
+HK-availability proxy (not a validated transfer mapping),HistGBM,Open-Circuit,Normal,1
+HK-availability proxy (not a validated transfer mapping),HistGBM,Open-Circuit,Short-Circuit,557
+HK-availability proxy (not a validated transfer mapping),HistGBM,Open-Circuit,Degradation,142
+HK-availability proxy (not a validated transfer mapping),HistGBM,Open-Circuit,Open-Circuit,4071
+HK-availability proxy (not a validated transfer mapping),HistGBM,Open-Circuit,Shadowing,1253
+HK-availability proxy (not a validated transfer mapping),HistGBM,Shadowing,Normal,20277
+HK-availability proxy (not a validated transfer mapping),HistGBM,Shadowing,Short-Circuit,908
+HK-availability proxy (not a validated transfer mapping),HistGBM,Shadowing,Degradation,975
+HK-availability proxy (not a validated transfer mapping),HistGBM,Shadowing,Open-Circuit,12700
+HK-availability proxy (not a validated transfer mapping),HistGBM,Shadowing,Shadowing,153613
+HK-availability proxy (not a validated transfer mapping),MLP,Normal,Normal,340319
+HK-availability proxy (not a validated transfer mapping),MLP,Normal,Short-Circuit,1
+HK-availability proxy (not a validated transfer mapping),MLP,Normal,Degradation,9160
+HK-availability proxy (not a validated transfer mapping),MLP,Normal,Open-Circuit,52
+HK-availability proxy (not a validated transfer mapping),MLP,Normal,Shadowing,53312
+HK-availability proxy (not a validated transfer mapping),MLP,Short-Circuit,Normal,13
+HK-availability proxy (not a validated transfer mapping),MLP,Short-Circuit,Short-Circuit,4874
+HK-availability proxy (not a validated transfer mapping),MLP,Short-Circuit,Degradation,19
+HK-availability proxy (not a validated transfer mapping),MLP,Short-Circuit,Open-Circuit,10
+HK-availability proxy (not a validated transfer mapping),MLP,Short-Circuit,Shadowing,1083
+HK-availability proxy (not a validated transfer mapping),MLP,Degradation,Normal,2508
+HK-availability proxy (not a validated transfer mapping),MLP,Degradation,Short-Circuit,10
+HK-availability proxy (not a validated transfer mapping),MLP,Degradation,Degradation,6481
+HK-availability proxy (not a validated transfer mapping),MLP,Degradation,Open-Circuit,38
+HK-availability proxy (not a validated transfer mapping),MLP,Degradation,Shadowing,1334
+HK-availability proxy (not a validated transfer mapping),MLP,Open-Circuit,Normal,0
+HK-availability proxy (not a validated transfer mapping),MLP,Open-Circuit,Short-Circuit,0
+HK-availability proxy (not a validated transfer mapping),MLP,Open-Circuit,Degradation,0
+HK-availability proxy (not a validated transfer mapping),MLP,Open-Circuit,Open-Circuit,6000
+HK-availability proxy (not a validated transfer mapping),MLP,Open-Circuit,Shadowing,24
+HK-availability proxy (not a validated transfer mapping),MLP,Shadowing,Normal,15271
+HK-availability proxy (not a validated transfer mapping),MLP,Shadowing,Short-Circuit,198
+HK-availability proxy (not a validated transfer mapping),MLP,Shadowing,Degradation,219
+HK-availability proxy (not a validated transfer mapping),MLP,Shadowing,Open-Circuit,50
+HK-availability proxy (not a validated transfer mapping),MLP,Shadowing,Shadowing,172735

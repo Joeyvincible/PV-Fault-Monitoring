@@ -1,0 +1,201 @@
+feature_set,model,label,class,precision,recall,f1,support
+Electrical (full),LogReg,0,Normal,0.8978,0.8869,0.8923,402844
+Electrical (full),LogReg,1,Short-Circuit,0.9077,0.9952,0.9494,5999
+Electrical (full),LogReg,2,Degradation,0.9703,0.945,0.9575,10371
+Electrical (full),LogReg,3,Open-Circuit,0.9964,0.9993,0.9978,6024
+Electrical (full),LogReg,4,Shadowing,0.764,0.7826,0.7732,188473
+Electrical (full),RF,0,Normal,0.9888,0.9935,0.9912,402844
+Electrical (full),RF,1,Short-Circuit,0.9853,0.8283,0.9,5999
+Electrical (full),RF,2,Degradation,0.9931,0.8646,0.9244,10371
+Electrical (full),RF,3,Open-Circuit,0.9967,0.9997,0.9982,6024
+Electrical (full),RF,4,Shadowing,0.978,0.98,0.979,188473
+Electrical (full),HistGBM,0,Normal,0.9943,0.9871,0.9907,402844
+Electrical (full),HistGBM,1,Short-Circuit,0.9816,0.9678,0.9747,5999
+Electrical (full),HistGBM,2,Degradation,0.9891,0.8764,0.9293,10371
+Electrical (full),HistGBM,3,Open-Circuit,0.8081,0.9615,0.8782,6024
+Electrical (full),HistGBM,4,Shadowing,0.9714,0.987,0.9791,188473
+Electrical + irradiance,LogReg,0,Normal,0.9126,0.9081,0.9103,402844
+Electrical + irradiance,LogReg,1,Short-Circuit,0.9242,0.9957,0.9586,5999
+Electrical + irradiance,LogReg,2,Degradation,0.9724,0.9395,0.9557,10371
+Electrical + irradiance,LogReg,3,Open-Circuit,0.9973,0.9988,0.9981,6024
+Electrical + irradiance,LogReg,4,Shadowing,0.8049,0.8129,0.8089,188473
+Electrical + irradiance,RF,0,Normal,0.9873,0.9947,0.991,402844
+Electrical + irradiance,RF,1,Short-Circuit,0.9833,0.8343,0.9027,5999
+Electrical + irradiance,RF,2,Degradation,0.9945,0.8618,0.9234,10371
+Electrical + irradiance,RF,3,Open-Circuit,0.9974,0.9997,0.9985,6024
+Electrical + irradiance,RF,4,Shadowing,0.9807,0.9768,0.9787,188473
+Electrical + irradiance,HistGBM,0,Normal,0.9926,0.9941,0.9933,402844
+Electrical + irradiance,HistGBM,1,Short-Circuit,0.9832,0.8861,0.9321,5999
+Electrical + irradiance,HistGBM,2,Degradation,0.9872,0.878,0.9294,10371
+Electrical + irradiance,HistGBM,3,Open-Circuit,0.9972,0.9899,0.9935,6024
+Electrical + irradiance,HistGBM,4,Shadowing,0.9789,0.9849,0.9819,188473
+Electrical + irradiance + module temp,LogReg,0,Normal,0.9187,0.901,0.9098,402844
+Electrical + irradiance + module temp,LogReg,1,Short-Circuit,0.8581,0.9927,0.9205,5999
+Electrical + irradiance + module temp,LogReg,2,Degradation,0.9713,0.9347,0.9527,10371
+Electrical + irradiance + module temp,LogReg,3,Open-Circuit,0.9672,0.9995,0.9831,6024
+Electrical + irradiance + module temp,LogReg,4,Shadowing,0.7967,0.8263,0.8112,188473
+Electrical + irradiance + module temp,RF,0,Normal,0.987,0.995,0.991,402844
+Electrical + irradiance + module temp,RF,1,Short-Circuit,0.9807,0.8293,0.8987,5999
+Electrical + irradiance + module temp,RF,2,Degradation,0.9947,0.8362,0.9086,10371
+Electrical + irradiance + module temp,RF,3,Open-Circuit,0.9974,1.0,0.9987,6024
+Electrical + irradiance + module temp,RF,4,Shadowing,0.9812,0.9774,0.9793,188473
+Electrical + irradiance + module temp,HistGBM,0,Normal,0.9918,0.9936,0.9927,402844
+Electrical + irradiance + module temp,HistGBM,1,Short-Circuit,0.9751,0.886,0.9284,5999
+Electrical + irradiance + module temp,HistGBM,2,Degradation,0.9888,0.8079,0.8893,10371
+Electrical + irradiance + module temp,HistGBM,3,Open-Circuit,0.9962,0.9924,0.9943,6024
+Electrical + irradiance + module temp,HistGBM,4,Shadowing,0.974,0.9828,0.9784,188473
+No current sensors,LogReg,0,Normal,0.8767,0.8021,0.8378,402844
+No current sensors,LogReg,1,Short-Circuit,0.6773,0.9912,0.8047,5999
+No current sensors,LogReg,2,Degradation,0.2059,0.9526,0.3387,10371
+No current sensors,LogReg,3,Open-Circuit,0.996,0.9992,0.9976,6024
+No current sensors,LogReg,4,Shadowing,0.7088,0.6858,0.6971,188473
+No current sensors,RF,0,Normal,0.8529,0.8672,0.86,402844
+No current sensors,RF,1,Short-Circuit,0.9617,0.9413,0.9514,5999
+No current sensors,RF,2,Degradation,0.7415,0.5977,0.6619,10371
+No current sensors,RF,3,Open-Circuit,0.9965,0.9987,0.9976,6024
+No current sensors,RF,4,Shadowing,0.7075,0.6901,0.6987,188473
+No current sensors,HistGBM,0,Normal,0.8957,0.8293,0.8612,402844
+No current sensors,HistGBM,1,Short-Circuit,0.9031,0.9518,0.9268,5999
+No current sensors,HistGBM,2,Degradation,0.4397,0.8417,0.5776,10371
+No current sensors,HistGBM,3,Open-Circuit,0.9963,0.9887,0.9925,6024
+No current sensors,HistGBM,4,Shadowing,0.6995,0.7741,0.7349,188473
+No voltage sensors,LogReg,0,Normal,0.7548,0.6053,0.6719,402844
+No voltage sensors,LogReg,1,Short-Circuit,0.0691,0.7583,0.1266,5999
+No voltage sensors,LogReg,2,Degradation,0.2299,0.6637,0.3415,10371
+No voltage sensors,LogReg,3,Open-Circuit,0.9875,1.0,0.9937,6024
+No voltage sensors,LogReg,4,Shadowing,0.567,0.5679,0.5674,188473
+No voltage sensors,RF,0,Normal,0.919,0.94,0.9294,402844
+No voltage sensors,RF,1,Short-Circuit,0.0585,0.0088,0.0154,5999
+No voltage sensors,RF,2,Degradation,0.6471,0.3797,0.4786,10371
+No voltage sensors,RF,3,Open-Circuit,0.9885,0.8979,0.941,6024
+No voltage sensors,RF,4,Shadowing,0.881,0.8844,0.8827,188473
+No voltage sensors,HistGBM,0,Normal,0.9501,0.7464,0.836,402844
+No voltage sensors,HistGBM,1,Short-Circuit,0.0608,0.6009,0.1104,5999
+No voltage sensors,HistGBM,2,Degradation,0.2356,0.6159,0.3409,10371
+No voltage sensors,HistGBM,3,Open-Circuit,0.9872,0.9997,0.9934,6024
+No voltage sensors,HistGBM,4,Shadowing,0.8584,0.9323,0.8938,188473
+Computed power + approximate measured-POA physics,LogReg,0,Normal,0.9051,0.6649,0.7666,402844
+Computed power + approximate measured-POA physics,LogReg,1,Short-Circuit,0.2672,0.8921,0.4112,5999
+Computed power + approximate measured-POA physics,LogReg,2,Degradation,0.0769,0.5724,0.1356,10371
+Computed power + approximate measured-POA physics,LogReg,3,Open-Circuit,0.8759,0.9949,0.9316,6024
+Computed power + approximate measured-POA physics,LogReg,4,Shadowing,0.7095,0.8044,0.754,188473
+Computed power + approximate measured-POA physics,RF,0,Normal,0.9439,0.8644,0.9024,402844
+Computed power + approximate measured-POA physics,RF,1,Short-Circuit,0.6097,0.4957,0.5468,5999
+Computed power + approximate measured-POA physics,RF,2,Degradation,0.5583,0.5728,0.5655,10371
+Computed power + approximate measured-POA physics,RF,3,Open-Circuit,0.9879,0.6786,0.8046,6024
+Computed power + approximate measured-POA physics,RF,4,Shadowing,0.7595,0.9073,0.8268,188473
+Computed power + approximate measured-POA physics,HistGBM,0,Normal,0.9366,0.8539,0.8933,402844
+Computed power + approximate measured-POA physics,HistGBM,1,Short-Circuit,0.5646,0.4524,0.5023,5999
+Computed power + approximate measured-POA physics,HistGBM,2,Degradation,0.2715,0.5099,0.3543,10371
+Computed power + approximate measured-POA physics,HistGBM,3,Open-Circuit,0.5102,0.6602,0.5756,6024
+Computed power + approximate measured-POA physics,HistGBM,4,Shadowing,0.7651,0.8702,0.8143,188473
+Electrical (full),MLP,0,Normal,0.9955,0.9936,0.9946,402844
+Electrical (full),MLP,1,Short-Circuit,0.9853,0.9863,0.9858,5999
+Electrical (full),MLP,2,Degradation,0.991,0.9346,0.962,10371
+Electrical (full),MLP,3,Open-Circuit,0.9964,0.999,0.9977,6024
+Electrical (full),MLP,4,Shadowing,0.9826,0.9897,0.9861,188473
+Electrical + irradiance,MLP,0,Normal,0.9964,0.9917,0.994,402844
+Electrical + irradiance,MLP,1,Short-Circuit,0.987,0.986,0.9865,5999
+Electrical + irradiance,MLP,2,Degradation,0.9888,0.9404,0.964,10371
+Electrical + irradiance,MLP,3,Open-Circuit,0.9962,0.9998,0.998,6024
+Electrical + irradiance,MLP,4,Shadowing,0.9791,0.9916,0.9853,188473
+Electrical + irradiance + module temp,MLP,0,Normal,0.9934,0.9903,0.9918,402844
+Electrical + irradiance + module temp,MLP,1,Short-Circuit,0.988,0.9858,0.9869,5999
+Electrical + irradiance + module temp,MLP,2,Degradation,0.9814,0.9482,0.9645,10371
+Electrical + irradiance + module temp,MLP,3,Open-Circuit,0.9962,0.9983,0.9973,6024
+Electrical + irradiance + module temp,MLP,4,Shadowing,0.9764,0.9847,0.9805,188473
+No current sensors,MLP,0,Normal,0.8941,0.8384,0.8653,402844
+No current sensors,MLP,1,Short-Circuit,0.9511,0.9883,0.9693,5999
+No current sensors,MLP,2,Degradation,0.7498,0.6638,0.7042,10371
+No current sensors,MLP,3,Open-Circuit,0.9957,0.9992,0.9974,6024
+No current sensors,MLP,4,Shadowing,0.6967,0.7929,0.7417,188473
+No voltage sensors,MLP,0,Normal,0.9389,0.9223,0.9305,402844
+No voltage sensors,MLP,1,Short-Circuit,0.0769,0.0012,0.0023,5999
+No voltage sensors,MLP,2,Degradation,0.5953,0.4779,0.5302,10371
+No voltage sensors,MLP,3,Open-Circuit,0.9869,1.0,0.9934,6024
+No voltage sensors,MLP,4,Shadowing,0.8597,0.928,0.8926,188473
+Computed power + approximate measured-POA physics,MLP,0,Normal,0.9464,0.8343,0.8868,402844
+Computed power + approximate measured-POA physics,MLP,1,Short-Circuit,0.6726,0.8866,0.7649,5999
+Computed power + approximate measured-POA physics,MLP,2,Degradation,0.4812,0.4375,0.4583,10371
+Computed power + approximate measured-POA physics,MLP,3,Open-Circuit,0.9725,0.8997,0.9347,6024
+Computed power + approximate measured-POA physics,MLP,4,Shadowing,0.7299,0.9127,0.8111,188473
+Computed total power only,LogReg,0,Normal,0.5746,0.1564,0.2459,402844
+Computed total power only,LogReg,1,Short-Circuit,0.0346,0.5991,0.0654,5999
+Computed total power only,LogReg,2,Degradation,0.0617,0.7217,0.1137,10371
+Computed total power only,LogReg,3,Open-Circuit,0.1407,0.9995,0.2466,6024
+Computed total power only,LogReg,4,Shadowing,0.4508,0.5647,0.5013,188473
+Computed total power only,RF,0,Normal,0.8204,0.8162,0.8183,402844
+Computed total power only,RF,1,Short-Circuit,0.0348,0.0342,0.0345,5999
+Computed total power only,RF,2,Degradation,0.0476,0.0506,0.0491,10371
+Computed total power only,RF,3,Open-Circuit,0.2314,0.2113,0.2209,6024
+Computed total power only,RF,4,Shadowing,0.6728,0.6801,0.6764,188473
+Computed total power only,HistGBM,0,Normal,0.8936,0.5213,0.6584,402844
+Computed total power only,HistGBM,1,Short-Circuit,0.0406,0.3934,0.0737,5999
+Computed total power only,HistGBM,2,Degradation,0.0435,0.3857,0.0782,10371
+Computed total power only,HistGBM,3,Open-Circuit,0.153,0.7186,0.2523,6024
+Computed total power only,HistGBM,4,Shadowing,0.7325,0.7787,0.7549,188473
+Computed total power only,MLP,0,Normal,0.8999,0.8602,0.8796,402844
+Computed total power only,MLP,1,Short-Circuit,0.0,0.0,0.0,5999
+Computed total power only,MLP,2,Degradation,0.0,0.0,0.0,10371
+Computed total power only,MLP,3,Open-Circuit,0.0,0.0,0.0,6024
+Computed total power only,MLP,4,Shadowing,0.7271,0.8819,0.797,188473
+Computed power + measured irradiance,LogReg,0,Normal,0.7792,0.6442,0.7053,402844
+Computed power + measured irradiance,LogReg,1,Short-Circuit,0.2623,0.872,0.4033,5999
+Computed power + measured irradiance,LogReg,2,Degradation,0.0498,0.4524,0.0897,10371
+Computed power + measured irradiance,LogReg,3,Open-Circuit,0.693,0.9014,0.7835,6024
+Computed power + measured irradiance,LogReg,4,Shadowing,0.6545,0.5509,0.5982,188473
+Computed power + measured irradiance,RF,0,Normal,0.9116,0.8632,0.8867,402844
+Computed power + measured irradiance,RF,1,Short-Circuit,0.2603,0.173,0.2079,5999
+Computed power + measured irradiance,RF,2,Degradation,0.2158,0.2404,0.2274,10371
+Computed power + measured irradiance,RF,3,Open-Circuit,0.9866,0.5845,0.7341,6024
+Computed power + measured irradiance,RF,4,Shadowing,0.749,0.847,0.795,188473
+Computed power + measured irradiance,HistGBM,0,Normal,0.9302,0.8339,0.8794,402844
+Computed power + measured irradiance,HistGBM,1,Short-Circuit,0.3029,0.4516,0.3626,5999
+Computed power + measured irradiance,HistGBM,2,Degradation,0.2018,0.3432,0.2542,10371
+Computed power + measured irradiance,HistGBM,3,Open-Circuit,0.981,0.8064,0.8852,6024
+Computed power + measured irradiance,HistGBM,4,Shadowing,0.7585,0.8897,0.8189,188473
+Computed power + measured irradiance,MLP,0,Normal,0.9364,0.8505,0.8914,402844
+Computed power + measured irradiance,MLP,1,Short-Circuit,0.5332,0.6159,0.5716,5999
+Computed power + measured irradiance,MLP,2,Degradation,0.2364,0.2602,0.2478,10371
+Computed power + measured irradiance,MLP,3,Open-Circuit,0.9822,0.8994,0.939,6024
+Computed power + measured irradiance,MLP,4,Shadowing,0.7542,0.8962,0.8191,188473
+Computed power + irradiance + module temp,LogReg,0,Normal,0.7656,0.5932,0.6685,402844
+Computed power + irradiance + module temp,LogReg,1,Short-Circuit,0.2375,0.8921,0.3751,5999
+Computed power + irradiance + module temp,LogReg,2,Degradation,0.0488,0.4575,0.0881,10371
+Computed power + irradiance + module temp,LogReg,3,Open-Circuit,0.8626,0.9997,0.9261,6024
+Computed power + irradiance + module temp,LogReg,4,Shadowing,0.5996,0.5558,0.5769,188473
+Computed power + irradiance + module temp,RF,0,Normal,0.9065,0.8719,0.8889,402844
+Computed power + irradiance + module temp,RF,1,Short-Circuit,0.6237,0.3597,0.4563,5999
+Computed power + irradiance + module temp,RF,2,Degradation,0.3581,0.2158,0.2693,10371
+Computed power + irradiance + module temp,RF,3,Open-Circuit,0.9851,0.7007,0.8189,6024
+Computed power + irradiance + module temp,RF,4,Shadowing,0.7547,0.8499,0.7995,188473
+Computed power + irradiance + module temp,HistGBM,0,Normal,0.9151,0.6956,0.7904,402844
+Computed power + irradiance + module temp,HistGBM,1,Short-Circuit,0.2102,0.5016,0.2962,5999
+Computed power + irradiance + module temp,HistGBM,2,Degradation,0.3325,0.4222,0.3721,10371
+Computed power + irradiance + module temp,HistGBM,3,Open-Circuit,0.5169,0.5798,0.5466,6024
+Computed power + irradiance + module temp,HistGBM,4,Shadowing,0.6056,0.8781,0.7168,188473
+Computed power + irradiance + module temp,MLP,0,Normal,0.94,0.8387,0.8865,402844
+Computed power + irradiance + module temp,MLP,1,Short-Circuit,0.6553,0.8188,0.728,5999
+Computed power + irradiance + module temp,MLP,2,Degradation,0.3997,0.4715,0.4327,10371
+Computed power + irradiance + module temp,MLP,3,Open-Circuit,0.9138,0.8619,0.8871,6024
+Computed power + irradiance + module temp,MLP,4,Shadowing,0.7369,0.8948,0.8082,188473
+HK-availability proxy (not a validated transfer mapping),LogReg,0,Normal,0.8976,0.6775,0.7721,402844
+HK-availability proxy (not a validated transfer mapping),LogReg,1,Short-Circuit,0.2926,0.8916,0.4407,5999
+HK-availability proxy (not a validated transfer mapping),LogReg,2,Degradation,0.0826,0.5937,0.1451,10371
+HK-availability proxy (not a validated transfer mapping),LogReg,3,Open-Circuit,0.8686,0.9997,0.9295,6024
+HK-availability proxy (not a validated transfer mapping),LogReg,4,Shadowing,0.7131,0.7944,0.7515,188473
+HK-availability proxy (not a validated transfer mapping),RF,0,Normal,0.9427,0.8755,0.9079,402844
+HK-availability proxy (not a validated transfer mapping),RF,1,Short-Circuit,0.6156,0.5341,0.5719,5999
+HK-availability proxy (not a validated transfer mapping),RF,2,Degradation,0.5205,0.4052,0.4556,10371
+HK-availability proxy (not a validated transfer mapping),RF,3,Open-Circuit,0.9877,0.6922,0.814,6024
+HK-availability proxy (not a validated transfer mapping),RF,4,Shadowing,0.7657,0.9021,0.8283,188473
+HK-availability proxy (not a validated transfer mapping),HistGBM,0,Normal,0.9255,0.7069,0.8016,402844
+HK-availability proxy (not a validated transfer mapping),HistGBM,1,Short-Circuit,0.2602,0.4752,0.3363,5999
+HK-availability proxy (not a validated transfer mapping),HistGBM,2,Degradation,0.1235,0.569,0.203,10371
+HK-availability proxy (not a validated transfer mapping),HistGBM,3,Open-Circuit,0.1167,0.6758,0.1991,6024
+HK-availability proxy (not a validated transfer mapping),HistGBM,4,Shadowing,0.7232,0.815,0.7664,188473
+HK-availability proxy (not a validated transfer mapping),MLP,0,Normal,0.9503,0.8448,0.8945,402844
+HK-availability proxy (not a validated transfer mapping),MLP,1,Short-Circuit,0.9589,0.8125,0.8796,5999
+HK-availability proxy (not a validated transfer mapping),MLP,2,Degradation,0.4081,0.6249,0.4938,10371
+HK-availability proxy (not a validated transfer mapping),MLP,3,Open-Circuit,0.9756,0.996,0.9857,6024
+HK-availability proxy (not a validated transfer mapping),MLP,4,Shadowing,0.756,0.9165,0.8285,188473

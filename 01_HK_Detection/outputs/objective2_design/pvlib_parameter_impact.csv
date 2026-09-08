@@ -1,0 +1,3 @@
+quantity,mean_diff,max_abs_diff,mean_pct,max_abs_pct,n_rows
+ghi_clear (W/m2),-0.3007,3.6096,-0.49637,549.83671,45766
+solar_zenith (deg),0.06308,0.0774,,,45766

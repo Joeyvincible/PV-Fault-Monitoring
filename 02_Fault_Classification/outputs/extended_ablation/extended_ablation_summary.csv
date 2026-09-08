@@ -1,0 +1,41 @@
+feature_set,model,macro_f1_oof,macro_f1_fold_mean,macro_f1_fold_std,balanced_accuracy_oof,four_fault_mean_recall,runtime_s,macro_f1_fold_sd_ddof1,source
+Electrical (full),LogReg,0.9141,0.9147,0.0127,0.9218,0.9305,83.4,0.014168986835692099,baseline (read)
+Electrical (full),RF,0.9586,0.9476,0.0541,0.9332,0.9181,222.6,0.06045106903695953,baseline (read)
+Electrical (full),HistGBM,0.9504,0.9576,0.0383,0.956,0.9482,44.5,0.04277479785331754,baseline (read)
+Electrical + irradiance,LogReg,0.9263,0.926,0.0103,0.931,0.9367,88.3,0.011556185462595864,baseline (read)
+Electrical + irradiance,RF,0.9589,0.9495,0.0504,0.9335,0.9182,217.3,0.05630402526037641,baseline (read)
+Electrical + irradiance,HistGBM,0.9661,0.9639,0.0448,0.9466,0.9347,70.1,0.05013127338169021,baseline (read)
+Electrical + irradiance + module temp,LogReg,0.9154,0.9178,0.0161,0.9308,0.9383,94.9,0.01795397656853892,baseline (read)
+Electrical + irradiance + module temp,RF,0.9552,0.9458,0.0547,0.9276,0.9107,222.1,0.0611242175508381,baseline (read)
+Electrical + irradiance + module temp,HistGBM,0.9566,0.9543,0.0602,0.9325,0.9173,67.0,0.06731617615644657,baseline (read)
+No current sensors,LogReg,0.7352,0.7427,0.0419,0.8862,0.9072,27.6,0.046878766939323496,baseline (read)
+No current sensors,RF,0.8339,0.8372,0.0278,0.819,0.807,256.1,0.03107783839922315,baseline (read)
+No current sensors,HistGBM,0.8186,0.8187,0.0256,0.8771,0.8891,41.4,0.028623828531067153,baseline (read)
+No voltage sensors,LogReg,0.5402,0.5376,0.0305,0.719,0.7475,61.5,0.03411518736108564,baseline (read)
+No voltage sensors,RF,0.6494,0.641,0.0678,0.6222,0.5427,185.7,0.07583918619846486,baseline (read)
+No voltage sensors,HistGBM,0.6349,0.6305,0.0345,0.779,0.7872,34.1,0.03859460585776264,baseline (read)
+Computed power + approximate measured-POA physics,LogReg,0.5998,0.607,0.0352,0.7857,0.8159,88.8,0.03933667471346304,baseline (read)
+Computed power + approximate measured-POA physics,RF,0.7292,0.7072,0.0973,0.7038,0.6636,150.0,0.10882839896797676,baseline (read)
+Computed power + approximate measured-POA physics,HistGBM,0.628,0.6501,0.0555,0.6693,0.6232,57.9,0.06200461293776957,baseline (read)
+Electrical (full),MLP,0.9852,0.9858,0.0076,0.9806,0.9774,429.0,0.0085,new
+Electrical + irradiance,MLP,0.9856,0.9858,0.0069,0.9819,0.9794,514.4,0.0077,new
+Electrical + irradiance + module temp,MLP,0.9842,0.9838,0.0086,0.9815,0.9793,459.6,0.0097,new
+No current sensors,MLP,0.8556,0.8578,0.0291,0.8565,0.861,655.0,0.0326,new
+No voltage sensors,MLP,0.6698,0.668,0.0408,0.6659,0.6018,383.4,0.0456,new
+Computed power + approximate measured-POA physics,MLP,0.7712,0.7819,0.0771,0.7942,0.7841,735.3,0.0862,new
+Computed total power only,LogReg,0.2346,0.2333,0.0154,0.6083,0.7213,3.3,0.0172,new
+Computed total power only,RF,0.3598,0.3578,0.0114,0.3585,0.2441,146.3,0.0128,new
+Computed total power only,HistGBM,0.3635,0.3604,0.0328,0.5595,0.5691,30.5,0.0366,new
+Computed total power only,MLP,0.3353,0.3342,0.0115,0.3484,0.2205,109.8,0.0128,new
+Computed power + measured irradiance,LogReg,0.516,0.5264,0.0318,0.6842,0.6942,19.6,0.0356,new
+Computed power + measured irradiance,RF,0.5702,0.5472,0.0884,0.5416,0.4612,87.6,0.0989,new
+Computed power + measured irradiance,HistGBM,0.6401,0.6354,0.1097,0.6649,0.6227,27.8,0.1226,new
+Computed power + measured irradiance,MLP,0.6938,0.7128,0.122,0.7045,0.668,343.9,0.1364,new
+Computed power + irradiance + module temp,LogReg,0.5269,0.5359,0.042,0.6997,0.7263,25.1,0.0469,new
+Computed power + irradiance + module temp,RF,0.6466,0.6343,0.0703,0.5996,0.5315,76.2,0.0786,new
+Computed power + irradiance + module temp,HistGBM,0.5444,0.5681,0.2271,0.6155,0.5954,63.6,0.2539,new
+Computed power + irradiance + module temp,MLP,0.7485,0.7576,0.0416,0.7771,0.7618,587.8,0.0466,new
+HK-availability proxy (not a validated transfer mapping),LogReg,0.6078,0.6136,0.0335,0.7914,0.8198,39.8,0.0375,new
+HK-availability proxy (not a validated transfer mapping),RF,0.7155,0.7001,0.0524,0.6818,0.6334,143.1,0.0586,new
+HK-availability proxy (not a validated transfer mapping),HistGBM,0.4613,0.5874,0.2448,0.6484,0.6338,50.2,0.2737,new
+HK-availability proxy (not a validated transfer mapping),MLP,0.8164,0.8077,0.0506,0.8389,0.8375,719.7,0.0566,new

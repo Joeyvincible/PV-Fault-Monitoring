@@ -1,0 +1,5 @@
+arm,train_z_threshold,median_z_2023,alert_slots_2023,alert_slots_after_median_removed,pct_attributable_to_offset
+Reference (measured irradiance),-3.576,-1.2976,1469,626,57.4
+Arm A (pvlib only),-3.03,-0.3067,431,335,22.3
+Arm B (ML estimate),-3.025,-0.2625,350,277,20.9
+Arm C (pvlib + ML estimate),-3.112,-0.2911,342,260,24.0

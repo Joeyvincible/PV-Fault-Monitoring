@@ -1,0 +1,125 @@
+arm,month,n,mean_W,median_W,q25_W,q75_W,in_sample
+Reference (measured irradiance),2021-06,1440,164.4,191.6,-584.4,1000.1,True
+Reference (measured irradiance),2021-07,1474,439.7,310.8,-437.6,1511.3,True
+Reference (measured irradiance),2021-08,1436,115.4,139.8,-589.4,875.4,True
+Reference (measured irradiance),2021-09,1309,136.3,127.5,-591.4,913.0,True
+Reference (measured irradiance),2021-10,1292,126.5,264.7,-181.7,681.4,True
+Reference (measured irradiance),2021-11,1190,173.2,239.4,-187.1,658.9,True
+Reference (measured irradiance),2021-12,1190,161.0,188.4,-163.0,535.7,True
+Reference (measured irradiance),2022-01,1204,-90.4,-37.0,-468.0,283.1,True
+Reference (measured irradiance),2022-02,1151,158.4,180.9,-61.1,404.7,True
+Reference (measured irradiance),2022-03,1337,2.7,50.3,-337.6,403.0,True
+Reference (measured irradiance),2022-04,1369,258.6,182.9,-302.1,717.6,True
+Reference (measured irradiance),2022-05,1465,-42.6,58.1,-382.3,509.5,True
+Reference (measured irradiance),2022-06,1440,-92.6,-55.6,-854.6,787.4,True
+Reference (measured irradiance),2022-07,1474,-428.8,-201.8,-1008.4,531.6,True
+Reference (measured irradiance),2022-08,1437,-459.8,-332.8,-1156.7,437.4,True
+Reference (measured irradiance),2022-09,1311,-290.0,-264.3,-778.2,303.7,True
+Reference (measured irradiance),2022-10,1293,-73.4,-139.3,-530.3,336.5,True
+Reference (measured irradiance),2022-11,1191,-201.8,-192.0,-523.1,100.1,True
+Reference (measured irradiance),2022-12,1111,-39.6,-12.3,-336.7,264.7,False
+Reference (measured irradiance),2023-01,1214,-215.8,-275.4,-638.9,144.7,False
+Reference (measured irradiance),2023-02,1150,-1552.5,-1179.0,-2945.4,92.4,False
+Reference (measured irradiance),2023-03,1336,-3429.6,-2808.1,-4966.4,-1421.0,False
+Reference (measured irradiance),2023-04,1369,-4553.8,-3337.8,-6203.5,-1770.5,False
+Reference (measured irradiance),2023-05,1465,-7321.7,-5676.4,-10352.2,-2711.2,False
+Reference (measured irradiance),2023-06,1440,-5593.5,-4825.5,-7556.1,-2403.9,False
+Reference (measured irradiance),2023-07,1474,-5125.0,-4341.8,-6657.4,-2425.9,False
+Reference (measured irradiance),2023-08,1437,-5148.8,-4347.7,-7024.1,-2486.9,False
+Reference (measured irradiance),2023-09,1109,-3732.8,-3041.9,-5285.7,-1653.1,False
+Reference (measured irradiance),2023-10,1294,-2407.8,-1948.8,-3433.7,-698.8,False
+Reference (measured irradiance),2023-11,1191,-1771.7,-1602.0,-2264.2,-827.4,False
+Reference (measured irradiance),2023-12,1190,-1902.7,-1782.8,-2805.1,-865.5,False
+Arm A (pvlib only),2021-06,1440,-291.0,-370.3,-2058.3,1590.8,True
+Arm A (pvlib only),2021-07,1474,-84.3,-93.0,-1886.9,2256.5,True
+Arm A (pvlib only),2021-08,1436,74.1,-113.9,-1787.8,1961.7,True
+Arm A (pvlib only),2021-09,1309,85.0,150.0,-1404.6,1732.8,True
+Arm A (pvlib only),2021-10,1292,120.8,55.4,-1264.1,1403.8,True
+Arm A (pvlib only),2021-11,1190,393.6,398.2,-518.6,1517.9,True
+Arm A (pvlib only),2021-12,1190,-263.9,-50.1,-1016.6,899.8,True
+Arm A (pvlib only),2022-01,1204,-296.9,-258.7,-1048.7,609.1,True
+Arm A (pvlib only),2022-02,1151,394.9,138.8,-703.8,1176.5,True
+Arm A (pvlib only),2022-03,1337,-441.1,-321.0,-1394.0,854.5,True
+Arm A (pvlib only),2022-04,1369,-361.4,-132.7,-1260.2,748.8,True
+Arm A (pvlib only),2022-05,1465,47.3,-51.2,-1196.0,1445.2,True
+Arm A (pvlib only),2022-06,1440,-407.9,-383.3,-2193.4,1278.3,True
+Arm A (pvlib only),2022-07,1474,-427.4,-191.6,-1854.7,1265.5,True
+Arm A (pvlib only),2022-08,1437,-75.6,-59.3,-1613.1,1699.1,True
+Arm A (pvlib only),2022-09,1311,-36.0,115.6,-815.6,1240.5,True
+Arm A (pvlib only),2022-10,1293,543.5,457.0,-529.7,1553.8,True
+Arm A (pvlib only),2022-11,1191,-325.6,-278.2,-1288.9,750.0,True
+Arm A (pvlib only),2022-12,1111,164.1,300.1,-637.4,1145.8,False
+Arm A (pvlib only),2023-01,1214,97.0,-68.0,-1958.2,2050.9,False
+Arm A (pvlib only),2023-02,1150,-204.5,-502.8,-1866.3,1210.1,False
+Arm A (pvlib only),2023-03,1336,-755.6,-675.7,-1751.6,395.0,False
+Arm A (pvlib only),2023-04,1369,-3128.0,-1950.5,-4827.1,-631.5,False
+Arm A (pvlib only),2023-05,1465,-3707.0,-2320.7,-5988.0,-669.7,False
+Arm A (pvlib only),2023-06,1440,-1887.6,-1405.8,-3920.8,262.4,False
+Arm A (pvlib only),2023-07,1474,-1425.7,-823.8,-3158.2,989.9,False
+Arm A (pvlib only),2023-08,1437,-1476.5,-1026.8,-3512.2,825.3,False
+Arm A (pvlib only),2023-09,1109,-787.7,-249.7,-1922.0,1073.9,False
+Arm A (pvlib only),2023-10,1294,-1446.8,-739.4,-2960.3,371.2,False
+Arm A (pvlib only),2023-11,1191,-843.9,-313.5,-1619.3,548.8,False
+Arm A (pvlib only),2023-12,1190,-1358.9,-750.8,-2896.6,359.6,False
+Arm B (ML estimate),2021-06,1440,41.6,-231.6,-1840.0,1756.8,True
+Arm B (ML estimate),2021-07,1474,782.5,462.6,-1115.9,3179.5,True
+Arm B (ML estimate),2021-08,1436,160.6,-53.5,-1709.2,2021.6,True
+Arm B (ML estimate),2021-09,1309,569.0,623.0,-890.6,2261.2,True
+Arm B (ML estimate),2021-10,1292,301.0,208.7,-988.5,1513.4,True
+Arm B (ML estimate),2021-11,1190,55.6,12.1,-804.3,859.9,True
+Arm B (ML estimate),2021-12,1190,-368.4,-158.8,-1041.1,424.2,True
+Arm B (ML estimate),2022-01,1204,178.7,57.7,-513.4,777.0,True
+Arm B (ML estimate),2022-02,1151,265.1,152.8,-390.5,825.3,True
+Arm B (ML estimate),2022-03,1337,41.2,55.1,-514.4,724.7,True
+Arm B (ML estimate),2022-04,1369,118.7,12.6,-685.0,796.7,True
+Arm B (ML estimate),2022-05,1465,175.8,134.9,-580.0,1037.9,True
+Arm B (ML estimate),2022-06,1440,212.5,28.1,-1217.3,1636.4,True
+Arm B (ML estimate),2022-07,1474,-41.6,305.4,-1047.7,1424.2,True
+Arm B (ML estimate),2022-08,1437,-32.8,79.5,-1408.2,1454.5,True
+Arm B (ML estimate),2022-09,1311,160.2,278.1,-545.1,1053.8,True
+Arm B (ML estimate),2022-10,1293,144.0,121.7,-635.1,912.4,True
+Arm B (ML estimate),2022-11,1191,58.6,-106.7,-648.8,573.5,True
+Arm B (ML estimate),2022-12,1111,296.1,258.7,-249.0,768.5,False
+Arm B (ML estimate),2023-01,1214,-565.1,-231.1,-1627.6,919.7,False
+Arm B (ML estimate),2023-02,1150,-638.3,-509.6,-1636.7,439.8,False
+Arm B (ML estimate),2023-03,1336,-918.4,-742.6,-1832.7,211.0,False
+Arm B (ML estimate),2023-04,1369,-1401.1,-1053.6,-2712.2,58.7,False
+Arm B (ML estimate),2023-05,1465,-3449.0,-2126.9,-5567.0,-527.6,False
+Arm B (ML estimate),2023-06,1440,-761.9,-654.2,-2787.5,926.3,False
+Arm B (ML estimate),2023-07,1474,-855.9,-193.0,-2827.4,1818.6,False
+Arm B (ML estimate),2023-08,1437,-836.9,-551.1,-2817.6,1522.9,False
+Arm B (ML estimate),2023-09,1109,-933.2,-328.6,-1855.7,579.7,False
+Arm B (ML estimate),2023-10,1294,-1022.9,-526.5,-2101.7,379.3,False
+Arm B (ML estimate),2023-11,1191,-1120.2,-410.3,-1960.4,163.7,False
+Arm B (ML estimate),2023-12,1190,-1590.6,-1052.7,-2921.1,-59.9,False
+Arm C (pvlib + ML estimate),2021-06,1440,-128.0,-350.0,-1915.1,1582.6,True
+Arm C (pvlib + ML estimate),2021-07,1474,330.5,342.7,-1233.5,2493.3,True
+Arm C (pvlib + ML estimate),2021-08,1436,193.9,-68.4,-1543.5,1856.1,True
+Arm C (pvlib + ML estimate),2021-09,1309,140.6,163.1,-1171.0,1568.1,True
+Arm C (pvlib + ML estimate),2021-10,1292,119.7,38.8,-1047.4,1272.7,True
+Arm C (pvlib + ML estimate),2021-11,1190,65.0,35.0,-726.4,941.4,True
+Arm C (pvlib + ML estimate),2021-12,1190,-143.7,49.1,-841.7,679.1,True
+Arm C (pvlib + ML estimate),2022-01,1204,79.4,-20.2,-559.5,678.8,True
+Arm C (pvlib + ML estimate),2022-02,1151,348.9,180.2,-372.7,933.1,True
+Arm C (pvlib + ML estimate),2022-03,1337,68.7,74.3,-511.5,787.5,True
+Arm C (pvlib + ML estimate),2022-04,1369,101.1,22.9,-675.6,836.2,True
+Arm C (pvlib + ML estimate),2022-05,1465,90.3,52.1,-772.2,1065.9,True
+Arm C (pvlib + ML estimate),2022-06,1440,45.0,-144.3,-1348.8,1420.8,True
+Arm C (pvlib + ML estimate),2022-07,1474,-317.3,-52.1,-1155.1,1093.9,True
+Arm C (pvlib + ML estimate),2022-08,1437,-101.0,-42.1,-1423.2,1333.3,True
+Arm C (pvlib + ML estimate),2022-09,1311,-154.6,-44.4,-821.0,789.4,True
+Arm C (pvlib + ML estimate),2022-10,1293,-53.0,-59.9,-790.6,779.0,True
+Arm C (pvlib + ML estimate),2022-11,1191,18.9,-153.8,-693.9,565.4,True
+Arm C (pvlib + ML estimate),2022-12,1111,616.2,538.4,-6.2,1122.6,False
+Arm C (pvlib + ML estimate),2023-01,1214,-606.2,-224.3,-1471.4,815.1,False
+Arm C (pvlib + ML estimate),2023-02,1150,-588.6,-469.1,-1390.3,394.4,False
+Arm C (pvlib + ML estimate),2023-03,1336,-925.2,-748.4,-1718.8,91.5,False
+Arm C (pvlib + ML estimate),2023-04,1369,-1411.8,-1045.5,-2665.5,53.6,False
+Arm C (pvlib + ML estimate),2023-05,1465,-3643.3,-2372.4,-5917.5,-800.1,False
+Arm C (pvlib + ML estimate),2023-06,1440,-1089.8,-888.2,-3028.5,562.4,False
+Arm C (pvlib + ML estimate),2023-07,1474,-1218.5,-400.9,-2936.6,1221.2,False
+Arm C (pvlib + ML estimate),2023-08,1437,-1227.4,-727.0,-3076.2,996.1,False
+Arm C (pvlib + ML estimate),2023-09,1109,-1034.2,-475.7,-1914.3,491.9,False
+Arm C (pvlib + ML estimate),2023-10,1294,-1141.4,-630.4,-2081.9,408.8,False
+Arm C (pvlib + ML estimate),2023-11,1191,-1144.3,-476.5,-1863.2,116.9,False
+Arm C (pvlib + ML estimate),2023-12,1190,-1478.2,-970.5,-2920.6,-13.9,False

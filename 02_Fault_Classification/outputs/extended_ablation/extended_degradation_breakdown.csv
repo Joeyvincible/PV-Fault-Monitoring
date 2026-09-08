@@ -1,0 +1,41 @@
+feature_set,model,standard_deg_recall,anomalous_deg_recall,standard_rows,anomalous_rows
+Electrical (full),LogReg,0.9927,0.8822,5897,4474
+Electrical (full),RF,0.8615,0.8688,5897,4474
+Electrical (full),HistGBM,0.9771,0.7436,5897,4474
+Electrical + irradiance,LogReg,0.9924,0.8699,5897,4474
+Electrical + irradiance,RF,0.8718,0.8487,5897,4474
+Electrical + irradiance,HistGBM,0.9778,0.7465,5897,4474
+Electrical + irradiance + module temp,LogReg,0.991,0.8605,5897,4474
+Electrical + irradiance + module temp,RF,0.863,0.8008,5897,4474
+Electrical + irradiance + module temp,HistGBM,0.9735,0.5896,5897,4474
+No current sensors,LogReg,0.9756,0.9222,5897,4474
+No current sensors,RF,0.7178,0.4394,5897,4474
+No current sensors,HistGBM,0.9396,0.7126,5897,4474
+No voltage sensors,LogReg,0.7392,0.5641,5897,4474
+No voltage sensors,RF,0.3888,0.3677,5897,4474
+No voltage sensors,HistGBM,0.6468,0.5751,5897,4474
+Computed power + approximate measured-POA physics,LogReg,0.7828,0.295,5897,4474
+Computed power + approximate measured-POA physics,RF,0.7056,0.3979,5897,4474
+Computed power + approximate measured-POA physics,HistGBM,0.7634,0.1757,5897,4474
+Electrical (full),MLP,0.979,0.8762,5897,4474
+Electrical + irradiance,MLP,0.979,0.8896,5897,4474
+Electrical + irradiance + module temp,MLP,0.98,0.9063,5897,4474
+No current sensors,MLP,0.7919,0.4949,5897,4474
+No voltage sensors,MLP,0.5377,0.399,5897,4474
+Computed power + approximate measured-POA physics,MLP,0.6914,0.1028,5897,4474
+Computed total power only,LogReg,0.8847,0.5069,5897,4474
+Computed total power only,RF,0.0614,0.0364,5897,4474
+Computed total power only,HistGBM,0.3978,0.3697,5897,4474
+Computed total power only,MLP,0.0,0.0,5897,4474
+Computed power + measured irradiance,LogReg,0.7957,0.0,5897,4474
+Computed power + measured irradiance,RF,0.2374,0.2443,5897,4474
+Computed power + measured irradiance,HistGBM,0.4099,0.2553,5897,4474
+Computed power + measured irradiance,MLP,0.4577,0.0,5897,4474
+Computed power + irradiance + module temp,LogReg,0.7828,0.0288,5897,4474
+Computed power + irradiance + module temp,RF,0.3795,0.0,5897,4474
+Computed power + irradiance + module temp,HistGBM,0.4436,0.3941,5897,4474
+Computed power + irradiance + module temp,MLP,0.7529,0.1006,5897,4474
+HK-availability proxy (not a validated transfer mapping),LogReg,0.7885,0.3368,5897,4474
+HK-availability proxy (not a validated transfer mapping),RF,0.6483,0.0847,5897,4474
+HK-availability proxy (not a validated transfer mapping),HistGBM,0.73,0.3567,5897,4474
+HK-availability proxy (not a validated transfer mapping),MLP,0.7229,0.4958,5897,4474

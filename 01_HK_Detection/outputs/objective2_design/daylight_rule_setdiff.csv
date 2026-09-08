@@ -1,0 +1,6 @@
+candidate_rule,candidate_only,historical_only,both,candidate_only_overcast_irr_lt_20,candidate_only_missing_sensor
+ghi_clear >= 20,1974,10963,40662,1224,262
+ghi_clear >= 50,1542,12084,39541,802,252
+zenith < 85,1903,11011,40614,1155,260
+zenith < 80,1336,13194,38431,602,246
+ghi_clear >= 50 AND zenith < 85,1542,12084,39541,802,252

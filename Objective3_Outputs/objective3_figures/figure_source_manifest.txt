@@ -1,0 +1,37 @@
+Objective 3 consolidation — figure source manifest
+Generated: 2026-09-04T16:36:55
+
+All inputs are frozen Objective 3 artefacts. No Objective 1 or Objective 2
+output and no dataset was read during consolidation.
+
+fig1_source_performance
+    objective3_source_checkpoint.csv   (pooled 5x5 cells, binary TN/FP/FN/TP,
+                                  macro_f1, anomalous_f1, balanced_accuracy)
+
+fig2_hk_class_distribution
+    objective3_screening_distribution.csv  (HK predicted counts and proportions,
+                                       both Brazil reference distributions)
+    objective3_stress_tests.csv             (denominator for the primary population)
+
+fig3_fold_stability_and_score
+    objective3_per_fold_screening.csv         (per-fold screening rates)
+    objective3_hk_screening.csv      (uncalibrated score; per-fold predictions,
+                                  from which unanimous and pairwise agreement
+                                  were recomputed)
+    objective3_screening_checks.csv       (cross-check of the recomputed pairwise range)
+
+fig4_populations_and_support
+    objective3_stress_tests.csv        (screening rate, eligible / feature-complete /
+                                  excluded counts, per-feature missingness)
+    objective3_screening_checks.csv       (per-fold hull and occupied-bin containment)
+
+fig5_temporal_and_agreement
+    objective3_hk_screening.csv      (timestamps and flags; run lengths recomputed
+                                  under 15-minute continuity)
+    objective3_temporal_clustering.csv (frozen run statistics, used to verify the
+                                  recomputation)
+    objective3_objective2_agreement.csv (Arm B / Arm C contingency — the only source
+                                   for the cross-screening panel)
+
+objective3_summary.md
+    all of the above, plus objective3_capacity_sensitivity.csv

@@ -1,0 +1,19 @@
+feature_set,model,standard_deg_recall,anomalous_deg_recall,standard_rows,anomalous_rows
+Electrical (full),LogReg,0.9927,0.8822,5897,4474
+Electrical (full),RF,0.8615,0.8688,5897,4474
+Electrical (full),HistGBM,0.9771,0.7436,5897,4474
+Electrical + irradiance,LogReg,0.9924,0.8699,5897,4474
+Electrical + irradiance,RF,0.8718,0.8487,5897,4474
+Electrical + irradiance,HistGBM,0.9778,0.7465,5897,4474
+Electrical + irradiance + module temp,LogReg,0.991,0.8605,5897,4474
+Electrical + irradiance + module temp,RF,0.863,0.8008,5897,4474
+Electrical + irradiance + module temp,HistGBM,0.9735,0.5896,5897,4474
+No current sensors,LogReg,0.9756,0.9222,5897,4474
+No current sensors,RF,0.7178,0.4394,5897,4474
+No current sensors,HistGBM,0.9396,0.7126,5897,4474
+No voltage sensors,LogReg,0.7392,0.5641,5897,4474
+No voltage sensors,RF,0.3888,0.3677,5897,4474
+No voltage sensors,HistGBM,0.6468,0.5751,5897,4474
+Power + approx. measured-POA physics,LogReg,0.7828,0.295,5897,4474
+Power + approx. measured-POA physics,RF,0.7056,0.3979,5897,4474
+Power + approx. measured-POA physics,HistGBM,0.7634,0.1757,5897,4474

@@ -1,0 +1,1 @@
+2026-08-24T11:26:27 | plot_objective2_results.py | input: 9 frozen Objective 2 artefacts | output: 13 files in outputs/objective2_figures/ | notes: consolidation only; nothing trained, no transfer run, no Objective 1 or 3 output read

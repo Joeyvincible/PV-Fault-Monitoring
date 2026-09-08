@@ -1,0 +1,19 @@
+feature_set,model,macro_f1_oof,macro_f1_fold_mean,macro_f1_fold_std,balanced_accuracy_oof,four_fault_mean_recall,runtime_s
+Electrical (full),LogReg,0.9141,0.9147,0.0127,0.9218,0.9305,83.4
+Electrical (full),RF,0.9586,0.9476,0.0541,0.9332,0.9181,222.6
+Electrical (full),HistGBM,0.9504,0.9576,0.0383,0.956,0.9482,44.5
+Electrical + irradiance,LogReg,0.9263,0.926,0.0103,0.931,0.9367,88.3
+Electrical + irradiance,RF,0.9589,0.9495,0.0504,0.9335,0.9182,217.3
+Electrical + irradiance,HistGBM,0.9661,0.9639,0.0448,0.9466,0.9347,70.1
+Electrical + irradiance + module temp,LogReg,0.9154,0.9178,0.0161,0.9308,0.9383,94.9
+Electrical + irradiance + module temp,RF,0.9552,0.9458,0.0547,0.9276,0.9107,222.1
+Electrical + irradiance + module temp,HistGBM,0.9566,0.9543,0.0602,0.9325,0.9173,67.0
+No current sensors,LogReg,0.7352,0.7427,0.0419,0.8862,0.9072,27.6
+No current sensors,RF,0.8339,0.8372,0.0278,0.819,0.807,256.1
+No current sensors,HistGBM,0.8186,0.8187,0.0256,0.8771,0.8891,41.4
+No voltage sensors,LogReg,0.5402,0.5376,0.0305,0.719,0.7475,61.5
+No voltage sensors,RF,0.6494,0.641,0.0678,0.6222,0.5427,185.7
+No voltage sensors,HistGBM,0.6349,0.6305,0.0345,0.779,0.7872,34.1
+Power + approx. measured-POA physics,LogReg,0.5998,0.607,0.0352,0.7857,0.8159,88.8
+Power + approx. measured-POA physics,RF,0.7292,0.7072,0.0973,0.7038,0.6636,150.0
+Power + approx. measured-POA physics,HistGBM,0.628,0.6501,0.0555,0.6693,0.6232,57.9

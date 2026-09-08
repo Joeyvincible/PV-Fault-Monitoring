@@ -1,0 +1,101 @@
+feature_set,method,valid_for_reporting,validity_label,true,pred,count
+ratio_5k0 + residual_5k0,A_stratified_random_row,False,"stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)",Normal,Normal,345523
+ratio_5k0 + residual_5k0,A_stratified_random_row,False,"stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)",Normal,Short-Circuit,374
+ratio_5k0 + residual_5k0,A_stratified_random_row,False,"stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)",Normal,Degradation,38085
+ratio_5k0 + residual_5k0,A_stratified_random_row,False,"stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)",Normal,Open-Circuit,0
+ratio_5k0 + residual_5k0,A_stratified_random_row,False,"stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)",Normal,Shadowing,18862
+ratio_5k0 + residual_5k0,A_stratified_random_row,False,"stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)",Short-Circuit,Normal,21
+ratio_5k0 + residual_5k0,A_stratified_random_row,False,"stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)",Short-Circuit,Short-Circuit,5907
+ratio_5k0 + residual_5k0,A_stratified_random_row,False,"stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)",Short-Circuit,Degradation,38
+ratio_5k0 + residual_5k0,A_stratified_random_row,False,"stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)",Short-Circuit,Open-Circuit,9
+ratio_5k0 + residual_5k0,A_stratified_random_row,False,"stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)",Short-Circuit,Shadowing,24
+ratio_5k0 + residual_5k0,A_stratified_random_row,False,"stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)",Degradation,Normal,345
+ratio_5k0 + residual_5k0,A_stratified_random_row,False,"stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)",Degradation,Short-Circuit,19
+ratio_5k0 + residual_5k0,A_stratified_random_row,False,"stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)",Degradation,Degradation,9948
+ratio_5k0 + residual_5k0,A_stratified_random_row,False,"stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)",Degradation,Open-Circuit,31
+ratio_5k0 + residual_5k0,A_stratified_random_row,False,"stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)",Degradation,Shadowing,28
+ratio_5k0 + residual_5k0,A_stratified_random_row,False,"stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)",Open-Circuit,Normal,0
+ratio_5k0 + residual_5k0,A_stratified_random_row,False,"stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)",Open-Circuit,Short-Circuit,0
+ratio_5k0 + residual_5k0,A_stratified_random_row,False,"stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)",Open-Circuit,Degradation,4
+ratio_5k0 + residual_5k0,A_stratified_random_row,False,"stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)",Open-Circuit,Open-Circuit,6018
+ratio_5k0 + residual_5k0,A_stratified_random_row,False,"stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)",Open-Circuit,Shadowing,2
+ratio_5k0 + residual_5k0,A_stratified_random_row,False,"stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)",Shadowing,Normal,13102
+ratio_5k0 + residual_5k0,A_stratified_random_row,False,"stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)",Shadowing,Short-Circuit,706
+ratio_5k0 + residual_5k0,A_stratified_random_row,False,"stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)",Shadowing,Degradation,4636
+ratio_5k0 + residual_5k0,A_stratified_random_row,False,"stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)",Shadowing,Open-Circuit,86
+ratio_5k0 + residual_5k0,A_stratified_random_row,False,"stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)",Shadowing,Shadowing,169943
+ratio_5k0 + residual_5k0,B_group_disjoint,True,VALID,Normal,Normal,299513
+ratio_5k0 + residual_5k0,B_group_disjoint,True,VALID,Normal,Short-Circuit,514
+ratio_5k0 + residual_5k0,B_group_disjoint,True,VALID,Normal,Degradation,42506
+ratio_5k0 + residual_5k0,B_group_disjoint,True,VALID,Normal,Open-Circuit,0
+ratio_5k0 + residual_5k0,B_group_disjoint,True,VALID,Normal,Shadowing,60311
+ratio_5k0 + residual_5k0,B_group_disjoint,True,VALID,Short-Circuit,Normal,120
+ratio_5k0 + residual_5k0,B_group_disjoint,True,VALID,Short-Circuit,Short-Circuit,5075
+ratio_5k0 + residual_5k0,B_group_disjoint,True,VALID,Short-Circuit,Degradation,102
+ratio_5k0 + residual_5k0,B_group_disjoint,True,VALID,Short-Circuit,Open-Circuit,9
+ratio_5k0 + residual_5k0,B_group_disjoint,True,VALID,Short-Circuit,Shadowing,693
+ratio_5k0 + residual_5k0,B_group_disjoint,True,VALID,Degradation,Normal,4083
+ratio_5k0 + residual_5k0,B_group_disjoint,True,VALID,Degradation,Short-Circuit,357
+ratio_5k0 + residual_5k0,B_group_disjoint,True,VALID,Degradation,Degradation,5826
+ratio_5k0 + residual_5k0,B_group_disjoint,True,VALID,Degradation,Open-Circuit,31
+ratio_5k0 + residual_5k0,B_group_disjoint,True,VALID,Degradation,Shadowing,74
+ratio_5k0 + residual_5k0,B_group_disjoint,True,VALID,Open-Circuit,Normal,0
+ratio_5k0 + residual_5k0,B_group_disjoint,True,VALID,Open-Circuit,Short-Circuit,102
+ratio_5k0 + residual_5k0,B_group_disjoint,True,VALID,Open-Circuit,Degradation,0
+ratio_5k0 + residual_5k0,B_group_disjoint,True,VALID,Open-Circuit,Open-Circuit,5733
+ratio_5k0 + residual_5k0,B_group_disjoint,True,VALID,Open-Circuit,Shadowing,189
+ratio_5k0 + residual_5k0,B_group_disjoint,True,VALID,Shadowing,Normal,17797
+ratio_5k0 + residual_5k0,B_group_disjoint,True,VALID,Shadowing,Short-Circuit,727
+ratio_5k0 + residual_5k0,B_group_disjoint,True,VALID,Shadowing,Degradation,4668
+ratio_5k0 + residual_5k0,B_group_disjoint,True,VALID,Shadowing,Open-Circuit,80
+ratio_5k0 + residual_5k0,B_group_disjoint,True,VALID,Shadowing,Shadowing,165201
+Electrical full,A_stratified_random_row,False,"stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)",Normal,Normal,401720
+Electrical full,A_stratified_random_row,False,"stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)",Normal,Short-Circuit,0
+Electrical full,A_stratified_random_row,False,"stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)",Normal,Degradation,0
+Electrical full,A_stratified_random_row,False,"stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)",Normal,Open-Circuit,0
+Electrical full,A_stratified_random_row,False,"stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)",Normal,Shadowing,1124
+Electrical full,A_stratified_random_row,False,"stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)",Short-Circuit,Normal,2
+Electrical full,A_stratified_random_row,False,"stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)",Short-Circuit,Short-Circuit,5980
+Electrical full,A_stratified_random_row,False,"stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)",Short-Circuit,Degradation,7
+Electrical full,A_stratified_random_row,False,"stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)",Short-Circuit,Open-Circuit,0
+Electrical full,A_stratified_random_row,False,"stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)",Short-Circuit,Shadowing,10
+Electrical full,A_stratified_random_row,False,"stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)",Degradation,Normal,0
+Electrical full,A_stratified_random_row,False,"stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)",Degradation,Short-Circuit,2
+Electrical full,A_stratified_random_row,False,"stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)",Degradation,Degradation,10353
+Electrical full,A_stratified_random_row,False,"stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)",Degradation,Open-Circuit,4
+Electrical full,A_stratified_random_row,False,"stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)",Degradation,Shadowing,12
+Electrical full,A_stratified_random_row,False,"stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)",Open-Circuit,Normal,0
+Electrical full,A_stratified_random_row,False,"stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)",Open-Circuit,Short-Circuit,0
+Electrical full,A_stratified_random_row,False,"stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)",Open-Circuit,Degradation,1
+Electrical full,A_stratified_random_row,False,"stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)",Open-Circuit,Open-Circuit,6023
+Electrical full,A_stratified_random_row,False,"stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)",Open-Circuit,Shadowing,0
+Electrical full,A_stratified_random_row,False,"stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)",Shadowing,Normal,328
+Electrical full,A_stratified_random_row,False,"stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)",Shadowing,Short-Circuit,19
+Electrical full,A_stratified_random_row,False,"stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)",Shadowing,Degradation,30
+Electrical full,A_stratified_random_row,False,"stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)",Shadowing,Open-Circuit,1
+Electrical full,A_stratified_random_row,False,"stratified random-row 5-fold CV - DIAGNOSTIC ONLY, methodologically invalid for result reporting (adjacent seconds of the same physical event appear in different folds)",Shadowing,Shadowing,188095
+Electrical full,B_group_disjoint,True,VALID,Normal,Normal,397654
+Electrical full,B_group_disjoint,True,VALID,Normal,Short-Circuit,0
+Electrical full,B_group_disjoint,True,VALID,Normal,Degradation,0
+Electrical full,B_group_disjoint,True,VALID,Normal,Open-Circuit,1326
+Electrical full,B_group_disjoint,True,VALID,Normal,Shadowing,3864
+Electrical full,B_group_disjoint,True,VALID,Short-Circuit,Normal,2
+Electrical full,B_group_disjoint,True,VALID,Short-Circuit,Short-Circuit,5806
+Electrical full,B_group_disjoint,True,VALID,Short-Circuit,Degradation,26
+Electrical full,B_group_disjoint,True,VALID,Short-Circuit,Open-Circuit,0
+Electrical full,B_group_disjoint,True,VALID,Short-Circuit,Shadowing,165
+Electrical full,B_group_disjoint,True,VALID,Degradation,Normal,1
+Electrical full,B_group_disjoint,True,VALID,Degradation,Short-Circuit,36
+Electrical full,B_group_disjoint,True,VALID,Degradation,Degradation,9089
+Electrical full,B_group_disjoint,True,VALID,Degradation,Open-Circuit,21
+Electrical full,B_group_disjoint,True,VALID,Degradation,Shadowing,1224
+Electrical full,B_group_disjoint,True,VALID,Open-Circuit,Normal,0
+Electrical full,B_group_disjoint,True,VALID,Open-Circuit,Short-Circuit,0
+Electrical full,B_group_disjoint,True,VALID,Open-Circuit,Degradation,15
+Electrical full,B_group_disjoint,True,VALID,Open-Circuit,Open-Circuit,5792
+Electrical full,B_group_disjoint,True,VALID,Open-Circuit,Shadowing,217
+Electrical full,B_group_disjoint,True,VALID,Shadowing,Normal,2293
+Electrical full,B_group_disjoint,True,VALID,Shadowing,Short-Circuit,73
+Electrical full,B_group_disjoint,True,VALID,Shadowing,Degradation,59
+Electrical full,B_group_disjoint,True,VALID,Shadowing,Open-Circuit,28
+Electrical full,B_group_disjoint,True,VALID,Shadowing,Shadowing,186020

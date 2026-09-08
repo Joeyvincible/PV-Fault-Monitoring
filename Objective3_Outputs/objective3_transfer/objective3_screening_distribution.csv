@@ -1,0 +1,21 @@
+population,label_role,denominator_feature_complete_rows,class,predicted_count,predicted_proportion,brazil_empirical_label_proportion,brazil_balanced_training_proportion
+clean-sensor 2023 (Jan/Feb/Nov/Dec),PRIMARY,4745,Normal,1520,0.320337,0.656407,0.471961
+clean-sensor 2023 (Jan/Feb/Nov/Dec),PRIMARY,4745,Short-Circuit,8,0.001686,0.009775,0.015022
+clean-sensor 2023 (Jan/Feb/Nov/Dec),PRIMARY,4745,Degradation,165,0.034773,0.016899,0.02597
+clean-sensor 2023 (Jan/Feb/Nov/Dec),PRIMARY,4745,Open-Circuit,6,0.001264,0.009816,0.015085
+clean-sensor 2023 (Jan/Feb/Nov/Dec),PRIMARY,4745,Shadowing,3046,0.641939,0.307104,0.471961
+March-October 2023,corrupted-input stress test,10939,Normal,3470,0.317214,0.656407,0.471961
+March-October 2023,corrupted-input stress test,10939,Short-Circuit,54,0.004936,0.009775,0.015022
+March-October 2023,corrupted-input stress test,10939,Degradation,1366,0.124874,0.016899,0.02597
+March-October 2023,corrupted-input stress test,10939,Open-Circuit,246,0.022488,0.009816,0.015085
+March-October 2023,corrupted-input stress test,10939,Shadowing,5803,0.530487,0.307104,0.471961
+full 2023,mixed-period stress summary (NOT a corruption contrast),15684,Normal,4990,0.318159,0.656407,0.471961
+full 2023,mixed-period stress summary (NOT a corruption contrast),15684,Short-Circuit,62,0.003953,0.009775,0.015022
+full 2023,mixed-period stress summary (NOT a corruption contrast),15684,Degradation,1531,0.097615,0.016899,0.02597
+full 2023,mixed-period stress summary (NOT a corruption contrast),15684,Open-Circuit,252,0.016067,0.009816,0.015085
+full 2023,mixed-period stress summary (NOT a corruption contrast),15684,Shadowing,8849,0.564206,0.307104,0.471961
+Saola proxy window (1-15 Sept 2023),corrupted-input stress test,475,Normal,231,0.486316,0.656407,0.471961
+Saola proxy window (1-15 Sept 2023),corrupted-input stress test,475,Short-Circuit,0,0.0,0.009775,0.015022
+Saola proxy window (1-15 Sept 2023),corrupted-input stress test,475,Degradation,34,0.071579,0.016899,0.02597
+Saola proxy window (1-15 Sept 2023),corrupted-input stress test,475,Open-Circuit,1,0.002105,0.009816,0.015085
+Saola proxy window (1-15 Sept 2023),corrupted-input stress test,475,Shadowing,209,0.44,0.307104,0.471961

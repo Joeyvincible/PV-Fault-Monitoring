@@ -1,0 +1,6 @@
+f_nv,class,n_events_total,n_events_ge60,median_len_ge60,max_len,n_events_ge_900
+0,Normal,1114,149,1548.0,56719,91
+1,Short-Circuit,15,12,591.0,619,0
+2,Degradation,19,12,587.0,2695,2
+3,Open-Circuit,23,10,600.0,606,0
+4,Shadowing,1136,116,1160.0,6555,60

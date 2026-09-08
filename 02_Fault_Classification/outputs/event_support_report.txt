@@ -1,0 +1,262 @@
+======================================================================
+  FAULT-EVENT SUPPORT ANALYSIS (read-only)
+======================================================================
+
+Cleaned rows        : 613,711
+Source events (raw) : 2,307
+sample_index range  : 30,294 .. 1,350,895
+
+======================================================================
+  3a. RECORDING GROUP DETECTION
+======================================================================
+
+Gap statistics (consecutive sample_index differences):
+  contiguous steps (gap == 1): 613,597
+  discontinuities (gap > 1)  : 113
+
+Largest 50 gaps (seconds at 1 Hz nominal):
+    1.     51,534 s  (  14.31 h)  before sample_index 200,000
+    2.     51,189 s  (  14.22 h)  before sample_index 371,694
+    3.     50,397 s  (  14.00 h)  before sample_index 285,780
+    4.     48,995 s  (  13.61 h)  before sample_index 457,205
+    5.     47,781 s  (  13.27 h)  before sample_index 1,312,365
+    6.     47,659 s  (  13.24 h)  before sample_index 1,225,999
+    7.     47,406 s  (  13.17 h)  before sample_index 113,111
+    8.     46,527 s  (  12.92 h)  before sample_index 540,839
+    9.     46,016 s  (  12.78 h)  before sample_index 713,864
+   10.     45,459 s  (  12.63 h)  before sample_index 627,102
+   11.     44,940 s  (  12.48 h)  before sample_index 886,113
+   12.     44,903 s  (  12.47 h)  before sample_index 1,139,630
+   13.     44,539 s  (  12.37 h)  before sample_index 971,313
+   14.     44,384 s  (  12.33 h)  before sample_index 1,055,397
+   15.     44,109 s  (  12.25 h)  before sample_index 799,419
+   16.        375 s  (   0.10 h)  before sample_index 1,140,399
+   17.        163 s  (   0.05 h)  before sample_index 200,278
+   18.         91 s  (   0.03 h)  before sample_index 714,086
+   19.         42 s  (   0.01 h)  before sample_index 971,432
+   20.         33 s  (   0.01 h)  before sample_index 317,597
+   21.         23 s  (   0.01 h)  before sample_index 285,807
+   22.         22 s  (   0.01 h)  before sample_index 1,139,656
+   23.         19 s  (   0.01 h)  before sample_index 148,460
+   24.         15 s  (   0.00 h)  before sample_index 65,705
+   25.         14 s  (   0.00 h)  before sample_index 1,264,578
+   26.         14 s  (   0.00 h)  before sample_index 1,312,379
+   27.         14 s  (   0.00 h)  before sample_index 841,173
+   28.         13 s  (   0.00 h)  before sample_index 1,139,897
+   29.         13 s  (   0.00 h)  before sample_index 1,178,337
+   30.         12 s  (   0.00 h)  before sample_index 1,094,724
+   31.         11 s  (   0.00 h)  before sample_index 1,055,408
+   32.         10 s  (   0.00 h)  before sample_index 1,094,706
+   33.         10 s  (   0.00 h)  before sample_index 886,124
+   34.          9 s  (   0.00 h)  before sample_index 1,312,398
+   35.          9 s  (   0.00 h)  before sample_index 1,350,895
+   36.          9 s  (   0.00 h)  before sample_index 113,244
+   37.          8 s  (   0.00 h)  before sample_index 1,226,013
+   38.          8 s  (   0.00 h)  before sample_index 113,225
+   39.          8 s  (   0.00 h)  before sample_index 1,139,696
+   40.          7 s  (   0.00 h)  before sample_index 713,994
+   41.          7 s  (   0.00 h)  before sample_index 1,139,910
+   42.          7 s  (   0.00 h)  before sample_index 1,139,882
+   43.          6 s  (   0.00 h)  before sample_index 1,139,903
+   44.          6 s  (   0.00 h)  before sample_index 113,208
+   45.          6 s  (   0.00 h)  before sample_index 755,308
+   46.          5 s  (   0.00 h)  before sample_index 1,139,666
+   47.          5 s  (   0.00 h)  before sample_index 113,254
+   48.          5 s  (   0.00 h)  before sample_index 1,139,681
+   49.          5 s  (   0.00 h)  before sample_index 457,218
+   50.          5 s  (   0.00 h)  before sample_index 1,226,005
+
+Group count by threshold (mandated probe set):
+  gap >  1,800s → 16 groups
+  gap >  3,600s → 16 groups
+  gap >  7,200s → 16 groups
+  gap > 14,400s → 16 groups
+  gap > 21,600s → 16 groups
+  gap > 28,800s → 16 groups
+  gap > 43,200s → 16 groups
+  gap > 57,600s → 1 groups
+
+Widest stable plateau across probed thresholds:
+  group count 16 holds for thresholds 387s .. 42,335s  (band width x109.4)
+
+  A. SEPARATION
+     smallest gap above band :      44109 s
+     largest gap below band  :        375 s
+     separation ratio        : 117.62 (need >= 5.0)  → PASS
+  B. STABILITY
+     threshold band width    : x109.4 (need >= x4.0)  → PASS
+  C. PLAUSIBILITY  (at adopted threshold 4,047s)
+     groups formed           : 16
+     span range              : 9.65 h .. 11.60 h (need 0.5-24.0 h)
+     → PASS
+
+  SOFT FLAG — retained group-size imbalance (not an acceptance test)
+     rows per group          : 34,663 .. 41,742 (ratio x1.2, flag at > x4.0)
+     STATUS: normal (<= x4.0)
+
+  CORROBORATION (reported after the fact, not a tuning target)
+     groups recovered        : 16
+     paper's recording days  : 16
+     → matches the paper's stated 16 recording days
+
+  ALL THREE TESTS PASS — reconstruction adopted
+  Adopted threshold: 4,047s (geometric centre of the empty band 387-42,335s)
+  Recording groups : 16
+
+  Per-group detail:
+    Group       Rows      min idx      max idx   Span (h)
+        0     35,395       30,294       65,705       9.84
+        1     35,304      113,111      148,466       9.82
+        2     35,220      200,000      235,383       9.83
+        3     34,663      285,780      320,505       9.65
+        4     36,511      371,694      408,210      10.14
+        5     37,098      457,205      494,312      10.31
+        6     40,801      540,839      581,643      11.33
+        7     40,746      627,102      667,848      11.32
+        8     41,344      713,864      755,310      11.51
+        9     41,742      799,419      841,173      11.60
+       10     40,644      886,113      926,774      11.29
+       11     39,656      971,313    1,011,013      11.03
+       12     39,296    1,055,397    1,094,727      10.93
+       13     38,244    1,139,630    1,178,340      10.75
+       14     38,553    1,225,999    1,264,584      10.72
+       15     38,494    1,312,365    1,350,895      10.70
+
+======================================================================
+  3b. EVENT COUNTS (from pre-filter source_event_id)
+======================================================================
+
+Whole dataset — distinct source events per class:
+  Class               raw events   retained   raw samples  retained samples
+  0 Normal                1,114      1,113     1,162,931           402,844
+  1 Short-Circuit            15         15         5,999             5,999
+  2 Degradation              19         19        10,371            10,371
+  3 Open-Circuit             23         23         6,024             6,024
+  4 Shadowing             1,136      1,136       188,473           188,473
+
+Controlled-fault events — raw vs retained sample counts:
+
+  1 — Short-Circuit (15 source events):
+     event_id    start idx      end idx      raw  retained
+         1869      990,569      991,180      612       612
+         1877      993,870      994,483      614       614
+         2117    1,074,414    1,075,032      619       619
+         2125    1,077,713    1,078,325      613       613
+         2161    1,158,445    1,159,035      591       591
+         2180    1,161,744    1,161,745        2         2
+         2182    1,161,747    1,162,255      509       509
+         2184    1,162,257    1,162,259        3         3
+         2186    1,162,261    1,162,275       15        15
+         2188    1,162,277    1,162,336       60        60
+         2221    1,244,416    1,244,622      207       207
+         2223    1,244,624    1,245,007      384       384
+         2229    1,245,320    1,245,907      588       588
+         2270    1,332,871    1,333,461      591       591
+         2287    1,336,171    1,336,761      591       591
+
+  2 — Degradation (19 source events):
+     event_id    start idx      end idx      raw  retained
+         1272      725,945      727,723    1,779     1,779
+         1430      815,665      818,359    2,695     2,695
+         1864      988,470      989,080      611       611
+         1872      991,770      992,379      610       610
+         2112    1,072,283    1,072,926      644       644
+         2120    1,075,650    1,076,227      578       578
+         2155    1,156,346    1,156,935      590       590
+         2163    1,159,045    1,159,050        6         6
+         2170    1,159,653    1,159,655        3         3
+         2172    1,159,657    1,160,235      579       579
+         2190    1,162,345    1,162,350        6         6
+         2213    1,242,691    1,243,200      510       510
+         2225    1,245,015    1,245,019        5         5
+         2231    1,245,917    1,245,922        6         6
+         2239    1,247,524    1,248,095      572       572
+         2261    1,330,781    1,331,361      581       581
+         2272    1,333,469    1,333,474        6         6
+         2278    1,334,078    1,334,661      584       584
+         2289    1,336,771    1,336,776        6         6
+
+  3 — Open-Circuit (23 source events):
+     event_id    start idx      end idx      raw  retained
+         1270      725,933      725,934        2         2
+         1273      727,724      727,725        2         2
+         1428      815,649      815,649        1         1
+         1866      989,370      989,970      601       601
+         1874      992,671      993,268      598       598
+         2114    1,073,215    1,073,814      600       600
+         2122    1,076,514    1,077,119      606       606
+         2157    1,157,236    1,157,835      600       600
+         2168    1,159,636    1,159,637        2         2
+         2173    1,160,236    1,160,236        1         1
+         2176    1,160,535    1,161,135      601       601
+         2211    1,242,672    1,242,675        4         4
+         2214    1,243,201    1,243,203        3         3
+         2217    1,243,508    1,244,106      599       599
+         2234    1,246,513    1,247,107      595       595
+         2237    1,247,507    1,247,508        2         2
+         2240    1,248,096    1,248,097        2         2
+         2259    1,330,765    1,330,766        2         2
+         2262    1,331,362    1,331,363        2         2
+         2266    1,331,663    1,332,261      599       599
+         2276    1,334,063    1,334,063        1         1
+         2280    1,334,663    1,334,663        1         1
+         2283    1,334,962    1,335,561      600       600
+
+Shadowing is reported as observed. Its runs are not part of the
+controlled schedule and fragmentation is expected; no attempt is made
+to merge runs or reconcile them against the fault schedule.
+
+======================================================================
+  3c. SUPPORT TABLE
+======================================================================
+
+  Grp      Rows    Span |  Nrm   SC  Deg   OC   Shd |   SC smp  Deg smp   OC smp   Shd smp
+    0    35,395    9.84 |   76    0    0    0    75 |        0        0        0    15,201
+    1    35,304    9.82 |   71    0    0    0    70 |        0        0        0    15,333
+    2    35,220    9.83 |  105    0    0    0   104 |        0        0        0    12,524
+    3    34,663    9.65 |  108    0    0    0   108 |        0        0        0    15,656
+    4    36,511   10.14 |   54    0    0    0    53 |        0        0        0    12,650
+    5    37,098   10.31 |   55    0    0    0    54 |        0        0        0    10,922
+    6    40,801   11.33 |   74    0    0    0    73 |        0        0        0    13,587
+    7    40,746   11.32 |   65    0    0    0    64 |        0        0        0    11,584
+    8    41,344   11.51 |   52    0    1    2    52 |        0    1,779        4    10,384
+    9    41,742   11.60 |   72    0    1    1    71 |        0    2,695        1    13,815
+   10    40,644   11.29 |  141    0    0    0   140 |        0        0        0    11,683
+   11    39,656   11.03 |   78    2    2    2    75 |    1,226    1,221    1,199    10,227
+   12    39,296   10.93 |  124    2    2    2   121 |    1,232    1,222    1,206    10,961
+   13    38,244   10.75 |   20    6    5    4    29 |    1,180    1,184    1,204     9,038
+   14    38,553   10.72 |   15    3    4    6    21 |    1,179    1,093    1,205     8,081
+   15    38,494   10.70 |   18    2    4    6    26 |    1,182    1,177    1,205     6,827
+
+Total distinct source events per class (whole dataset, retained):
+  Normal        : 1113
+  Short-Circuit : 15
+  Degradation   : 19
+  Open-Circuit  : 23
+  Shadowing     : 1136
+
+Paper's scheduled controlled events (Table 2): 2 per class per day x 16 days = 32 each
+Observed vs scheduled: SC 15/32, Deg 19/32, OC 23/32
+NOTE: shortfall is expected — reported sample counts indicate not every
+scheduled event survived into the released data.
+
+Groups containing at least one event of each controlled fault class: 5 of 16
+Groups with zero short-circuit events : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+Groups with zero degradation events : [0, 1, 2, 3, 4, 5, 6, 7, 10]
+Groups with zero open-circuit events : [0, 1, 2, 3, 4, 5, 6, 7, 10]
+
+======================================================================
+  SPLIT FEASIBILITY ASSESSMENT
+======================================================================
+
+  For meaningful per-class recall, a test partition needs at least
+  2 source events of each controlled fault class.
+
+  Groups with full controlled-fault coverage: 5 of 16
+  Minimum events available in any single class: 15
+
+  "FIXED SPLIT VIABLE — sufficient groups have full class coverage to
+   construct train/validation/test partitions each containing all classes"
+
+  This assessment states what the data supports. No folds have been
+  selected and no split has been applied.

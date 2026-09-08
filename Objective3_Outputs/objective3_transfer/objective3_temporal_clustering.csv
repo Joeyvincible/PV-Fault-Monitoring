@@ -1,0 +1,9 @@
+statistic,value
+n_anomalous_runs,262.0
+n_flagged_rows,3225.0
+denominator_feature_complete_rows,4745.0
+mean_run_length_intervals,12.298
+median_run_length_intervals,8.0
+max_run_length_intervals,39.0
+runs_of_length_1,43.0
+runs_ge_4_intervals_ge_1h,179.0
