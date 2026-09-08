@@ -1,24 +1,24 @@
 # Fault Detection for Solar PV Deployment
 
-This repository contains the implementation and retained evidence for an MSc
-dissertation on fault detection for solar photovoltaic (PV) deployment. It
-examines how measurement availability affects PV fault analysis, same-time
-irradiance estimation, expected AC-power modelling, and cross-domain screening.
+This MSc project investigates fault detection for solar photovoltaic (PV)
+deployment. It examines how measurement availability affects PV fault analysis,
+same-time irradiance estimation, expected AC-power modelling and cross-domain
+screening.
 
 ## Research question
 
 How can measurement-aware machine-learning and physics-informed PV analysis
 support fault detection and diagnostic screening when sensor availability,
-data quality, and operating domains differ?
+data quality and operating domains differ?
 
 ## Objectives
 
 1. **Brazil sensor ablation and five-class PV fault classification.** Evaluate
-   Normal, Short-Circuit, Degradation, Open-Circuit, and Shadowing classes with
+   Normal, Short-Circuit, Degradation, Open-Circuit and Shadowing classes with
    recording-group-disjoint validation.
 2. **Hong Kong SQ1 same-time irradiance estimation and expected AC-power
    modelling.** Compare a measured-irradiance Reference arm, pvlib clear-sky
-   irradiance, a machine-learned same-time irradiance estimate, and a hybrid
+   irradiance, a machine-learned same-time irradiance estimate and a hybrid
    representation. This is not an ahead-of-time forecasting task.
 3. **Brazil-to-Hong-Kong cross-domain screening.** Apply a Brazil-fitted
    classifier using the restricted proxy-comparable shared representation. Hong
@@ -51,9 +51,9 @@ intentional project identities and are retained as-is.
 
 ## Data availability and reproduction
 
-Large external source datasets and reproducible generated artefacts are
-intentionally excluded from the public Git repository. They remain present in
-the local working copy; the ignore rules affect future Git tracking only.
+Large source datasets and reproducible generated artefacts are excluded from
+the public Git repository but remain in the local working copy. The ignore
+rules affect future Git tracking only.
 
 ### Brazil
 
@@ -89,9 +89,9 @@ Obtain the required SQ1 subset from the authoritative
 ```
 
 Only the required subset is needed: `SQ1.csv`, `SQ1_Inverter.csv`, the PV
-generation-system metadata TTL, and the 2021–2023 meteorological files for
+generation-system metadata TTL and the 2021–2023 meteorological files for
 irradiance, temperature, relative humidity, sea-level pressure, visibility,
-wind, and rainfall. The original Dryad README is retained at:
+wind and rainfall. The original Dryad README is retained at:
 
 ```text
 01_HK_Detection/raw_data/README.md
@@ -112,8 +112,8 @@ the public repository.
 
 ### Generated artefacts intentionally excluded from public Git
 
-The following large, reproducible artefacts are generated during execution and
-are intentionally excluded rather than treated as missing project files:
+These large, reproducible artefacts are generated during execution and excluded
+from public Git. They are not missing project files:
 
 - `02_Fault_Classification/raw_data/converted_csv/`
 - `02_Fault_Classification/data/fault_dataset.csv`
@@ -140,9 +140,9 @@ reproduce every floating-point value exactly.
 in an isolated verification runtime; it is not evidence of a complete frozen
 submission environment.
 
-The full classifier and neural-model fits are resource-intensive. The commands
-below describe the retained regeneration workflow, not a guarantee of
-byte-identical numerical re-creation on every machine.
+The classifier and neural-model fits are resource-intensive. The commands below
+show how to regenerate the workflow, but do not guarantee byte-identical
+numerical re-creation on every machine.
 
 ## Execution order
 
@@ -203,10 +203,10 @@ python Objective3_Outputs/objective3_transfer/plot_objective3_results.py
 
 ## GitHub scope
 
-Keep the concise reports, figures, source code, and compact summary tables that
+Keep concise reports, figures, source code and compact summary tables that
 support the dissertation. Do not upload the full external Hong Kong source
 release, large regenerable Brazil intermediates, virtual environments, Python
-caches, or local machine files without confirming the relevant redistribution
-terms and repository-size limits. The largest retained data products should be
-made available through an appropriate data release or documented download route
-when they exceed practical Git hosting limits.
+caches or local machine files without confirming the relevant redistribution
+terms and repository-size limits. Make the largest retained data products
+available through an appropriate data release or documented download route when
+they exceed practical Git hosting limits.
